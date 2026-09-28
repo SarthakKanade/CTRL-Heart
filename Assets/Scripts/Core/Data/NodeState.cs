@@ -25,10 +25,19 @@ namespace CtrlHeart.Core.Data
         {
             nodeType = type;
             currentHealth = MAX_HEALTH;
-            calmInfluence = 25f;
-            anxietyInfluence = 25f;
-            confidenceInfluence = 25f;
-            attractionInfluence = 25f;
+            calmInfluence = 0f;
+            anxietyInfluence = 0f;
+            confidenceInfluence = 0f;
+            attractionInfluence = 0f;
+        }
+
+        public void DecayInfluences(float rate)
+        {
+            float factor = Mathf.Clamp01(1.0f - rate);
+            calmInfluence *= factor;
+            anxietyInfluence *= factor;
+            confidenceInfluence *= factor;
+            attractionInfluence *= factor;
         }
 
         public float GetInfluence(CoreEmotion emotion)

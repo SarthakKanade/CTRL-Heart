@@ -7,21 +7,29 @@ using CtrlHeart.Core.Visuals;
 namespace CtrlHeart.Core.UI
 {
     /// <summary>
-    /// Draggable emotion unit supporting drag-and-drop onto mind map nodes.
-    /// Master Design Bible Part 2 §2.2, Part 5 §5.10 & Dev Plan Day 2 Track A.
+    /// Emotion unit card in the left panel matching the reference UI:
+    /// - Calm (water drop, cyan)
+    /// - Anxiety (lightning bolt, pink/coral)
+    /// - Confidence (star, golden yellow)
+    /// - Attraction (heart, purple)
+    /// Supports both drag-and-drop onto organ nodes AND click-to-select interaction.
     /// </summary>
-    public class UIEmotionDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+    public class UIEmotionDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
     {
         public CoreEmotion emotionType;
 
+        [SerializeField] private Image cardBackgroundImage;
         [SerializeField] private Image iconImage;
         [SerializeField] private Text labelText;
+        [SerializeField] private Image influenceBarFill;
+        [SerializeField] private Image selectionGlowRing;
 
         private RectTransform rectTransform;
         private Canvas rootCanvas;
         private CanvasGroup canvasGroup;
-        private Vector2 originalLocalPosition;
+        private Vector2 originalAnchoredPosition;
         private Transform originalParent;
+        private bool isDragging = false;
 
         private void Awake()
         {
@@ -34,15 +42,88 @@ namespace CtrlHeart.Core.UI
         public void Initialize(CoreEmotion emotion)
         {
             emotionType = emotion;
-            if (labelText != null) labelText.text = emotion.ToString();
-            if (iconImage != null) iconImage.color = VisualTheme.GetEmotionColor(emotion);
+            Color themeColor = VisualTheme.GetEmotionColor(emotion);
+
+            if (labelText != null)
+            {
+                labelText.text = emotion.ToString();
+                labelText.color = Color.white;
+            }
+
+            if (iconImage != null)
+            {
+                string iconKey = emotion switch
+                {
+                    CoreEmotion.Calm => "icon_calm",
+                    CoreEmotion.Anxiety => "icon_anxiety",
+                    CoreEmotion.Confidence => "icon_confidence",
+                    CoreEmotion.Attraction => "icon_attraction",
+                    _ => "circle_glow"
+                };
+                iconImage.sprite = UIProceduralTextureGenerator.GetSprite(iconKey);
+                iconImage.color = themeColor;
+            }
+
+            if (influenceBarFill != null)
+            {
+                influenceBarFill.sprite = UIProceduralTextureGenerator.GetSprite("bar_pill");
+                influenceBarFill.color = themeColor;
+                influenceBarFill.fillAmount = 0.45f;
+            }
+
+            if (cardBackgroundImage != null)
+            {
+                var s = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
+                cardBackgroundImage.sprite = s != null ? s : UIProceduralTextureGenerator.GetSprite("panel_glass");
+                cardBackgroundImage.type = Image.Type.Sliced;
+                cardBackgroundImage.color = Color.white;
+            }
+
+            SetSelected(false);
+        }
+
+        public void AssignComponents(Image bg, Image icon, Text label, Image barFill, Image glow)
+        {
+            cardBackgroundImage = bg;
+            iconImage = icon;
+            labelText = label;
+            influenceBarFill = barFill;
+            selectionGlowRing = glow;
+        }
+
+        public void SetSelected(bool selected)
+        {
+            if (selectionGlowRing != null)
+            {
+                selectionGlowRing.gameObject.SetActive(selected);
+                if (selected)
+                {
+                    selectionGlowRing.color = VisualTheme.GetEmotionColor(emotionType);
+                }
+            }
+        }
+
+        public void UpdateInfluenceLevel(float fillPercent)
+        {
+            if (influenceBarFill != null)
+            {
+                influenceBarFill.fillAmount = Mathf.Clamp01(fillPercent);
+            }
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (isDragging) return;
+            CoreGameUI.SelectEmotion(emotionType);
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            originalLocalPosition = rectTransform.localPosition;
+            isDragging = true;
+            originalAnchoredPosition = rectTransform.anchoredPosition;
             originalParent = transform.parent;
             canvasGroup.blocksRaycasts = false;
+            CoreGameUI.SelectEmotion(emotionType);
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -53,6 +134,7 @@ namespace CtrlHeart.Core.UI
 
         public void OnEndDrag(PointerEventData eventData)
         {
+            isDragging = false;
             canvasGroup.blocksRaycasts = true;
 
             // Check if dropped onto a UINodeView
@@ -65,18 +147,15 @@ namespace CtrlHeart.Core.UI
                 }
             }
 
-            // Return to tray
+            // Snap back to tray
             rectTransform.SetParent(originalParent);
-            rectTransform.localPosition = originalLocalPosition;
+            rectTransform.anchoredPosition = originalAnchoredPosition;
         }
 
         private void OnDroppedOnNode(InternalNodeType targetNode)
         {
-            Debug.Log($"[DragDrop] Dropped {emotionType} onto {targetNode}");
-            if (GameManager.Instance != null)
-            {
-                GameManager.Instance.HandleEmotionDrop(targetNode, emotionType);
-            }
+            Debug.Log($"[DragDrop] Injected {emotionType} into {targetNode}");
+            GameManager.Instance?.HandleEmotionDrop(targetNode, emotionType);
         }
     }
 }

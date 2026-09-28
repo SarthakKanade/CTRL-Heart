@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 1eb697c5e8fd843958b6e8a0b95ff66b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5226785699583602717
+    second: Gaya-2nd_date_0
+  - first:
+      213: 2172287418451760257
+    second: Gaya-2nd_date_1
+  - first:
+      213: -7378896673474101739
+    second: Gaya-2nd_date_2
+  - first:
+      213: -8380106835018590534
+    second: Gaya-2nd_date_3
+  - first:
+      213: -2984708328079796009
+    second: Gaya-2nd_date_4
+  - first:
+      213: -1299977052976817671
+    second: Gaya-2nd_date_5
+  - first:
+      213: -879403910683749020
+    second: Gaya-2nd_date_6
+  - first:
+      213: 116418031788646473
+    second: Gaya-2nd_date_7
+  - first:
+      213: 1563968984962282943
+    second: Gaya-2nd_date_8
+  - first:
+      213: 62137642605379557
+    second: Gaya-2nd_date_9
+  - first:
+      213: -522783152543990346
+    second: Gaya-2nd_date_10
+  - first:
+      213: -8134296646210477145
+    second: Gaya-2nd_date_11
+  - first:
+      213: -3124890454585598763
+    second: Gaya-2nd_date_12
+  - first:
+      213: -2498465612751880258
+    second: Gaya-2nd_date_13
+  - first:
+      213: 8239292335876109031
+    second: Gaya-2nd_date_14
+  - first:
+      213: 5843579884914802531
+    second: Gaya-2nd_date_15
+  - first:
+      213: 8230726182858847782
+    second: Gaya-2nd_date_16
+  - first:
+      213: -7525525963479748535
+    second: Gaya-2nd_date_17
+  - first:
+      213: -5286472679914803448
+    second: Gaya-2nd_date_18
+  - first:
+      213: -3277346671825182719
+    second: Gaya-2nd_date_19
+  - first:
+      213: 632562942222962086
+    second: Gaya-2nd_date_20
+  - first:
+      213: 6393079295017547666
+    second: Gaya-2nd_date_21
+  - first:
+      213: -3123244675691069854
+    second: Gaya-2nd_date_22
+  - first:
+      213: 3033631446354121142
+    second: Gaya-2nd_date_23
+  - first:
+      213: -6808097666484127399
+    second: Gaya-2nd_date_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gaya-2nd_date_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1034
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10b5cca6e5498840800000000000000
+      internalID: 5226785699583602717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1034
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1841ed6d5e3852e10800000000000000
+      internalID: 2172287418451760257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_2
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1034
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eb34f0294e89990800000000000000
+      internalID: -7378896673474101739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_3
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1034
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6d4e6bb31e3bb80800000000000000
+      internalID: -8380106835018590534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_4
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1034
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d857aad69f2496d0800000000000000
+      internalID: -2984708328079796009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 778
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9582502cd85fde0800000000000000
+      internalID: -1299977052976817671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 778
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4651b917dcabbc3f0800000000000000
+      internalID: -879403910683749020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_7
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 778
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940663645999d9100800000000000000
+      internalID: 116418031788646473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_8
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 778
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5b76c618554b510800000000000000
+      internalID: 1563968984962282943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_9
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 778
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef7ca25bd1ccd000800000000000000
+      internalID: 62137642605379557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 522
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd7e0a1e73beb8f0800000000000000
+      internalID: -522783152543990346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 522
+        width: 148
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a329f03c4c2d1f80800000000000000
+      internalID: -8134296646210477145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_12
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 523
+        width: 146
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc9a6c10b822a4d0800000000000000
+      internalID: -3124890454585598763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_13
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 523
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf356c33caa35dd0800000000000000
+      internalID: -2498465612751880258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_14
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 523
+        width: 140
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e27e70d9b8d75270800000000000000
+      internalID: 8239292335876109031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_15
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 267
+        width: 139
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ff6f8d1f0981150800000000000000
+      internalID: 5843579884914802531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 267
+        width: 140
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626fec4ead9693270800000000000000
+      internalID: 8230726182858847782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_17
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 267
+        width: 141
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9407fc61206ff8790800000000000000
+      internalID: -7525525963479748535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_18
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 267
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80feed64b1da2a6b0800000000000000
+      internalID: -5286472679914803448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_19
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 267
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1002d0ce0968482d0800000000000000
+      internalID: -3277346671825182719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10
+        width: 143
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad864df4a057c800800000000000000
+      internalID: 632562942222962086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 11
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297fc603fb7c8b850800000000000000
+      internalID: 6393079295017547666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 11
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ebdced38108a4d0800000000000000
+      internalID: -3123244675691069854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_23
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 11
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b154634abf991a20800000000000000
+      internalID: 3033631446354121142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-2nd_date_24
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 11
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9593c014e37c481a0800000000000000
+      internalID: -6808097666484127399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gaya-2nd_date_0: 5226785699583602717
+      Gaya-2nd_date_1: 2172287418451760257
+      Gaya-2nd_date_10: -522783152543990346
+      Gaya-2nd_date_11: -8134296646210477145
+      Gaya-2nd_date_12: -3124890454585598763
+      Gaya-2nd_date_13: -2498465612751880258
+      Gaya-2nd_date_14: 8239292335876109031
+      Gaya-2nd_date_15: 5843579884914802531
+      Gaya-2nd_date_16: 8230726182858847782
+      Gaya-2nd_date_17: -7525525963479748535
+      Gaya-2nd_date_18: -5286472679914803448
+      Gaya-2nd_date_19: -3277346671825182719
+      Gaya-2nd_date_2: -7378896673474101739
+      Gaya-2nd_date_20: 632562942222962086
+      Gaya-2nd_date_21: 6393079295017547666
+      Gaya-2nd_date_22: -3123244675691069854
+      Gaya-2nd_date_23: 3033631446354121142
+      Gaya-2nd_date_24: -6808097666484127399
+      Gaya-2nd_date_3: -8380106835018590534
+      Gaya-2nd_date_4: -2984708328079796009
+      Gaya-2nd_date_5: -1299977052976817671
+      Gaya-2nd_date_6: -879403910683749020
+      Gaya-2nd_date_7: 116418031788646473
+      Gaya-2nd_date_8: 1563968984962282943
+      Gaya-2nd_date_9: 62137642605379557
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

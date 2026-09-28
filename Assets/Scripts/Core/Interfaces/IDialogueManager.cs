@@ -11,7 +11,8 @@ namespace CtrlHeart.Core.Interfaces
     public interface IDialogueManager
     {
         QuestionData SelectQuestion(int slotIndex, ConnectionTier tier);
-        AnswerData ResolveAnswer(QuestionData question, EmotionState dominantState, bool isLowFocus, bool isCriticalBody);
+        AnswerData ResolveAnswer(QuestionData question, EmotionState dominantState, bool isCriticalBody);
+        ReactionData SelectReaction(QuestionData question, EmotionState state);
         ReactionData SelectReaction(QuestionData question, ConnectionTier postAnswerTier);
     }
 }

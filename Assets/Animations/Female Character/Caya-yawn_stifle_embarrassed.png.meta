@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: c4760d19e8af04d0fabbd939b30b13ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6956261637818547879
+    second: Caya-yawn_stifle_embarrassed_0
+  - first:
+      213: -8270761669593380938
+    second: Caya-yawn_stifle_embarrassed_1
+  - first:
+      213: -3322762646342119650
+    second: Caya-yawn_stifle_embarrassed_2
+  - first:
+      213: 3965144341022291520
+    second: Caya-yawn_stifle_embarrassed_3
+  - first:
+      213: 5956431389725111325
+    second: Caya-yawn_stifle_embarrassed_4
+  - first:
+      213: -5006681931989159229
+    second: Caya-yawn_stifle_embarrassed_5
+  - first:
+      213: 2622106441978614816
+    second: Caya-yawn_stifle_embarrassed_6
+  - first:
+      213: 4648457324593026098
+    second: Caya-yawn_stifle_embarrassed_7
+  - first:
+      213: -8107562432347176572
+    second: Caya-yawn_stifle_embarrassed_8
+  - first:
+      213: 3250061245741231747
+    second: Caya-yawn_stifle_embarrassed_9
+  - first:
+      213: 4948410080981368868
+    second: Caya-yawn_stifle_embarrassed_10
+  - first:
+      213: -2822251147377010651
+    second: Caya-yawn_stifle_embarrassed_11
+  - first:
+      213: -2369074287254204313
+    second: Caya-yawn_stifle_embarrassed_12
+  - first:
+      213: -4297825004985080172
+    second: Caya-yawn_stifle_embarrassed_13
+  - first:
+      213: 2330777499512711057
+    second: Caya-yawn_stifle_embarrassed_14
+  - first:
+      213: 3660409444502169149
+    second: Caya-yawn_stifle_embarrassed_15
+  - first:
+      213: -6766103681675354650
+    second: Caya-yawn_stifle_embarrassed_16
+  - first:
+      213: 4980628644593506790
+    second: Caya-yawn_stifle_embarrassed_17
+  - first:
+      213: 588576928192814857
+    second: Caya-yawn_stifle_embarrassed_18
+  - first:
+      213: 4753353350205816206
+    second: Caya-yawn_stifle_embarrassed_19
+  - first:
+      213: 236982524734689867
+    second: Caya-yawn_stifle_embarrassed_20
+  - first:
+      213: 298627874701057933
+    second: Caya-yawn_stifle_embarrassed_21
+  - first:
+      213: -3169752122258810941
+    second: Caya-yawn_stifle_embarrassed_22
+  - first:
+      213: -4859500632115205122
+    second: Caya-yawn_stifle_embarrassed_23
+  - first:
+      213: 3175975596638308011
+    second: Caya-yawn_stifle_embarrassed_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951062175e4667f90800000000000000
+      internalID: -6956261637818547879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b748f5f41a583d80800000000000000
+      internalID: -8270761669593380938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f47d75afc23e1d0800000000000000
+      internalID: -3322762646342119650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046b8c915c5070730800000000000000
+      internalID: 3965144341022291520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d143d895ace79a250800000000000000
+      internalID: 5956431389725111325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c27b643f41b48ab0800000000000000
+      internalID: -5006681931989159229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024166d9ae7936420800000000000000
+      internalID: 2622106441978614816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2341ee1ee43a28040800000000000000
+      internalID: 4648457324593026098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48105a96ce62c7f80800000000000000
+      internalID: -8107562432347176572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e6ba2cb798a1d20800000000000000
+      internalID: 3250061245741231747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4204bd730c84ca440800000000000000
+      internalID: 4948410080981368868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52897adc88955d8d0800000000000000
+      internalID: -2822251147377010651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76093b5dc7b5f1fd0800000000000000
+      internalID: -2369074287254204313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496a217cdee0b54c0800000000000000
+      internalID: -4297825004985080172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197adec69c5985020800000000000000
+      internalID: 2330777499512711057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3669000ff26cc230800000000000000
+      internalID: 3660409444502169149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed1744cc88f912a0800000000000000
+      internalID: -6766103681675354650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9912f1d5fbe1540800000000000000
+      internalID: 4980628644593506790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f5ce7099b0b2800800000000000000
+      internalID: 588576928192814857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d3eea00bd47f140800000000000000
+      internalID: 4753353350205816206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4259c4c95ee94300800000000000000
+      internalID: 236982524734689867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f16974870f42400800000000000000
+      internalID: 298627874701057933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_22
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c719b62d37c204d0800000000000000
+      internalID: -3169752122258810941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbacfcfbe59f8cb0800000000000000
+      internalID: -4859500632115205122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caya-yawn_stifle_embarrassed_24
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba68fe46af4531c20800000000000000
+      internalID: 3175975596638308011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Caya-yawn_stifle_embarrassed_0: -6956261637818547879
+      Caya-yawn_stifle_embarrassed_1: -8270761669593380938
+      Caya-yawn_stifle_embarrassed_10: 4948410080981368868
+      Caya-yawn_stifle_embarrassed_11: -2822251147377010651
+      Caya-yawn_stifle_embarrassed_12: -2369074287254204313
+      Caya-yawn_stifle_embarrassed_13: -4297825004985080172
+      Caya-yawn_stifle_embarrassed_14: 2330777499512711057
+      Caya-yawn_stifle_embarrassed_15: 3660409444502169149
+      Caya-yawn_stifle_embarrassed_16: -6766103681675354650
+      Caya-yawn_stifle_embarrassed_17: 4980628644593506790
+      Caya-yawn_stifle_embarrassed_18: 588576928192814857
+      Caya-yawn_stifle_embarrassed_19: 4753353350205816206
+      Caya-yawn_stifle_embarrassed_2: -3322762646342119650
+      Caya-yawn_stifle_embarrassed_20: 236982524734689867
+      Caya-yawn_stifle_embarrassed_21: 298627874701057933
+      Caya-yawn_stifle_embarrassed_22: -3169752122258810941
+      Caya-yawn_stifle_embarrassed_23: -4859500632115205122
+      Caya-yawn_stifle_embarrassed_24: 3175975596638308011
+      Caya-yawn_stifle_embarrassed_3: 3965144341022291520
+      Caya-yawn_stifle_embarrassed_4: 5956431389725111325
+      Caya-yawn_stifle_embarrassed_5: -5006681931989159229
+      Caya-yawn_stifle_embarrassed_6: 2622106441978614816
+      Caya-yawn_stifle_embarrassed_7: 4648457324593026098
+      Caya-yawn_stifle_embarrassed_8: -8107562432347176572
+      Caya-yawn_stifle_embarrassed_9: 3250061245741231747
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

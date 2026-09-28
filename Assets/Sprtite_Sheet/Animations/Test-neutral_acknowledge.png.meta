@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: ed8df5a24828945fb890e6c5c2a1f179
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6624225941294607019
+    second: Test-neutral_acknowledge_0
+  - first:
+      213: -96954850926991021
+    second: Test-neutral_acknowledge_1
+  - first:
+      213: 4538208670795510100
+    second: Test-neutral_acknowledge_2
+  - first:
+      213: -9192474080209848688
+    second: Test-neutral_acknowledge_3
+  - first:
+      213: 4977066413053388300
+    second: Test-neutral_acknowledge_4
+  - first:
+      213: 612393634561865758
+    second: Test-neutral_acknowledge_5
+  - first:
+      213: -2313952127926933375
+    second: Test-neutral_acknowledge_6
+  - first:
+      213: -2018601827534189473
+    second: Test-neutral_acknowledge_7
+  - first:
+      213: 7664975431983554878
+    second: Test-neutral_acknowledge_8
+  - first:
+      213: 1973236562399350269
+    second: Test-neutral_acknowledge_9
+  - first:
+      213: -3720762865156187382
+    second: Test-neutral_acknowledge_10
+  - first:
+      213: 5507804418318529629
+    second: Test-neutral_acknowledge_11
+  - first:
+      213: 8204908170731498847
+    second: Test-neutral_acknowledge_12
+  - first:
+      213: 5398055773594741347
+    second: Test-neutral_acknowledge_13
+  - first:
+      213: 5793881452206227111
+    second: Test-neutral_acknowledge_14
+  - first:
+      213: 6238066098645858624
+    second: Test-neutral_acknowledge_15
+  - first:
+      213: -7616084982464238338
+    second: Test-neutral_acknowledge_16
+  - first:
+      213: 5644120864772909390
+    second: Test-neutral_acknowledge_17
+  - first:
+      213: 7716556247355304516
+    second: Test-neutral_acknowledge_18
+  - first:
+      213: -6044682191746110120
+    second: Test-neutral_acknowledge_19
+  - first:
+      213: 8624507390165039353
+    second: Test-neutral_acknowledge_20
+  - first:
+      213: -1872433924508616311
+    second: Test-neutral_acknowledge_21
+  - first:
+      213: 937685550498597364
+    second: Test-neutral_acknowledge_22
+  - first:
+      213: -8007518033926311038
+    second: Test-neutral_acknowledge_23
+  - first:
+      213: -8025138756940483010
+    second: Test-neutral_acknowledge_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1037
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55515316a950214a0800000000000000
+      internalID: -6624225941294607019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1037
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359ee37a31c87aef0800000000000000
+      internalID: -96954850926991021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1037
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4513d5bddb4fafe30800000000000000
+      internalID: 4538208670795510100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1037
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0963b122785cd6080800000000000000
+      internalID: -9192474080209848688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1037
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0623957887121540800000000000000
+      internalID: 4977066413053388300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 781
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1835ca14c8af7800800000000000000
+      internalID: 612393634561865758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 781
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188e7abacc033efd0800000000000000
+      internalID: -2313952127926933375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 781
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cced6355c7cf3e0800000000000000
+      internalID: -2018601827534189473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_8
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 781
+        width: 149
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31e97b6b867f5a60800000000000000
+      internalID: 7664975431983554878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_9
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 781
+        width: 149
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd40a7e238526b10800000000000000
+      internalID: 1973236562399350269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 525
+        width: 149
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b96e833e13d5cc0800000000000000
+      internalID: -3720762865156187382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 525
+        width: 149
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54f336dfe6af6c40800000000000000
+      internalID: 5507804418318529629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_12
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 525
+        width: 148
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5da6238280bdd170800000000000000
+      internalID: 8204908170731498847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 525
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a6cde302fb9ea40800000000000000
+      internalID: 5398055773594741347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_14
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 525
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aef975cb70086050800000000000000
+      internalID: 5793881452206227111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 269
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0497137e010129650800000000000000
+      internalID: 6238066098645858624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 269
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc28096f0b3e4690800000000000000
+      internalID: -7616084982464238338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_17
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 269
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49e82ec502f35e40800000000000000
+      internalID: 5644120864772909390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_18
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 269
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a2fecd507b61b60800000000000000
+      internalID: 7716556247355304516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_19
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 269
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85de7dc9299fc1ca0800000000000000
+      internalID: -6044682191746110120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 13
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8b489d6c760b770800000000000000
+      internalID: 8624507390165039353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_21
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 13
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989f5482447c306e0800000000000000
+      internalID: -1872433924508616311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_22
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 13
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f94c744a04530d00800000000000000
+      internalID: 937685550498597364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_23
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 13
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283b94716c49fd090800000000000000
+      internalID: -8007518033926311038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test-neutral_acknowledge_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 13
+        width: 145
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36b75fc1daf0a090800000000000000
+      internalID: -8025138756940483010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Test-neutral_acknowledge_0: -6624225941294607019
+      Test-neutral_acknowledge_1: -96954850926991021
+      Test-neutral_acknowledge_10: -3720762865156187382
+      Test-neutral_acknowledge_11: 5507804418318529629
+      Test-neutral_acknowledge_12: 8204908170731498847
+      Test-neutral_acknowledge_13: 5398055773594741347
+      Test-neutral_acknowledge_14: 5793881452206227111
+      Test-neutral_acknowledge_15: 6238066098645858624
+      Test-neutral_acknowledge_16: -7616084982464238338
+      Test-neutral_acknowledge_17: 5644120864772909390
+      Test-neutral_acknowledge_18: 7716556247355304516
+      Test-neutral_acknowledge_19: -6044682191746110120
+      Test-neutral_acknowledge_2: 4538208670795510100
+      Test-neutral_acknowledge_20: 8624507390165039353
+      Test-neutral_acknowledge_21: -1872433924508616311
+      Test-neutral_acknowledge_22: 937685550498597364
+      Test-neutral_acknowledge_23: -8007518033926311038
+      Test-neutral_acknowledge_24: -8025138756940483010
+      Test-neutral_acknowledge_3: -9192474080209848688
+      Test-neutral_acknowledge_4: 4977066413053388300
+      Test-neutral_acknowledge_5: 612393634561865758
+      Test-neutral_acknowledge_6: -2313952127926933375
+      Test-neutral_acknowledge_7: -2018601827534189473
+      Test-neutral_acknowledge_8: 7664975431983554878
+      Test-neutral_acknowledge_9: 1973236562399350269
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

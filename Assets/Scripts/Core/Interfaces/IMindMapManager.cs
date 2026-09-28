@@ -15,5 +15,6 @@ namespace CtrlHeart.Core.Interfaces
         void ApplyDamage(InternalNodeType targetNode, float damage);
         void HealNode(InternalNodeType targetNode, float amount);
         bool IsBodyCriticallyLow();
+        float CalculateEquilibriumScore();
     }
 }

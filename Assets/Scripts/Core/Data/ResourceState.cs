@@ -4,8 +4,8 @@ using UnityEngine;
 namespace CtrlHeart.Core.Data
 {
     /// <summary>
-    /// Holds the 4 continuous resource meters.
-    /// Oxygen, Focus, Composure, Connection.
+    /// Holds the 3 continuous resource meters.
+    /// Oxygen, Composure, Connection.
     /// Master Design Bible Part 2 §2.5.
     /// </summary>
     [Serializable]
@@ -13,14 +13,10 @@ namespace CtrlHeart.Core.Data
     {
         // ── Oxygen (Operational - Lungs) ──
         [Range(0f, 100f)] public float oxygen = 100f;
-        public float oxygenBaseRegenRate = 5f; // per second at 100% Lungs health
-
-        // ── Focus (Cognitive - Brain) ──
-        [Range(0f, 100f)] public float focus = 70f;
-        public float focusBaseRegenRate = 8f; // per second at 100% Brain health
+        public float oxygenBaseRegenRate = 3.5f; // per second at 100% Lungs health
 
         // ── Composure (Global stability, 0-100 - Heart) ──
-        [Range(0f, 100f)] public float composure = 80f;
+        [Range(0f, 100f)] public float composure = 75f;
 
         // ── Connection (Relationship score, 0-100) ──
         [Range(0f, 100f)] public float connection = 50f;

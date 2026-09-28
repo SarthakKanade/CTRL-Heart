@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: 69b99d954873f46b3add4d82eca0c5cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7077155808574357904
+    second: "Oaya-glass_spill_catch_\u2014_p_0"
+  - first:
+      213: -5231601211392501488
+    second: "Oaya-glass_spill_catch_\u2014_p_1"
+  - first:
+      213: -1846153667058604232
+    second: "Oaya-glass_spill_catch_\u2014_p_2"
+  - first:
+      213: 3759224526829675301
+    second: "Oaya-glass_spill_catch_\u2014_p_3"
+  - first:
+      213: 2423006539193856873
+    second: "Oaya-glass_spill_catch_\u2014_p_4"
+  - first:
+      213: 7255181644796407903
+    second: "Oaya-glass_spill_catch_\u2014_p_5"
+  - first:
+      213: -774845996058104331
+    second: "Oaya-glass_spill_catch_\u2014_p_6"
+  - first:
+      213: -474842538995943699
+    second: "Oaya-glass_spill_catch_\u2014_p_7"
+  - first:
+      213: 1079321401482736553
+    second: "Oaya-glass_spill_catch_\u2014_p_8"
+  - first:
+      213: 2711545401377081916
+    second: "Oaya-glass_spill_catch_\u2014_p_9"
+  - first:
+      213: -3832108791890286859
+    second: "Oaya-glass_spill_catch_\u2014_p_10"
+  - first:
+      213: 7876601446339829138
+    second: "Oaya-glass_spill_catch_\u2014_p_11"
+  - first:
+      213: -5934378660482749356
+    second: "Oaya-glass_spill_catch_\u2014_p_12"
+  - first:
+      213: 8622107555756538778
+    second: "Oaya-glass_spill_catch_\u2014_p_13"
+  - first:
+      213: -374796475202065922
+    second: "Oaya-glass_spill_catch_\u2014_p_14"
+  - first:
+      213: -4835194404902084532
+    second: "Oaya-glass_spill_catch_\u2014_p_15"
+  - first:
+      213: 8361306806796349110
+    second: "Oaya-glass_spill_catch_\u2014_p_16"
+  - first:
+      213: -4791819516111028691
+    second: "Oaya-glass_spill_catch_\u2014_p_17"
+  - first:
+      213: 7785854949345734554
+    second: "Oaya-glass_spill_catch_\u2014_p_18"
+  - first:
+      213: 2840325514456354194
+    second: "Oaya-glass_spill_catch_\u2014_p_19"
+  - first:
+      213: 6298012083929198658
+    second: "Oaya-glass_spill_catch_\u2014_p_20"
+  - first:
+      213: 1305139362371468252
+    second: "Oaya-glass_spill_catch_\u2014_p_21"
+  - first:
+      213: 6016387847750310346
+    second: "Oaya-glass_spill_catch_\u2014_p_22"
+  - first:
+      213: 6813501286000065152
+    second: "Oaya-glass_spill_catch_\u2014_p_23"
+  - first:
+      213: -4952608584835398226
+    second: "Oaya-glass_spill_catch_\u2014_p_24"
+  - first:
+      213: -3961451086148593848
+    second: "Oaya-glass_spill_catch_\u2014_p_25"
+  - first:
+      213: 7913999168240388114
+    second: "Oaya-glass_spill_catch_\u2014_p_26"
+  - first:
+      213: -5155190055821333965
+    second: "Oaya-glass_spill_catch_\u2014_p_27"
+  - first:
+      213: -3936246066917696994
+    second: "Oaya-glass_spill_catch_\u2014_p_28"
+  - first:
+      213: -4064251872377981172
+    second: "Oaya-glass_spill_catch_\u2014_p_29"
+  - first:
+      213: 273591821918515173
+    second: "Oaya-glass_spill_catch_\u2014_p_30"
+  - first:
+      213: -1357470533332017950
+    second: "Oaya-glass_spill_catch_\u2014_p_31"
+  - first:
+      213: 2365251559519615620
+    second: "Oaya-glass_spill_catch_\u2014_p_32"
+  - first:
+      213: -3536782725694266629
+    second: "Oaya-glass_spill_catch_\u2014_p_33"
+  - first:
+      213: 674962732224895136
+    second: "Oaya-glass_spill_catch_\u2014_p_34"
+  - first:
+      213: -475071899856617803
+    second: "Oaya-glass_spill_catch_\u2014_p_35"
+  - first:
+      213: 8570783284723374821
+    second: "Oaya-glass_spill_catch_\u2014_p_36"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091ca2626bb173260800000000000000
+      internalID: 7077155808574357904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_1"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019527c9a6e9567b0800000000000000
+      internalID: -5231601211392501488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_2"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837ef2a65052166e0800000000000000
+      internalID: -1846153667058604232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_3"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5236e983ac27b2430800000000000000
+      internalID: 3759224526829675301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_4"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96339191c9f30a120800000000000000
+      internalID: 2423006539193856873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_5"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50360f24459fa460800000000000000
+      internalID: 7255181644796407903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_6"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fda2510ca13f35f0800000000000000
+      internalID: -774845996058104331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_7"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6f6e20a350969f0800000000000000
+      internalID: -474842538995943699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_8"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3fadd98158afe00800000000000000
+      internalID: 1079321401482736553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_9"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3acc691d2851a520800000000000000
+      internalID: 2711545401377081916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_10"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f66abe6b5d91dac0800000000000000
+      internalID: -3832108791890286859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_11"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dd96e884f4f4d60800000000000000
+      internalID: 7876601446339829138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_12"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c644bcc0ad4ada0800000000000000
+      internalID: -5934378660482749356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_13"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b741cd321e7a770800000000000000
+      internalID: 8622107555756538778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_14"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9238077947ccaf0800000000000000
+      internalID: -374796475202065922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40ead38e40f5ecb0800000000000000
+      internalID: -4835194404902084532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_16"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bee62d9d34590470800000000000000
+      internalID: 8361306806796349110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_17"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2efa6ac989008db0800000000000000
+      internalID: -4791819516111028691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_18"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f287043d9ec0c60800000000000000
+      internalID: 7785854949345734554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_19"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d46a7b10dda6720800000000000000
+      internalID: 2840325514456354194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_20"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240b7bd3f98076750800000000000000
+      internalID: 6298012083929198658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_21"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbf78cc559cc1210800000000000000
+      internalID: 1305139362371468252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_22"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac952201fd08e7350800000000000000
+      internalID: 6016387847750310346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_23"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a73b4f15b6e8e50800000000000000
+      internalID: 6813501286000065152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Oaya-glass_spill_catch_\u2014_p_24"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5065d6bbcc44bb0800000000000000
+      internalID: -4952608584835398226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Oaya-glass_spill_catch_\u2014_p_0": 7077155808574357904
+      "Oaya-glass_spill_catch_\u2014_p_1": -5231601211392501488
+      "Oaya-glass_spill_catch_\u2014_p_10": -3832108791890286859
+      "Oaya-glass_spill_catch_\u2014_p_11": 7876601446339829138
+      "Oaya-glass_spill_catch_\u2014_p_12": -5934378660482749356
+      "Oaya-glass_spill_catch_\u2014_p_13": 8622107555756538778
+      "Oaya-glass_spill_catch_\u2014_p_14": -374796475202065922
+      "Oaya-glass_spill_catch_\u2014_p_15": -4835194404902084532
+      "Oaya-glass_spill_catch_\u2014_p_16": 8361306806796349110
+      "Oaya-glass_spill_catch_\u2014_p_17": -4791819516111028691
+      "Oaya-glass_spill_catch_\u2014_p_18": 7785854949345734554
+      "Oaya-glass_spill_catch_\u2014_p_19": 2840325514456354194
+      "Oaya-glass_spill_catch_\u2014_p_2": -1846153667058604232
+      "Oaya-glass_spill_catch_\u2014_p_20": 6298012083929198658
+      "Oaya-glass_spill_catch_\u2014_p_21": 1305139362371468252
+      "Oaya-glass_spill_catch_\u2014_p_22": 6016387847750310346
+      "Oaya-glass_spill_catch_\u2014_p_23": 6813501286000065152
+      "Oaya-glass_spill_catch_\u2014_p_24": -4952608584835398226
+      "Oaya-glass_spill_catch_\u2014_p_25": -3961451086148593848
+      "Oaya-glass_spill_catch_\u2014_p_26": 7913999168240388114
+      "Oaya-glass_spill_catch_\u2014_p_27": -5155190055821333965
+      "Oaya-glass_spill_catch_\u2014_p_28": -3936246066917696994
+      "Oaya-glass_spill_catch_\u2014_p_29": -4064251872377981172
+      "Oaya-glass_spill_catch_\u2014_p_3": 3759224526829675301
+      "Oaya-glass_spill_catch_\u2014_p_30": 273591821918515173
+      "Oaya-glass_spill_catch_\u2014_p_31": -1357470533332017950
+      "Oaya-glass_spill_catch_\u2014_p_32": 2365251559519615620
+      "Oaya-glass_spill_catch_\u2014_p_33": -3536782725694266629
+      "Oaya-glass_spill_catch_\u2014_p_34": 674962732224895136
+      "Oaya-glass_spill_catch_\u2014_p_35": -475071899856617803
+      "Oaya-glass_spill_catch_\u2014_p_36": 8570783284723374821
+      "Oaya-glass_spill_catch_\u2014_p_4": 2423006539193856873
+      "Oaya-glass_spill_catch_\u2014_p_5": 7255181644796407903
+      "Oaya-glass_spill_catch_\u2014_p_6": -774845996058104331
+      "Oaya-glass_spill_catch_\u2014_p_7": -474842538995943699
+      "Oaya-glass_spill_catch_\u2014_p_8": 1079321401482736553
+      "Oaya-glass_spill_catch_\u2014_p_9": 2711545401377081916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

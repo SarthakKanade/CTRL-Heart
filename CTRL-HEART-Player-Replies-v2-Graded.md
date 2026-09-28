@@ -29,7 +29,7 @@ These are the automatic player-character replies produced by the internal state.
 
 | State | Answer | Delta | Band |
 |---|---|---:|---|
-| Calm | “Thanks. You look really good too.” | +11 | Reasonable |
+| Calm | “Thanks. You look really good too.” | +9 | Reasonable |
 | Anxiety | “Oh—thanks. I, uh... wasn't sure what to wear.” | −17 | Actively wrong |
 | Confidence | “Thanks. I figured I should make an effort.” | −4 | Poor |
 | Attraction | *He smiles, a little too obviously pleased.* “Thanks.” | +3 | Reasonable |
@@ -39,6 +39,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Yeah, I mean—obviously I was going to look good. Thanks.” *He laughs at himself.* | −14 | Actively wrong |
 | Anxiety+Attraction | “Really? Oh. Thanks... that’s actually really nice to hear.” | −7 | Poor |
 | Confidence+Attraction | “Good. I was hoping I’d make a decent first impression.” | +6 | Reasonable |
+| Frozen/Blank | *He blinks, suddenly lost for words, smiling flustered.* | −12 | Frozen/Blank |
 
 ## T3 — She asks about his day
 **Her beat:** “So how was your day, actually—not the polite version.”
@@ -58,6 +59,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “It was totally fine. Just work being work. Nothing got to me.” *He pauses.* “Much.” | −14 | Actively wrong |
 | Anxiety+Attraction | “It was rough, actually. I was nervous about tonight too, so... not exactly my calmest day.” | −5 | Poor |
 | Confidence+Attraction | “Kind of brutal. Then I got here, so I’m counting that as the turnaround.” | −1 | Poor |
+| Frozen/Blank | *He starts to speak, hesitates, and rubs the back of his neck silently.* | −12 | Frozen/Blank |
 
 ## T2 — She leaves a comfortable pause
 **Her beat:** *She glances around the room for a second, half-listening, just settling in.*
@@ -77,6 +79,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “You’re good. I wasn’t about to panic over two seconds of silence.” *A beat.* “Not yet, anyway.” | −14 | Actively wrong |
 | Anxiety+Attraction | *He smiles, looks down at his drink, then back at her, clearly trying not to overthink the silence.* | −8 | Poor |
 | Confidence+Attraction | *A small grin.* “You can have a minute.” | +2 | Reasonable |
+| Frozen/Blank | *He freezes completely, staring down at the table until the silence thickens.* | −12 | Frozen/Blank |
 
 ## T1 — She notices he is tense
 **Her beat:** “Hey—you okay? You seem kind of tense already.”
@@ -118,6 +121,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Oh, definitely. I’ve got several.” *Beat.* “I’m not nervous about this question, if that’s what you’re testing.” | −14 | Actively wrong |
 | Anxiety+Attraction | “There is one... but telling you about it this early feels like giving away too much.” | −5 | Poor |
 | Confidence+Attraction | “I do. You’ll have to earn the demonstration.” | +14 | High fit |
+| Frozen/Blank | *He freezes with a sheepish grin, mind completely blanking on the spot.* | −12 | Frozen/Blank |
 
 ## T3 — She has a small physical mishap
 **Her beat:** *She nearly drops her napkin, laughs while grabbing it.*
@@ -137,6 +141,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Smooth.” *He grins, a little too quickly.* “I mean—good save.” | −5 | Poor |
 | Anxiety+Attraction | “Oh my god, are you okay? That looked like it almost went everywhere.” | −18 | Actively wrong |
 | Confidence+Attraction | “Nice save. I was about to pretend I didn’t see that.” | −8 | Poor |
+| Frozen/Blank | *He stares at the napkin, paralyzed between helping and not reacting.* | −12 | Frozen/Blank |
 
 ## T2 — She asks what he does
 **Her beat:** “So what do you do?”
@@ -156,6 +161,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Software. It’s good. I’m good at it.” *He catches himself.* “That sounded more rehearsed than I meant.” | −5 | Poor |
 | Anxiety+Attraction | “Software... sorry, that’s such a boring answer. I swear there’s more to me than my job.” | −18 | Actively wrong |
 | Confidence+Attraction | “Software. I like solving problems all day. You might get the better version of me off the clock, though.” | +2 | Reasonable |
+| Frozen/Blank | *He opens his mouth, pauses, and awkwardly clears his throat without speaking.* | −12 | Frozen/Blank |
 
 ## T1 — She avoids eye contact for a beat
 **Her beat:** *She checks her drink and doesn’t meet his eyes for a moment.*
@@ -197,6 +203,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “See? I can be normal.” *Beat.* “Sometimes.” | −5 | Poor |
 | Anxiety+Attraction | “Really? That’s... actually a huge relief.” | −8 | Poor |
 | Confidence+Attraction | “I was hoping you’d get that feeling.” | +2 | Reasonable |
+| Frozen/Blank | *He catches his breath, surprised, words failing him as he smiles nervously.* | −12 | Frozen/Blank |
 
 ## T3 — She turns her glass, smiling to herself
 **Her beat:** *She slowly turns her glass, smiling slightly, absorbed in a thought.*
@@ -216,6 +223,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Okay, now I need to know what that smile means.” *He tries to sound casual.* | −18 | Actively wrong |
 | Anxiety+Attraction | “Was that smile about something I said?” | −8 | Poor |
 | Confidence+Attraction | “That smile tells me I’m doing something right.” | +2 | Reasonable |
+| Frozen/Blank | *He watches her glass turn, tongue-tied, unable to find an opening.* | −12 | Frozen/Blank |
 
 ## T2 — She tries to hide a yawn
 **Her beat:** *She catches herself yawning and looks a little embarrassed.*
@@ -235,6 +243,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Wow. Brutal.” *He laughs, then glances at her.* “You’re actually just tired, right?” | −8 | Poor |
 | Anxiety+Attraction | “Sorry, is this getting boring? I can... talk about something else.” | −18 | Actively wrong |
 | Confidence+Attraction | “I’ll forgive you for that one.” *He grins.* “You tired?” | +2 | Reasonable |
+| Frozen/Blank | *He notices the yawn and freezes up completely, unsure whether to acknowledge it.* | −12 | Frozen/Blank |
 
 ## T1 — She calls out his self-checking
 **Her beat:** “You keep doing this thing—checking yourself. Is this weird for you?”
@@ -276,6 +285,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Smooth.” *He laughs.* “I mean—you recovered.” | −8 | Poor |
 | Anxiety+Attraction | “That looked terrifying for a second.” | −18 | Actively wrong |
 | Confidence+Attraction | “I’m impressed. I thought we were about to lose the table.” | +14 | High fit |
+| Frozen/Blank | *He reaches out reflexively but freezes halfway, laughing silently in disbelief.* | −12 | Frozen/Blank |
 
 ## T3 — She looks at him warmly
 **Her beat:** *She looks at him for a second with an unguarded smile, then glances away.*
@@ -295,6 +305,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | *He catches her eye.* “What?” *The grin is confident; the quick glance away isn't.* | −18 | Actively wrong |
 | Anxiety+Attraction | *He smiles, looks down for half a second, then back at her.* | −8 | Poor |
 | Confidence+Attraction | *He meets her eyes and gives her a small, knowing smile.* | +14 | High fit |
+| Frozen/Blank | *He holds her gaze for a split second, panics, and looks down at his hands.* | −12 | Frozen/Blank |
 
 ## T2 — Her phone buzzes; she puts it face-down
 **Her beat:** *Her phone buzzes. She glances at it, puts it face-down, says nothing.*
@@ -314,6 +325,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “You don’t have to prove anything. I’m not watching the phone.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Sorry—if you need to deal with something, really, it’s okay.” | −8 | Poor |
 | Confidence+Attraction | “I’m flattered you left it.” | +2 | Reasonable |
+| Frozen/Blank | *He watches her put down the phone in total silence, letting the moment hang in the air.* | −12 | Frozen/Blank |
 
 ## T1 — She checks the time, restless
 **Her beat:** *She checks the time, not subtly.*
@@ -355,6 +367,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “I know what I want.” *Beat.* “I mean—I think I do. Something serious. Eventually.” | −8 | Poor |
 | Anxiety+Attraction | “I want something real. And... I’d be lying if I said I wasn’t hoping this could become that.” | +2 | Reasonable |
 | Confidence+Attraction | “A relationship with someone I actually like. I’m pretty sure you can guess where my head is tonight.” | −18 | Actively wrong |
+| Frozen/Blank | *He swallows hard, caught off-guard by the sincerity, struggling to find words.* | −12 | Frozen/Blank |
 
 ## T3 — She asks, hedging
 **Her beat:** “What are you looking for, out of this, I guess.”
@@ -374,6 +387,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “I’m looking for something real. That’s the answer.” *Beat.* “Probably.” | −5 | Poor |
 | Anxiety+Attraction | “I’d like this to go somewhere. I just don’t want to get ahead of myself.” | −8 | Poor |
 | Confidence+Attraction | “I’m looking for a reason to ask for a second date.” | +2 | Reasonable |
+| Frozen/Blank | *He hesitates, lips parting, but ends up looking down at his plate in silence.* | −12 | Frozen/Blank |
 
 ## T2 — She hesitates before asking her own question
 **Her beat:** “Can I ask you something, or is it too soon.”
@@ -393,6 +407,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Ask whatever you want.” *Beat.* “I’m sure I can handle it.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Yeah. You can ask. I might need a second, though.” | −8 | Poor |
 | Confidence+Attraction | “You can ask. Now I definitely want to hear it.” | +2 | Reasonable |
+| Frozen/Blank | *He stares at her blankly, paralyzed by anticipation of what she might ask.* | −12 | Frozen/Blank |
 
 ## T1 — She asks if he would rather be somewhere else
 **Her beat:** “You seem like you’d rather be somewhere else. Would you?”
@@ -434,6 +449,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Almost cancelled?” *He laughs.* “Well, I’m glad you made the right call.” | −8 | Poor |
 | Anxiety+Attraction | “You almost didn’t come? Oh... I’m really glad you did.” | −5 | Poor |
 | Confidence+Attraction | “And here I was thinking you were excited to meet me.” *He grins.* “Still glad you came.” | −18 | Actively wrong |
+| Frozen/Blank | *His eyes widen, struck silent by the admission, smiling softly.* | −12 | Frozen/Blank |
 
 ## T3 — Shared physical mishap
 **Her beat:** *A server brushes the table; the drinks wobble. She catches hers and laughs.*
@@ -453,6 +469,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Okay, that one was nearly a disaster.” *He grins.* “But we handled it.” | −8 | Poor |
 | Anxiety+Attraction | “That scared me more than it should have.” *He laughs.* | −18 | Actively wrong |
 | Confidence+Attraction | “I’m starting to think this table has it out for us.” | +14 | High fit |
+| Frozen/Blank | *He sits frozen as the drinks wobble, reacting only after everything settles.* | −12 | Frozen/Blank |
 
 ## T2 — She is simply comfortable and quiet
 **Her beat:** *She eats, present and unbothered. No pressure, no pull-away.*
@@ -472,6 +489,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | *He almost starts a conversation, stops himself, and lets the quiet be quiet.* | −5 | Poor |
 | Anxiety+Attraction | *He looks at her with a small smile, then looks down again, visibly trying not to overthink the moment.* | −18 | Actively wrong |
 | Confidence+Attraction | *He relaxes, gives her a small smile, and stays in the quiet with her.* | −8 | Poor |
+| Frozen/Blank | *He sits rigid, watching her eat, unable to relax into the quiet.* | −12 | Frozen/Blank |
 
 ## T1 — She asks if this is going okay
 **Her beat:** “Is this going okay for you? I genuinely can’t tell.”
@@ -513,6 +531,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Obviously.” *He grins, then catches himself.* “I mean... yeah, I think so.” | −14 | Actively wrong |
 | Anxiety+Attraction | “I really hope so. I’ve been trying not to get too excited about you.” | −18 | Actively wrong |
 | Confidence+Attraction | “Yeah. I was hoping you’d ask.” | +18 | High fit |
+| Frozen/Blank | *He flushes, leaning back slightly, breath catching in his throat.* | −12 | Frozen/Blank |
 
 ## T3 — She gives him a playful challenge
 **Her beat:** “If this were a movie, what’s the twist? What am I gonna find out about you later?”
@@ -532,6 +551,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “That I’m secretly very mysterious.” *Beat.* “Or just anxious. One of those.” | −8 | Poor |
 | Anxiety+Attraction | “That I’ve already thought about what I’d say if you asked me this.” | +2 | Reasonable |
 | Confidence+Attraction | “That I’m trouble once I’m comfortable.” *He smiles.* | +14 | High fit |
+| Frozen/Blank | *He tries to come up with something witty, blanks completely, and gives a defeated grin.* | −12 | Frozen/Blank |
 
 ## T2 — Her attention drifts briefly
 **Her beat:** *Her attention drifts across the room, then comes back.*
@@ -551,6 +571,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “I know that look.” *He laughs nervously.* “You’ve left the conversation.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Sorry—did I lose you?” | −8 | Poor |
 | Confidence+Attraction | “Hey, come back. I was getting to the good part.” | +2 | Reasonable |
+| Frozen/Blank | *He watches her look away, withdrawing into his own thoughts without speaking.* | −12 | Frozen/Blank |
 
 ## T1 — She checks the time again
 **Her beat:** *She checks the time again, more obviously.*
@@ -592,6 +613,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Adorable?” *He laughs.* “I was going for intimidating.” | −8 | Poor |
 | Anxiety+Attraction | “You actually think it’s cute? Because I’m trying very hard not to completely embarrass myself here.” | −5 | Poor |
 | Confidence+Attraction | “Careful. Keep calling me adorable and I’m going to start believing you.” | +14 | High fit |
+| Frozen/Blank | *He shakes his head with a bashful, speechless smile.* | −12 | Frozen/Blank |
 
 ## T3 — She frames it as good nervous
 **Her beat:** “You’ve been a little nervous all night—good nervous, I think?”
@@ -611,6 +633,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Good nervous. Obviously.” *Beat.* “Mostly.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Yeah. Good nervous. I just... really want this to go well.” | −8 | Poor |
 | Confidence+Attraction | “Very good nervous. I’m enjoying myself.” | +14 | High fit |
+| Frozen/Blank | *He rubs his forehead, smiling sheepishly, nodding without words.* | −12 | Frozen/Blank |
 
 ## T2 — She wonders whether it is her
 **Her beat:** “You seem nervous. Is that me, or just how you are?”
@@ -630,6 +653,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Not you.” *Beat.* “Okay, maybe a little you.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Definitely you. I was nervous before, but being here made it worse—in a good way.” | −8 | Poor |
 | Confidence+Attraction | “You. I was fine until I saw you.” | +14 | High fit |
+| Frozen/Blank | *He freezes, eyes darting, unable to answer either way.* | −12 | Frozen/Blank |
 
 ## T1 — She questions whether the date is landing
 **Her beat:** “You’ve barely relaxed all night. Should I be worried this isn’t landing?”
@@ -671,6 +695,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “I’m not insecure.” *Beat.* “Okay, that sounded convincing for about half a second.” | −18 | Actively wrong |
 | Anxiety+Attraction | “Probably being rejected once someone actually sees all of me. That one’s... real.” | +2 | Reasonable |
 | Confidence+Attraction | “Losing someone I actually care about. I can handle a no; I don’t love the idea of having something good and messing it up.” | −8 | Poor |
+| Frozen/Blank | *He swallows, looking at her with genuine, quiet vulnerability, unable to speak.* | −12 | Frozen/Blank |
 
 ## T3 — She asks, knowing it may be too much
 **Her beat:** “This is maybe too much for a first date, but—what are you insecure about?”
@@ -690,6 +715,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “It’s not too much.” *Beat.* “I definitely didn’t just need three seconds to prepare an answer.” | −18 | Actively wrong |
 | Anxiety+Attraction | “I worry that if I like someone too much, I’ll give them every reason to leave.” | +14 | High fit |
 | Confidence+Attraction | “Probably caring more than I let people see. It’s not my favorite thing about myself.” | +2 | Reasonable |
+| Frozen/Blank | *He hesitates, tracing the rim of his glass, overwhelmed by the question.* | −12 | Frozen/Blank |
 
 ## T2 — She starts, then stops herself
 **Her beat:** “I don't know if it's my place to ask this, but—” *She stops herself.*
@@ -709,6 +735,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “You can say it.” *Beat.* “I can handle one unfinished sentence.” | −18 | Actively wrong |
 | Anxiety+Attraction | “You can ask. I promise I won’t judge you for wanting to know.” | −8 | Poor |
 | Confidence+Attraction | “Now you definitely have to finish that thought.” | +14 | High fit |
+| Frozen/Blank | *He stays quiet, letting her unfinished question evaporate into the room.* | −12 | Frozen/Blank |
 
 ## T1 — She says she is asking questions into a wall
 **Her beat:** “I feel like I’m asking questions into a wall right now. Is that fair?”
@@ -750,6 +777,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Obviously.” *Beat.* “I mean... yes. Definitely yes.” | −14 | Actively wrong |
 | Anxiety+Attraction | “Yeah. I really, really would.” | −18 | Actively wrong |
 | Confidence+Attraction | “Yeah. I was hoping I’d get another date out of you.” | +14 | High fit |
+| Frozen/Blank | *He breaks into a wide, slightly stunned smile, nodding emphatically before words come.* | −12 | Frozen/Blank |
 
 ## T3 — She gives him an out
 **Her beat:** “So... would you want to do this again? No pressure.”
@@ -769,6 +797,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “Of course.” *Beat.* “Yes. I mean, yes. Very much.” | −14 | Actively wrong |
 | Anxiety+Attraction | “Yeah. I’d really like another date. No pressure from me either.” | −8 | Poor |
 | Confidence+Attraction | “Definitely. I was already planning on asking you.” | −18 | Actively wrong |
+| Frozen/Blank | *He hesitates, nervous smile trembling, nodding quietly.* | −12 | Frozen/Blank |
 
 ## T2 — She is unsure how he feels
 **Her beat:** “I genuinely don’t know how tonight went for you. Would you want to do this again?”
@@ -788,6 +817,7 @@ These are the automatic player-character replies produced by the internal state.
 | Anxiety+Confidence | “It went well.” *Beat.* “I know I haven’t exactly made that easy to read.” | −14 | Actively wrong |
 | Anxiety+Attraction | “It went really well. I’m sorry if I made you doubt that—I actually like you a lot.” | +14 | High fit |
 | Confidence+Attraction | “I think you know the answer.” *He smiles.* “Yeah.” | −18 | Actively wrong |
+| Frozen/Blank | *He looks at her uncertainly, frozen between yes and no.* | −12 | Frozen/Blank |
 
 ## T1 — She braces for the answer
 **Her beat:** “Would you want to do this again? Be honest—I’d rather know.”

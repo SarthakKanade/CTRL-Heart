@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using CtrlHeart.Core.Data;
 using CtrlHeart.Core.Data.ScriptableObjects;
 using CtrlHeart.Core.Systems;
@@ -11,11 +10,21 @@ using CtrlHeart.Core.Testing;
 
 namespace CtrlHeart.Core
 {
+    public enum SlotPhase
+    {
+        None,
+        RtsIntervention, // 20 seconds: Scenario prompt + RTS effects live + player dragging/routing emotions
+        PlayerReply,     // 5 seconds: RTS freezes, Player's spoken reply is highlighted
+        DateReaction     // 5 seconds: Date character reacts with expression and quote, connection delta applies
+    }
+
     /// <summary>
-    /// Master Game Controller for Phase 1 / Day 3 Integration.
-    /// Orchestrates the 10-slot loop, connects MindMapManager, ResourceManager,
-    /// SocialEventEngine, and DialogueManager to the CoreGameUI in real time.
-    /// Master Design Bible Part 3 §3.2, Part 5 §5.2 & Dev Plan Day 3.
+    /// Master Game Controller for CTRL+HEART.
+    /// Orchestrates the disciplined 30-second slot loop:
+    /// - Phase 1: RTS Scenario & Effects (20.0s)
+    /// - Phase 2: Player Reply (5.0s)
+    /// - Phase 3: Date Reaction (5.0s)
+    /// Total = 30.0s per slot. Nothing is simultaneous; functions as a coherent, legible system.
     /// </summary>
     public class GameManager : MonoBehaviour
     {
@@ -28,15 +37,21 @@ namespace CtrlHeart.Core
         [SerializeField] private DialogueManager dialogueManager;
         [SerializeField] private CoreGameUI ui;
 
-        [Header("State")]
+        [Header("Phase Timing (Total 30s per slot)")]
+        [SerializeField] private float rtsPhaseDuration = 20.0f;
+        [SerializeField] private float playerReplyDuration = 5.0f;
+        [SerializeField] private float dateReactionDuration = 5.0f;
+
+        [Header("Current State")]
         [SerializeField] private int currentSlotIndex = 1;
+        [SerializeField] private SlotPhase currentPhase = SlotPhase.None;
+        [SerializeField] private float phaseTimer = 0f;
         [SerializeField] private QuestionData currentQuestion;
-        [SerializeField] private float slotTimer;
-        [SerializeField] private float slotTimerDuration = 6f;
-        [SerializeField] private bool isResponding = false;
-        [SerializeField] private bool isShowingReaction = false;
-        private float reactionTimer = 0f;
-        private const float REACTION_DURATION = 3f;
+        [SerializeField] private AnswerData resolvedAnswer;
+        [SerializeField] private ReactionData resolvedReaction;
+
+        public SlotPhase CurrentPhase => currentPhase;
+        public int CurrentSlotIndex => currentSlotIndex;
 
         private void Awake()
         {
@@ -46,6 +61,7 @@ namespace CtrlHeart.Core
                 return;
             }
             Instance = this;
+            Application.runInBackground = true;
         }
 
         private void Start()
@@ -79,7 +95,8 @@ namespace CtrlHeart.Core
         public void StartSlot(int slotIndex)
         {
             currentSlotIndex = slotIndex;
-            isShowingReaction = false;
+            resolvedAnswer = null;
+            resolvedReaction = null;
 
             // Select question based on live Connection tier
             var currentTier = resources.CurrentState.GetConnectionTier();
@@ -96,107 +113,196 @@ namespace CtrlHeart.Core
                 return;
             }
 
-            slotTimerDuration = currentQuestion.responseTimeWindow;
-            slotTimer = slotTimerDuration;
-            isResponding = true;
+            // Start Phase 1: RTS Scenario & Effects (30.0s)
+            currentPhase = SlotPhase.RtsIntervention;
+            phaseTimer = rtsPhaseDuration;
 
-            // Update UI with Question prompt
             if (ui != null)
             {
-                ui.SetupDateDisplay(slotIndex, currentQuestion.questionText, 1f);
-                ui.DisplaySpokenAnswer("...");
-                ui.DisplayDateReaction("");
+                ui.SetupRtsPhase(slotIndex, currentTier, currentQuestion.questionText, rtsPhaseDuration);
+                ui.DisplayEventDetails(currentQuestion.socialEventProfile.PrimaryTargetNode, currentQuestion.socialEventProfile);
             }
 
-            // Trigger Question's Social Event Profile (threats / pushes)
+            // Trigger Question's Social Event Profile across target nodes
             eventEngine.TriggerSocialEvent(currentQuestion.socialEventProfile);
+            RefreshProjectedAnswerPreview();
 
-            Debug.Log($"<color=yellow>[GameManager] Slot {slotIndex} Started: \"{currentQuestion.questionText}\"</color>");
+            Debug.Log($"<color=yellow>[GameManager] Slot {slotIndex} Phase 1 (RTS - {rtsPhaseDuration}s) Started: \"{currentQuestion.questionText}\"</color>");
         }
 
         private void Update()
         {
-            if (isResponding)
+            if (currentPhase == SlotPhase.None) return;
+
+            // Check game-over fail states
+            if (resources.IsMeltdown())
             {
-                // Passive regen tick
-                float lungsHealth = mindMap.GetNode(InternalNodeType.Lungs)?.currentHealth ?? 100f;
-                float brainHealth = mindMap.GetNode(InternalNodeType.Brain)?.currentHealth ?? 100f;
-                resources.TickPassiveRegen(Time.deltaTime, lungsHealth, brainHealth);
-
-                // Check fail states
-                if (resources.IsMeltdown())
-                {
-                    isResponding = false;
-                    TriggerEnding(EndingType.Meltdown_ComposureZero);
-                    return;
-                }
-                if (resources.IsDateCollapsed())
-                {
-                    isResponding = false;
-                    TriggerEnding(EndingType.DateCollapse_Tier0);
-                    return;
-                }
-
-                // Response timer countdown
-                slotTimer -= Time.deltaTime;
-                float fill = Mathf.Clamp01(slotTimer / slotTimerDuration);
-                if (ui != null) ui.SetupDateDisplay(currentSlotIndex, currentQuestion.questionText, fill);
-
-                // Strictly resolve on timer expiry (Bible Part 5 §5.2 Step 4)
-                if (slotTimer <= 0f)
-                {
-                    isResponding = false;
-                    ResolveSlot();
-                }
+                currentPhase = SlotPhase.None;
+                TriggerEnding(EndingType.Meltdown_ComposureZero);
+                return;
             }
-            else if (isShowingReaction)
+            if (resources.IsDateCollapsed())
             {
-                reactionTimer -= Time.deltaTime;
-                if (reactionTimer <= 0f)
-                {
-                    isShowingReaction = false;
-                    AdvanceToNextSlot();
-                }
+                currentPhase = SlotPhase.None;
+                TriggerEnding(EndingType.DateCollapse_Tier0);
+                return;
+            }
+
+            switch (currentPhase)
+            {
+                case SlotPhase.RtsIntervention:
+                    UpdateRtsPhase();
+                    break;
+
+                case SlotPhase.PlayerReply:
+                    UpdatePlayerReplyPhase();
+                    break;
+
+                case SlotPhase.DateReaction:
+                    UpdateDateReactionPhase();
+                    break;
             }
         }
 
-        private void ResolveSlot()
+        private void UpdateRtsPhase()
         {
-            var primaryNode = currentQuestion.socialEventProfile.PrimaryTargetNode;
-            var dominantState = mindMap.GetDominantState(primaryNode);
-            bool isLowFocus = resources.IsFocusLow();
-            bool isCriticalBody = mindMap.IsBodyCriticallyLow();
+            // Passive regen tick
+            float lungsHealth = mindMap.GetNode(InternalNodeType.Lungs)?.currentHealth ?? 100f;
+            float brainHealth = mindMap.GetNode(InternalNodeType.Brain)?.currentHealth ?? 100f;
+            resources.TickPassiveRegen(Time.deltaTime, lungsHealth, brainHealth);
 
-            var answer = dialogueManager.ResolveAnswer(currentQuestion, dominantState, isLowFocus, isCriticalBody);
-            if (answer != null)
+            // Real-time RTS crisis pressure & threat ticking
+            eventEngine.TickActiveSocialEvent(Time.deltaTime);
+
+            // Timer countdown
+            phaseTimer -= Time.deltaTime;
+            if (ui != null)
             {
-                // Display player's spoken answer
-                if (ui != null) ui.DisplaySpokenAnswer($"\"{answer.spokenText}\"");
-
-                // Apply Connection delta
-                resources.ModifyConnection(answer.connectionDelta);
-
-                // Select and display reaction based on post-answer tier
-                var postTier = resources.CurrentState.GetConnectionTier();
-                var reaction = dialogueManager.SelectReaction(currentQuestion, postTier);
-                if (reaction != null && ui != null)
-                {
-                    ui.DisplayDateReaction($"\"{reaction.reactionText}\"");
-                    ui.SetDateExpression(reaction.animationClipTag);
-                }
-
-                Debug.Log($"<color=cyan>[GameManager] Slot {currentSlotIndex} Resolved -> Answer: \"{answer.spokenText}\" | Delta: {answer.connectionDelta:+#;-#;0} | Date Expression: [{reaction?.animationClipTag}]</color>");
+                ui.UpdateTimer(Mathf.Max(0f, phaseTimer), rtsPhaseDuration, VisualTheme.ColorCalm);
+                RefreshProjectedAnswerPreview();
             }
 
-            isShowingReaction = true;
-            reactionTimer = REACTION_DURATION;
+            // Expiry -> Transition to Phase 2: Player Reply
+            if (phaseTimer <= 0f)
+            {
+                TransitionToPlayerReplyPhase();
+            }
+        }
+
+        public void RefreshProjectedAnswerPreview()
+        {
+            UpdateRtsBalancingMeter();
+        }
+
+        public void UpdateRtsBalancingMeter()
+        {
+            if (ui == null || mindMap == null) return;
+            float eq = mindMap.CalculateEquilibriumScore();
+            ui.UpdateEquilibriumMeter(eq);
+        }
+
+        private void TransitionToPlayerReplyPhase()
+        {
+            currentPhase = SlotPhase.PlayerReply;
+            phaseTimer = playerReplyDuration;
+
+            // Stop RTS stress effects during conversational delivery
+            eventEngine.StopSocialEvent();
+
+            var primaryNode = currentQuestion.socialEventProfile.PrimaryTargetNode;
+            var dominantState = mindMap.GetDominantState(primaryNode);
+            bool isCriticalBody = mindMap.IsBodyCriticallyLow();
+
+            resolvedAnswer = dialogueManager.ResolveAnswer(currentQuestion, dominantState, isCriticalBody);
+
+            if (resolvedAnswer != null)
+            {
+                // Dynamic Composure connection: Delivery tone impacts player's internal composure
+                float replyComposureDelta = resolvedAnswer.emotionState switch
+                {
+                    EmotionState.Confidence => 12f,
+                    EmotionState.Calm => 10f,
+                    EmotionState.Attraction => 8f,
+                    EmotionState.Anxiety => -6f,
+                    EmotionState.FrozenBlank => -12f,
+                    _ => 4f
+                };
+                resources.ModifyComposure(replyComposureDelta);
+            }
+
+            if (ui != null && resolvedAnswer != null)
+            {
+                ui.SetupPlayerReplyPhase(resolvedAnswer.spokenText, resolvedAnswer.emotionState, playerReplyDuration);
+            }
+
+            Debug.Log($"<color=cyan>[GameManager] Slot {currentSlotIndex} Phase 2 (Player Reply - {playerReplyDuration}s): \"{resolvedAnswer?.spokenText}\" [Tone: {resolvedAnswer?.emotionState}]</color>");
+        }
+
+        private void UpdatePlayerReplyPhase()
+        {
+            phaseTimer -= Time.deltaTime;
+            if (ui != null)
+            {
+                ui.UpdateTimer(Mathf.Max(0f, phaseTimer), playerReplyDuration, VisualTheme.ColorPlayerAnswerText);
+            }
+
+            // Expiry -> Transition to Phase 3: Date Reaction
+            if (phaseTimer <= 0f)
+            {
+                TransitionToDateReactionPhase();
+            }
+        }
+
+        private void TransitionToDateReactionPhase()
+        {
+            currentPhase = SlotPhase.DateReaction;
+            phaseTimer = dateReactionDuration;
+
+            // Apply Connection delta and date feedback to Composure
+            if (resolvedAnswer != null)
+            {
+                resources.ModifyConnection(resolvedAnswer.connectionDelta);
+
+                // Date Reaction feedback: Positive response provides huge relief/confidence surge; negative response causes social tension/cringe
+                float reactionComposureDelta = resolvedAnswer.connectionDelta switch
+                {
+                    > 0f => Mathf.Clamp(resolvedAnswer.connectionDelta * 1.5f, 6f, 15f),
+                    < 0f => Mathf.Clamp(resolvedAnswer.connectionDelta * 1.2f, -12f, -4f),
+                    _ => 3f
+                };
+                resources.ModifyComposure(reactionComposureDelta);
+            }
+
+            // Select reaction based on answered emotion state
+            resolvedReaction = dialogueManager.SelectReaction(currentQuestion, resolvedAnswer != null ? resolvedAnswer.emotionState : EmotionState.FrozenBlank);
+
+            if (ui != null && resolvedReaction != null)
+            {
+                ui.SetupDateReactionPhase(resolvedReaction.reactionText, resolvedReaction.animationClipTag, resolvedAnswer?.connectionDelta ?? 0f, dateReactionDuration);
+            }
+
+            Debug.Log($"<color=green>[GameManager] Slot {currentSlotIndex} Phase 3 (Date Reaction - {dateReactionDuration}s): \"{resolvedReaction?.reactionText}\" [Clip: {resolvedReaction?.animationClipTag}]</color>");
+        }
+
+        private void UpdateDateReactionPhase()
+        {
+            phaseTimer -= Time.deltaTime;
+            if (ui != null)
+            {
+                ui.UpdateTimer(Mathf.Max(0f, phaseTimer), dateReactionDuration, VisualTheme.ColorDateReactionText);
+            }
+
+            // Expiry -> Slot Complete! Advance to next slot or ending
+            if (phaseTimer <= 0f)
+            {
+                AdvanceToNextSlot();
+            }
         }
 
         private void AdvanceToNextSlot()
         {
             if (currentSlotIndex >= 10)
             {
-                // Date Complete -> check final Connection ending
                 var finalTier = resources.CurrentState.GetConnectionTier();
                 var ending = finalTier switch
                 {
@@ -209,29 +315,48 @@ namespace CtrlHeart.Core
             }
             else
             {
-                // Continuous carry-forward: no reset! Advance to next slot
+                // Inter-slot natural emotional settling (Bible §4.4 natural recovery / continuous carry)
+                // Settles high saturation by 50% so each new social beat challenges the player dynamically
+                mindMap?.SettleInfluencesBetweenSlots(0.50f);
+
                 StartSlot(currentSlotIndex + 1);
             }
         }
 
         public void HandleEmotionDrop(InternalNodeType targetNode, CoreEmotion emotion)
         {
-            if (!isResponding) return;
-
-            // Apply influence to node
-            mindMap.ApplyInfluence(targetNode, emotion, 25f);
-
-            // Emotion impact on resources
-            if (emotion == CoreEmotion.Calm)
+            if (currentPhase != SlotPhase.RtsIntervention)
             {
-                resources.ModifyComposure(+3f);
-            }
-            else if (emotion == CoreEmotion.Confidence)
-            {
-                resources.ModifyFocus(+2f);
+                Debug.Log("[GameManager] Emotions can only be deployed during Phase 1 (RTS).");
+                return;
             }
 
-            Debug.Log($"[GameManager] Applied {emotion} to {targetNode}");
+            // Oxygen Operational Cost (Master Bible Part 2 §2.5)
+            if (resources.CurrentState.oxygen < 15f)
+            {
+                Debug.LogWarning("[GameManager] Oxygen depleted! Lungs must generate oxygen before deploying units.");
+                if (ui != null)
+                {
+                    var nodePos = ui.GetNodeView(targetNode)?.RectTransform.position ?? Vector3.zero;
+                    ui.ShowFloatingMessage(nodePos, "LOW OXYGEN!", VisualTheme.ColorOxygen);
+                }
+                return;
+            }
+
+            // Deduct oxygen operational cost
+            resources.ModifyOxygen(-15f);
+
+            // Execute tactical RTS intervention on the node
+            eventEngine.OnPlayerIntervene(targetNode, emotion);
+
+            if (ui != null)
+            {
+                ui.OnEmotionInjected(targetNode, emotion);
+            }
+
+            RefreshProjectedAnswerPreview();
+
+            Debug.Log($"<color=cyan>[GameManager] Player deployed {emotion} onto {targetNode} (-15 Oxygen)</color>");
         }
 
         private void OnNodeStateChanged(InternalNodeType type, NodeState state)
@@ -257,13 +382,15 @@ namespace CtrlHeart.Core
 
         private void TriggerEnding(EndingType ending)
         {
+            currentPhase = SlotPhase.None;
             var data = EndingsData.GetEnding(ending);
             Debug.Log($"<color=magenta>=== DATE ENDED: {data.title} ===</color>\n{data.summary}\nDate: {data.dateFinalQuote}");
+
             if (ui != null)
             {
-                ui.SetupDateDisplay(currentSlotIndex, $"[{data.title}]", 0f);
-                ui.DisplaySpokenAnswer(data.summary);
-                ui.DisplayDateReaction(data.dateFinalQuote);
+                ui.SetupRtsPhase(currentSlotIndex, ConnectionTier.Tier0_Collapse, $"[DATE COMPLETE: {data.title.ToUpper()}]", 0f);
+                ui.SetupPlayerReplyPhase(data.summary, EmotionState.Calm, 0f);
+                ui.SetupDateReactionPhase(data.dateFinalQuote, "polite_smile", 0f, 0f);
             }
         }
     }

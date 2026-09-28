@@ -37,13 +37,13 @@ namespace CtrlHeart.Core.Data
         Confidence,
         Attraction,
 
-        // 6 Named Mixtures (Placeholders until final names authored in Day 2)
-        Mixture_1,
-        Mixture_2,
-        Mixture_3,
-        Mixture_4,
-        Mixture_5,
-        Mixture_6,
+        // 6 Named Mixtures
+        CalmAnxiety,
+        CalmConfidence,
+        CalmAttraction,
+        AnxietyConfidence,
+        AnxietyAttraction,
+        ConfidenceAttraction,
 
         // Special 11th State
         FrozenBlank

@@ -6,17 +6,14 @@ using CtrlHeart.Core.Interfaces;
 namespace CtrlHeart.Core.Systems
 {
     /// <summary>
-    /// Manages continuous resources: Oxygen, Focus, Composure, Connection.
-    /// Implements passive regen curves driven by Lungs and Brain health.
+    /// Manages continuous resources: Oxygen, Composure, Connection.
+    /// Implements passive regen curves driven by Lungs health.
     /// Master Design Bible Part 2 §2.5, §2.6 & Dev Plan Day 2 Track A.
     /// </summary>
     public class ResourceManager : MonoBehaviour, IResourceManager
     {
         [Header("State")]
         [SerializeField] private ResourceState state = new ResourceState();
-
-        [Header("Tuning")]
-        [SerializeField] private float focusLowThreshold = 20f;
 
         public ResourceState CurrentState => state;
 
@@ -25,10 +22,13 @@ namespace CtrlHeart.Core.Systems
         public void TickPassiveRegen(float deltaTime, float lungsHealth, float brainHealth)
         {
             float oxygenGain = SimulationMath.CalculateOxygenRegen(lungsHealth, state.oxygenBaseRegenRate) * deltaTime;
-            float focusGain = SimulationMath.CalculateFocusRegen(brainHealth, state.focusBaseRegenRate) * deltaTime;
-
             state.oxygen = Mathf.Clamp(state.oxygen + oxygenGain, ResourceState.MIN_VALUE, ResourceState.MAX_VALUE);
-            state.focus = Mathf.Clamp(state.focus + focusGain, ResourceState.MIN_VALUE, ResourceState.MAX_VALUE);
+
+            // Baseline Composure stabilization: Gentle natural breathing recovery toward 70
+            if (state.composure < 70f)
+            {
+                state.composure = Mathf.Clamp(state.composure + (0.8f * deltaTime), ResourceState.MIN_VALUE, 70f);
+            }
 
             OnResourceChanged?.Invoke(state);
         }
@@ -36,12 +36,6 @@ namespace CtrlHeart.Core.Systems
         public void ModifyOxygen(float delta)
         {
             state.oxygen = Mathf.Clamp(state.oxygen + delta, ResourceState.MIN_VALUE, ResourceState.MAX_VALUE);
-            OnResourceChanged?.Invoke(state);
-        }
-
-        public void ModifyFocus(float delta)
-        {
-            state.focus = Mathf.Clamp(state.focus + delta, ResourceState.MIN_VALUE, ResourceState.MAX_VALUE);
             OnResourceChanged?.Invoke(state);
         }
 
@@ -57,7 +51,6 @@ namespace CtrlHeart.Core.Systems
             OnResourceChanged?.Invoke(state);
         }
 
-        public bool IsFocusLow() => state.focus <= focusLowThreshold;
         public bool IsMeltdown() => state.IsMeltdown();
         public bool IsDateCollapsed() => state.IsDateCollapsed();
     }

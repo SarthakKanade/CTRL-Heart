@@ -1,0 +1,4402 @@
+[
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Thanks. You look really good too.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She smiles, taking the compliment back easily. “Thanks. I was hoping you’d think so.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Oh—thanks. I, uh... wasn't sure what to wear.”",
+    "isWordless": false,
+    "connectionDelta": -17,
+    "band": "ActivelyWrong",
+    "reactionText": "Her smile softens. “No, I meant it. You look good.” She gives him an easy out rather than pushing it."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Thanks. I figured I should make an effort.”",
+    "isWordless": false,
+    "connectionDelta": -4,
+    "band": "Poor",
+    "reactionText": "She laughs lightly. “Okay, fair.” A tiny eyebrow raise: she was being nice, not issuing a challenge."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "*He smiles, a little too obviously pleased.* “Thanks.”",
+    "isWordless": false,
+    "connectionDelta": 3,
+    "band": "Reasonable",
+    "reactionText": "She catches how pleased he looks and smiles. “There it is.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“Thanks. I was a little worried I'd overthought the whole outfit.”",
+    "isWordless": false,
+    "connectionDelta": 0,
+    "band": "Reasonable",
+    "reactionText": "“See? Then I wasn’t imagining the effort.” She grins and moves on."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Thanks. I’m glad I got it right.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She holds his eyes a second longer. “Good. I was hoping you’d know I meant it.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "*A small smile.* “Thanks. You look really nice.”",
+    "isWordless": false,
+    "connectionDelta": 15,
+    "band": "HighFit",
+    "reactionText": "Her smile warms. “Thank you.” She looks him over once more, not hiding that she means it."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Yeah, I mean—obviously I was going to look good. Thanks.” *He laughs at himself.*",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a small laugh, but the warmth drops a notch. “Okay... I was just complimenting you.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“Really? Oh. Thanks... that’s actually really nice to hear.”",
+    "isWordless": false,
+    "connectionDelta": -7,
+    "band": "Poor",
+    "reactionText": "“You’re welcome.” She smiles reassuringly, noticing how much the compliment landed."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Good. I was hoping I’d make a decent first impression.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She grins. “Good first impression, then.” The teasing tone keeps the moment light."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He blinks, suddenly lost for words, smiling flustered.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She chuckles warmly at his fluster. “Cat got your tongue already? Take your time.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“Pretty busy. Nothing dramatic, just one of those days. I’m good now, though.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She nods, listening properly. “Yeah, I know those days.” She follows naturally into another topic."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“It was fine... I mean, mostly. I had a meeting that went weird, then I started thinking about tonight and—yeah, anyway.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She watches him ramble for a second, then gently cuts in. “Hey, you don’t have to give me the whole play-by-play.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“Long day, but I handled it. I’m here now, so it worked out.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She smiles politely. “Sounds like you handled it.” Interested, but she does not chase the bragging angle."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“Honestly? A bit of a mess. I was mostly looking forward to this.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“So you were thinking about tonight all day?” she asks with a small smile."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“Kind of a lot. I’m fine, just still coming down from it a little.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She nods. “Yeah. I get that.” The honesty seems to make her relax too."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“Busy, a little chaotic. Nothing I couldn’t deal with.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“That’s a good way to put it.” She looks more settled, happy to keep talking."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“Long one. But honestly, sitting here with you already feels like a better part of it.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her expression softens. “Okay, that’s actually nice to hear.” She keeps the conversation there a little longer."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“It was totally fine. Just work being work. Nothing got to me.” *He pauses.* “Much.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She catches the crack in the confidence and smiles gently. “Well... it sounds like you survived it.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“It was rough, actually. I was nervous about tonight too, so... not exactly my calmest day.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“You were nervous about tonight too?” There is curiosity in it, but she notices the strain."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Kind of brutal. Then I got here, so I’m counting that as the turnaround.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "She laughs. “Okay, so I’m the turnaround.” It lands as cute, but a little rehearsed."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He starts to speak, hesitates, and rubs the back of his neck silently.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She smiles gently. “No worries if it’s too much to unpack right now.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "*He takes a sip and lets the silence sit.*",
+    "isWordless": true,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She glances back and smiles, comfortable enough not to rush either of them."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“So... yeah. This place is nice. I checked out the menu before I came, which is probably unnecessary, but—”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She looks over as he fills the silence. “You really don’t have to keep talking.” It is kind, but noticeable."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "*He leans back, relaxed, and gives her the space without filling it.*",
+    "isWordless": true,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She notices how relaxed he is and gives a small approving smile."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "*He catches her eye and smiles, comfortable letting the moment stay quiet.*",
+    "isWordless": true,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She meets his eyes briefly, then looks away; the smile is a little uncertain."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“Take your time. I’m good.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“I’m okay.” She smiles, but the extra reassurance makes her wonder if he is not."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "*He settles back, totally at ease with the quiet.*",
+    "isWordless": true,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She settles back too, letting the quiet become comfortable instead of awkward."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "*He watches her for a second, smiling softly, then takes another sip.*",
+    "isWordless": true,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Their eyes meet. She smiles softly, then looks around again without feeling the need to fill it."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“You’re good. I wasn’t about to panic over two seconds of silence.” *A beat.* “Not yet, anyway.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs once at the “not yet.” “Good to know,” she says, a little carefully."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "*He smiles, looks down at his drink, then back at her, clearly trying not to overthink the silence.*",
+    "isWordless": true,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She notices him fighting the silence and gives him a sympathetic smile, but the moment loses some ease."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "*A small grin.* “You can have a minute.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She smiles at the permission. “Thanks.” The tension in her shoulders eases a little."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He freezes completely, staring down at the table until the silence thickens.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She blinks, glancing back over at his frozen posture, looking slightly puzzled."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“Yeah, I’m okay. Just first-date nerves. They’ll go away.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles. “I just wanted to make sure you were alright.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Do I? Sorry. I didn’t realise it was that obvious.”",
+    "isWordless": false,
+    "connectionDelta": -17,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey, it’s okay.” She lowers her voice, trying to stop him from getting more self-conscious."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“Yeah. I’m fine. Just settling in.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She nods, but the quick dismissal makes her wonder what he is covering."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Maybe a little. You’re kind of hard not to be nervous around.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She smiles. “Good. I was a little worried I was intimidating you.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“A little, yeah. Nothing bad. I just need a second to settle.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay. Take your second.” She does exactly that, giving him room without making it awkward."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“Yeah, a little. I’m good, though.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She visibly relaxes. “Good.” Then, with a smile: “Because I was starting to feel nervous for you.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“A little. I think it’s mostly because I really wanted to meet you.”",
+    "isWordless": false,
+    "connectionDelta": 13,
+    "band": "HighFit",
+    "reactionText": "Her expression softens. “That’s actually kind of sweet.” She looks more comfortable herself."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Tense? No. I’m completely fine.” *He immediately fidgets with his glass.* “See?”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She notices the fidget immediately. “You don’t have to convince me.” Her tone stays gentle, but she is now watching closely."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“A little, yeah. I really wanted tonight to go well, so...”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Okay.” She gives him a reassuring smile. “We can just take it easy.”"
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Guilty. You have that effect on me, apparently.”",
+    "isWordless": false,
+    "connectionDelta": 0,
+    "band": "Reasonable",
+    "reactionText": "She laughs softly. “Apparently.” The flirtation works, but she does not quite know whether he is joking."
+  },
+  {
+    "slotIndex": 1,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He straightens too quickly, nods, and says nothing.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She frowns slightly with genuine concern. “Okay... just breathe, it’s not an interrogation.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“I can fold a fitted sheet properly. That counts.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“That absolutely counts.” She laughs, already thinking of one to trade back."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“I mean... probably? I have a few useless ones. None I can demonstrate under pressure.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“You have to demonstrate one?” She laughs, trying to rescue him from the pressure he just put on himself."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Absolutely. And you’re going to regret asking.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her eyes light up. “Oh, now you definitely have to tell me.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "*He smiles.* “I’ve got one. I might save it for later.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "She gives him a look. “Later?” A tiny smile, but she is not sure whether he is flirting or dodging."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I do, actually. It’s stupid, but I’m weirdly good at it.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“That’s actually cute.” She smiles, though she can tell he is more embarrassed than the joke needed."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Yeah. I can open almost any snack bag without ripping it.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “Okay, that one is genuinely useful.” She looks pleased with the exchange."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "“I’ve got one, but I’m pretty sure it only becomes impressive after you’ve known me for a while.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Oh, so there’s a mysterious version of you now?” she teases, amused but unconvinced."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Oh, definitely. I’ve got several.” *Beat.* “I’m not nervous about this question, if that’s what you’re testing.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She blinks, then laughs once. “I wasn’t testing you.” The playful energy drops slightly."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“There is one... but telling you about it this early feels like giving away too much.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“You can tell me later.” She smiles kindly, sensing he is protecting himself."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I do. You’ll have to earn the demonstration.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Oh, I’m absolutely earning that demonstration.” She grins, matching the playfulness."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He freezes with a sheepish grin, mind completely blanking on the spot.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She laughs delightedly. “Oh no, did I put you on the spot? I'll let you off the hook for now.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“You’re fine.” *He smiles and keeps eating.*",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“I know.” She laughs at herself and relaxes back into the conversation."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Oh—careful. Sorry, I don’t know why I said sorry.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m okay.” She laughs, but his alarm makes the tiny mishap feel bigger than it was."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“Nice recovery.” *He grins.*",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She laughs. “Thank you. I was trying to pretend that looked intentional.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "*He laughs with her.* “Okay, that was kind of adorable.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She laughs harder. “Adorable? Wow, okay.” The teasing comes back immediately."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“You got it. No disaster.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Exactly.” She smiles. “No disaster.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“Strong save.” *He gives her an approving nod.*",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I’ll take ‘strong save.’” She grins, clearly enjoying his easy reaction."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "*He laughs softly.* “You okay?”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I’m good.” She laughs and goes right back to the conversation."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“Smooth.” *He grins, a little too quickly.* “I mean—good save.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Yes, smooth.” She laughs, but the quick correction gives her a glimpse of his nerves."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“Oh my god, are you okay? That looked like it almost went everywhere.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m fine, I promise.” She laughs, slightly overwhelmed by how seriously he took it."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Nice save. I was about to pretend I didn’t see that.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Please don’t pretend you didn’t see it.” She laughs, but the comment feels a touch too performative."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He stares at the napkin, paralyzed between helping and not reacting.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She scoops it up herself, smiling slightly bemused. “Phew, crisis averted without backup.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“I work in software. Mostly product stuff. It’s busy, but I like it.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Software.” She nods. “What part do you actually like?” Her interest is genuine."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“I’m in software. Well—not exactly software, more... product and development. It’s complicated.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I got you.” She smiles, helping him settle. “You don’t have to explain the whole industry.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“I work in software. I like it, and I’m pretty good at what I do.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Okay, so you actually like what you do.” Her eyes brighten; she asks another question."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“I work in software. Honestly, I’m more interested in what you do.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She laughs softly. “I’ll tell you mine eventually.” The answer leaves her a little unsure what he wants to know about her."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“Software. It’s a good job. I like the work, even when it gets hectic.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That makes sense.” She nods, but the conversation stays fairly surface-level."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“I’m in software. It keeps me busy, and I’ve built some things I’m proud of.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Okay, that I can actually picture.” She asks about one of the things he built."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“Software. I could give you the boring version, but I’m more curious about you.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I’ll give you the non-boring version of mine too.” She smiles, inviting him to keep talking."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“Software. It’s good. I’m good at it.” *He catches himself.* “That sounded more rehearsed than I meant.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“No, it’s fine.” She gives him a small smile. “You don’t have to sell me on your job.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Software... sorry, that’s such a boring answer. I swear there’s more to me than my job.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey, it’s okay.” She smiles reassuringly. “You don’t have to prove you’re interesting.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Software. I like solving problems all day. You might get the better version of me off the clock, though.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She smiles. “Off the clock, then?” She gives him an opening to talk about himself differently."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He opens his mouth, pauses, and awkwardly clears his throat without speaking.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She tilts her head, waiting for a beat. “Or... we don't have to talk about work.”"
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“You good?” *He asks it casually, without making a thing of it.*",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She looks back up. “Yeah. Just thinking.” The tension passes without becoming a thing."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Did I say something weird?”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“No, no. You’re fine.” She reassures him, but her glance away shows she is now a little self-conscious too."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“You’ve got that look. Should I be worried?”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a small, unreadable smile. “Nothing dramatic.” The playful challenge makes her pull back."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "*He smiles, waiting for her to look back rather than pushing the moment.*",
+    "isWordless": true,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She catches his smile and returns it, just a little smaller."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“Hey, you’re okay. No pressure.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“I’m okay.” She smiles. “Really.” The extra reassurance makes the moment slightly heavier."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“Take your time.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She looks back at him. “Thanks.” Her shoulders loosen almost immediately."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "*He gives her an easy smile and lets her look back when she wants to.*",
+    "isWordless": true,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Their eyes meet again. She smiles, a little shyly, and stays there a beat longer."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Okay, that look definitely means I said something.” *He laughs nervously.*",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“You didn’t.” She laughs softly, but her attention is now more cautious."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Hey... did I make you uncomfortable?”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, you’re okay.” She gives him a quick reassuring smile, but the question makes her uncomfortable."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m starting to think you’re hiding something.” *He smiles.*",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She laughs under her breath. “Maybe.” The mystery lands as playful rather than threatening."
+  },
+  {
+    "slotIndex": 2,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He waits, then awkwardly takes a drink when the silence stretches.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She watches the ice melt in her glass, the distance between them feeling palpable."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“I’ll take that as a good sign.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“It is.” She smiles. “I’m glad we got past the weird first ten minutes.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Really? I thought I was talking too much.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, you weren’t.” She laughs gently. “You’ve been fine.” The reassurance is warm, but she notices the insecurity."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“I had a feeling you’d warm up to me.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "Her smile tightens. “That’s... one way to take it.” She redirects instead of rewarding the assumption."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Good. I’ve been trying not to make you like me too much too quickly.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Good.” She smiles, though the line feels a little too self-aware."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I’m glad. I was worried I was making this harder than it needed to be.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“You weren’t making it harder.” She gives him a reassuring look."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Good. That makes two of us who can relax a little.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Good.” She smiles. “Because I’ve actually been really comfortable with you.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "*He smiles.* “I’m glad. I’ve been enjoying this too.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She looks pleased. “Me too.” She lets the admission sit instead of covering it with a joke."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“See? I can be normal.” *Beat.* “Sometimes.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She laughs. “Normal enough, yeah.” The joke works, though she sees the insecurity underneath it."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“Really? That’s... actually a huge relief.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Hey.” Her voice softens. “You don’t have to pass some test with me.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I was hoping you’d get that feeling.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I did, huh?” She smiles, amused by the confidence without fully leaning into it."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He catches his breath, surprised, words failing him as he smiles nervously.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "Her smile turns soft and affectionate. “Hey, don’t overthink it. It was a good thing.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "*He notices the smile and lets her have the moment.*",
+    "isWordless": true,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She notices him noticing and smiles. “What?” The tone is light, inviting."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“What are you thinking about?” *Too quickly.* “You don’t have to tell me.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Nothing bad.” She laughs softly. “I was just thinking.” She avoids making him guess."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“You’ve got a secret smile going on.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Maybe I do.” She gives him a playful look."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "*He smiles back without interrupting whatever she’s thinking about.*",
+    "isWordless": true,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She smiles back, but the silence suddenly feels more self-conscious."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“You look like you just remembered something funny.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Maybe.” She laughs. “I just remembered something.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“You seem pleased with yourself.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Maybe I am.” She gives him a knowing smile, clearly enjoying the tiny moment."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "*He watches her with a quiet smile, curious but not pushing.*",
+    "isWordless": true,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She catches his eye and smiles without saying what she was thinking."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“Okay, now I need to know what that smile means.” *He tries to sound casual.*",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs, but her smile fades. “You really want to know that badly?”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“Was that smile about something I said?”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Maybe.” She smiles, but the question makes her feel slightly watched."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“That smile tells me I’m doing something right.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“You’re taking credit already?” she teases."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He watches her glass turn, tongue-tied, unable to find an opening.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She looks up after a moment, offering a mild, patient smile."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“Long day?” *He smiles, not making it a big deal.*",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“A little.” She laughs. “It’s been a long one.” The honesty makes the moment easier."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“Oh—sorry, are you tired? We can... I mean, you don't have to pretend you're not.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m tired, not bored.” She reassures him, but she can see where his mind went."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“I’m going to assume that was your subtle review of my conversation skills.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “You’re safe. It’s been a long day.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“I’ll try not to take that personally.” *He smiles.* “You okay?”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I’m fine.” She smiles, though the attempt to make it cute puts the focus on the awkwardness."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“You’re alright. It’s been a long day for both of us.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Long day.” She smiles. “That’s all.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“Long day?” *He laughs lightly.* “Fair enough.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She laughs. “Okay, good. I was hoping you wouldn’t make me feel guilty about it.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“You looked cute trying to hide that.” *A small grin.* “Long day?”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Long day.” She smiles. “But I’m still enjoying myself.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“Wow. Brutal.” *He laughs, then glances at her.* “You’re actually just tired, right?”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“No, no.” She laughs. “Don’t flatter yourself.” Her tone is playful, but the mood is less relaxed."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Sorry, is this getting boring? I can... talk about something else.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m not bored.” She says it quickly, trying to stop him from spiraling."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’ll forgive you for that one.” *He grins.* “You tired?”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “You’re going to blame yourself for that?”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He notices the yawn and freezes up completely, unsure whether to acknowledge it.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She clears her throat softly, tapping her fingers lightly against the table."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“A little. First dates are weird by default, right?”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“That makes sense.” She smiles. “I think everyone does a little.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“I do? I mean—maybe. I thought I was being subtle.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey, you don’t have to monitor yourself with me.” She says it kindly, but now she is watching for it."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“Yeah, I’m checking the vibe. That seems reasonable.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Fair.” She gives a tiny shrug. “I just noticed.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Maybe I’m just trying to figure out whether you’re having as good a time as I am.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Maybe.” She smiles, but the focus on whether she likes him makes her a little careful."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“Yeah. A little. I’m trying to stay present instead of overthinking everything.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She nods. “I get it.” The honesty seems to settle her."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“A little. I care how this is going, but I’m not panicking about it.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“I can tell.” She smiles. “You seem a lot more relaxed when you stop trying to do it perfectly.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“Maybe. I like you, so I’m paying attention.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her expression warms. “That’s actually kind of nice to hear.”"
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“I’m not checking myself.” *Beat.* “Okay, I’m absolutely checking myself.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I wasn’t accusing you.” She laughs softly, but the defensiveness changes the mood."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah... probably. I really don’t want to mess this up.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“You don’t have to get it perfect.” She looks genuinely sympathetic."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m reading the room. I’m hoping what I’m seeing is good.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I’m giving you enough feedback, I think.” She smiles, teasing rather than pushing."
+  },
+  {
+    "slotIndex": 3,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "“I—uh...” *He looks down, caught.*",
+    "isWordless": false,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "Her shoulders drop a fraction. “You really don't have to force this if you're uncomfortable.”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Nice save.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “Okay, nobody saw that.”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Oh—careful. That would’ve been... yeah.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“It’s fine.” She steadies the glass and smiles, but his alarm made the tiny mistake feel bigger."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Professional recovery.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Professional recovery?” she says, amused by the deadpan confidence."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Honestly, kind of impressive.” *He grins.*",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Impressive, apparently.” She laughs, though the compliment feels slightly too eager for the moment."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“You saved it. We’re good.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Exactly.” She smiles and settles the glass back down."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“That was a strong recovery.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“That sounded like a review.” She laughs, clearly enjoying his easy reaction."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "*He laughs softly.* “You’re alright.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She smiles. “I’m okay.” The shared laugh keeps things warm."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Smooth.” *He laughs.* “I mean—you recovered.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Yeah, I recovered.” She laughs, but the joke comes off a little forced."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“That looked terrifying for a second.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m fine!” She laughs, a little too quickly. “Really.”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m impressed. I thought we were about to lose the table.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I’m impressed you survived that.” She grins, matching his playful tone."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He reaches out reflexively but freezes halfway, laughing silently in disbelief.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She laughs easily and gives his hand an reassuring tap. “Team effort, almost!”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "*He holds her gaze for a beat, then smiles.*",
+    "isWordless": true,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She smiles back, then casually looks away. The warmth stays."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "*He notices, looks away, then sneaks another glance back.*",
+    "isWordless": true,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "She catches the quick glance away and smiles sympathetically."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“What?” *He smiles, knowingly.*",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“What?” she asks, half-laughing, but she breaks the eye contact."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "*He smiles and holds her gaze a little longer.*",
+    "isWordless": true,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She holds the gaze another second before smiling."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "*He smiles back, slightly nervous, but doesn’t look away.*",
+    "isWordless": true,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She gives him a small reassuring smile, noticing the nerves without calling them out."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "*He meets her eyes comfortably and lets the moment breathe.*",
+    "isWordless": true,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She keeps eye contact easily, comfortable with the quiet exchange."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "*He smiles softly, staying in the moment without saying anything.*",
+    "isWordless": true,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She smiles softly and looks down for a second, clearly a little flustered herself."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "*He catches her eye.* “What?” *The grin is confident; the quick glance away isn't.*",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs at the sudden “What?” but looks away, momentarily self-conscious."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "*He smiles, looks down for half a second, then back at her.*",
+    "isWordless": true,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She smiles when he looks back, but the nervousness makes the moment shorter than it might have been."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "*He meets her eyes and gives her a small, knowing smile.*",
+    "isWordless": true,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her smile turns more playful. She does not look away first this time."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He holds her gaze for a split second, panics, and looks down at his hands.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "Her smile dims just a little, though her eyes remain friendly. “Penny for your thoughts?”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“Everything okay?”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Yeah, everything’s fine.” She turns the phone farther away and refocuses on him."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“You can check it if you need to. I don't mind.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“It’s fine.” She smiles, but the offer to check it makes her wonder if she accidentally unsettled him."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“I’m choosing to take the face-down phone as a good sign.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m just trying to be present.” She leaves the phone alone, a little more guarded."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“Ignoring your phone for me? I’ll take the win.” *He smiles.*",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She smiles. “You noticed.” Then she reaches for her drink instead."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“You good? You don’t have to ignore something important.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Nothing important.” She reassures him, though his concern makes the interruption feel heavier."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“No rush. We’ve got time.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Thanks.” She smiles and stays fully engaged."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "*He smiles.* “Thanks for staying present.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I want to be here.” She gives him a small smile, then turns the phone another inch away."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“You don’t have to prove anything. I’m not watching the phone.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“You really don’t have to watch what I do with my phone.” Her tone stays polite, but there is a clear boundary now."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Sorry—if you need to deal with something, really, it’s okay.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“It’s okay.” She gives him a reassuring smile. “You don’t have to worry about that.”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m flattered you left it.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I’ll take the compliment.” She grins, then goes right back to the conversation."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He watches her put down the phone in total silence, letting the moment hang in the air.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She sighs quietly and rests her chin on her palm, waiting for him to re-engage."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“We doing alright?”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“We’re okay.” She smiles. “I was just checking the time.”"
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Is it getting late? Sorry, I didn’t realise how long we’d been sitting here.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, no—it’s not that late.” She reassures him, but she also notices how quickly he panicked."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“You look like you’ve got somewhere to be.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She nods. “I do, actually. I’ve got a little time, though.” The honesty keeps the moment grounded."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Please tell me you’re not checking how long until you can escape me.” *He smiles, half-joking.*",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "She laughs. “Not quite an escape plan.” But she does not deny being restless."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“Hey. If you need to head out, just tell me. No pressure.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She looks relieved. “Thank you.” The lack of pressure noticeably relaxes her."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“You alright for time?”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Yeah, I’m alright for time.” She puts the phone away and settles back in."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“Everything okay? I’m happy to stay as long as you are.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Everything’s okay.” She smiles, though she still seems a little distracted."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Okay, that was definitely a time check.” *He laughs.* “I’m guessing I should be worried.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I was.” She smiles at the joke, but the self-consciousness is now shared."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Are you bored? I know we don’t have to force this.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“No.” She says it quickly. “I’m not bored.” The reassurance makes her feel responsible for his nerves."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“You checking the time already? I was hoping you’d lose track with me.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I’m not keeping score.” She laughs, but the “lose track with me” line is a little much in this moment."
+  },
+  {
+    "slotIndex": 4,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He notices the time check and goes quiet.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She pockets her phone, looking around the room as if calculating when she can politely leave."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Something real, eventually. I’m not trying to force anything tonight.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She nods slowly. “Yeah. I think I’m looking for something that can actually become something.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“I don’t know if I have a good answer. I want something serious, I think—just not something forced.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That’s okay.” She smiles. “I don’t think there’s a perfect answer to that.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“I’m looking for a relationship if I meet the right person.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She nods. “Same.” It is not a bad answer, but it feels more formal than personal."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Honestly? I’d like to see where this goes with you.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "Her smile fades slightly. “I appreciate the honesty.” She gives the answer room instead of matching the intensity."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I’d like something real. I just don’t want to pretend I know exactly what it’ll look like yet.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I like that.” She looks relieved by the lack of pressure."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“A genuine relationship. I’m not in a rush, but I’m here because I want one.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“That’s basically where I’m at too.” She leans in a little, more invested now."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "“Something that feels easy and worth showing up for. I’m liking what I’ve got so far.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I like where your head is.” Her smile stays for a beat longer."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“I know what I want.” *Beat.* “I mean—I think I do. Something serious. Eventually.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She smiles gently. “You don’t have to know the entire answer tonight.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“I want something real. And... I’d be lying if I said I wasn’t hoping this could become that.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Yeah.” She holds his eyes. “I think I’d like something real too.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“A relationship with someone I actually like. I’m pretty sure you can guess where my head is tonight.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She takes a small breath. “Maybe we should just keep tonight about tonight.” The warmth becomes more cautious."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He swallows hard, caught off-guard by the sincerity, struggling to find words.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She gives a warm, understanding nod. “Heavy question, I know. You don’t have to have a thesis.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“I’m open to something serious. I’d rather let it grow naturally.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“That sounds reasonable.” She smiles, relieved by the lack of pressure."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Out of this? I mean... a good date. Maybe more. Sorry, that sounded vague.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey, you don’t have to solve it right now.” She softens her tone, trying to take the pressure back off him."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“I’d like to meet someone I actually want to see again.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Okay.” She nods. “I think I’m looking for something a little more specific than that.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“Right now? More time with you would be nice.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“More time together?” She smiles, catching the implication."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“Something worth continuing. I don’t need to define the whole future tonight.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That’s fair.” She looks thoughtful, still figuring out what she wants from the answer."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“I’m here to see if there’s something worth building.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“That’s pretty much exactly what I mean.” She smiles with genuine relief."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“Honestly, I’m enjoying this enough that I’m curious where it could go.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I was hoping you’d say something like that.” Her expression warms."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“I’m looking for something real. That’s the answer.” *Beat.* “Probably.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Alright.” She smiles. “You don’t have to make it sound so official.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“I’d like this to go somewhere. I just don’t want to get ahead of myself.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I get it.” She gives him a reassuring smile, but the caution keeps her from leaning in."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m looking for a reason to ask for a second date.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“A second date is a pretty concrete place to start.” She smiles, teasing just enough."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He hesitates, lips parting, but ends up looking down at his plate in silence.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She sips her drink, giving him space. “It’s okay, take a second. No right answer.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“You can ask. I’ll tell you if it’s too soon.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles, finally asking the question she was holding back."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“Sure. Unless it’s... yeah, no, ask.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“You can just tell me if it’s too personal.” She backs off slightly, sensing the hesitation."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“Go for it.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Alright.” She smiles. “Then I’m asking.” The confidence makes her commit to the question."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“You’ve got my attention.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That’s a dangerous thing to say.” She laughs, but keeps the question light."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“Yeah. Ask.” *A small smile.* “I’m not scared of the question.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She smiles, relieved. “Okay. Then I will.” She seems more willing to be vulnerable."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“Of course. What’ve you got?”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Alright.” She sits a little straighter, clearly ready to ask."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“You can ask me. I’m curious now.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Okay...” She smiles, but the invitation makes the moment feel heavier than she expected."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“Ask whatever you want.” *Beat.* “I’m sure I can handle it.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I wasn’t trying to scare you.” She laughs once, but the bravado makes her hesitate again."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah. You can ask. I might need a second, though.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Yeah, I know.” She smiles. “I might still need to phrase it carefully.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“You can ask. Now I definitely want to hear it.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “Because now I really do want to ask.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He stares at her blankly, paralyzed by anticipation of what she might ask.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She waves a hand dismissively with a wry smile. “Never mind, probably too soon.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“No. I’m here because I want to be here. I’ve probably just been in my head a bit.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She nods, visibly relieved. “Okay. I just needed to know.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“No—no, not at all. Sorry, do I really look like I want to leave?”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, no. You don’t have to convince me.” She softens immediately, but the moment has already made her uneasy."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“No. If I wanted to leave, I’d tell you.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a short nod. “Got it.” The certainty does not reassure her; it feels dismissive."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“No. I’d actually rather stay here with you.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Okay.” She smiles faintly. “I’m glad.” It is reassuring, but still a little intense."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“No. I’m nervous, but I’m not trying to get out of this.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her shoulders drop. “Okay. Good.” She looks genuinely relieved."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“Definitely not. I’m here because I want to see where this goes.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Alright.” She smiles. “Then we’re on the same page.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“No. I’m having a good time. I’m just quieter than I expected.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“That’s good.” She gives him a small, warm smile."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“No. I’m fine.” *Beat.* “I’m not exactly convincing you, am I?”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She notices the struggle and smiles gently. “You don’t have to look so determined about it.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“No, I don’t want to leave. I’m just... really in my head because I care how this goes.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” Her expression softens. “That actually helps.”"
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“No. Quite the opposite. I was hoping you’d want me to stay a while.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She smiles politely. “Okay.” The hint of “I want you to stay” is a little more than she wants to carry right now."
+  },
+  {
+    "slotIndex": 5,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "“No, I...” *He loses the sentence.*",
+    "isWordless": false,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She leans back, arms crossing loosely. “That’s pretty much an answer in itself.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Really? I’m glad you didn’t.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Me too.” She smiles. “I’m glad we both ignored that impulse.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Wait, really? Was it because of me?”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, not because of you.” She reassures him quickly, seeing where his mind went."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“I’m glad you decided against it.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“So do I.” She smiles. “You seem pretty happy I stayed.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Honestly, I’m really glad you came.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I’m glad too.” Her voice softens, but she does not make it bigger than it is."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I get that. I’m glad we both showed up anyway.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Yeah.” She smiles. “Maybe that says something good already.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Good thing you didn’t. I’m having a pretty good night.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Good.” She smiles genuinely. “I’m really glad I didn’t.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "“I’m really glad you came. I’ve liked having you here.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I am too.” She holds his eyes for a moment. “I’ve had a really nice time.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Almost cancelled?” *He laughs.* “Well, I’m glad you made the right call.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She laughs softly. “I’m glad I made the right call.” The “right call” joke lands a little awkwardly."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“You almost didn’t come? Oh... I’m really glad you did.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I almost did too.” She smiles, but the nervousness makes the vulnerability feel heavier."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“And here I was thinking you were excited to meet me.” *He grins.* “Still glad you came.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "Her smile tightens. “Well... I’m glad I came.” She leaves out the joke she might otherwise have made."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*His eyes widen, struck silent by the admission, smiling softly.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She laughs a little nervously, then relaxes seeing his expression. “Don’t look at me like that, I’m glad I came!”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“We survived.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “Okay, I definitely need to stop doing that.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Oh—okay, careful. That was close.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m okay.” She laughs, but the panic in his reaction makes her more self-conscious."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“Nice reflexes.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She grins. “Thank you. Finally, someone appreciates a good save.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "*He laughs.* “Okay, we’re getting tested tonight.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“You’re calling that adorable too?” she says, laughing."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“You got it. Nobody died.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“We’re good.” She smiles, settling back down."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“Strong save.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Strong save.” She points at him. “You’re learning my vocabulary already.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "*He laughs with her.* “You alright?”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She laughs softly. “I’m fine.” The little shared mishap keeps things easy."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“Okay, that one was nearly a disaster.” *He grins.* “But we handled it.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Yes, very smooth.” She laughs, catching the nerves behind the joke."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“That scared me more than it should have.” *He laughs.*",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m okay, seriously.” She puts a hand on the table, a little overwhelmed by the concern."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I’m starting to think this table has it out for us.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Please don’t pretend it didn’t happen.” She laughs, but the teasing feels slightly forced."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He sits frozen as the drinks wobble, reacting only after everything settles.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She exhales a breathy laugh. “Well, that was exciting. Good reflexes from the table.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "*He eats too, completely comfortable with the quiet.*",
+    "isWordless": true,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She keeps eating, then gives him a small smile. Nothing needs fixing."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "*He takes a sip, glances at her, then deliberately leaves the silence alone.*",
+    "isWordless": true,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She notices him filling the quiet and gently says, “You can just sit with me, you know.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "*He settles into the moment, unbothered by having nothing to say for a second.*",
+    "isWordless": true,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She looks comfortable enough to keep eating without worrying about the silence."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "*He smiles to himself and keeps eating, clearly enjoying having her there.*",
+    "isWordless": true,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "She smiles at him, but his focus makes her feel a little watched."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "*He exhales, shoulders dropping a little, and simply stays present.*",
+    "isWordless": true,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“I’m good.” She smiles and lets the quiet return."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "*He relaxes into his chair, comfortable enough not to perform.*",
+    "isWordless": true,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She looks completely at ease, comfortable enough that neither of them needs to perform."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "*He catches her eye for a second and smiles before going back to his food.*",
+    "isWordless": true,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She catches his eye over the table and smiles, quietly enjoying the calm."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "*He almost starts a conversation, stops himself, and lets the quiet be quiet.*",
+    "isWordless": true,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She notices the forced composure and gives him a sympathetic glance. “Relax.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "*He looks at her with a small smile, then looks down again, visibly trying not to overthink the moment.*",
+    "isWordless": true,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She smiles gently. “We don’t have to talk every second.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "*He relaxes, gives her a small smile, and stays in the quiet with her.*",
+    "isWordless": true,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She smiles at him and keeps eating. “I like this, actually.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He sits rigid, watching her eat, unable to relax into the quiet.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She glances up, sensing his stiffness, and offers a quiet, questioning smile."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“Yeah. I’m enjoying myself. I’m probably just quieter than you expected.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She nods. “I can work with that.” The uncertainty eases slightly."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“It is. I mean—I think it is. I’m sorry if I’m making it hard to tell.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey.” She softens her voice. “You don’t have to apologize for being nervous.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“Yeah. I’m having a good time.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I believe you.” She smiles politely, but wants more reassurance than confidence."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Yeah. I like being here with you.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Okay.” Her smile warms. “That’s actually nice to hear.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“Yeah. I’m nervous, but I’m enjoying this. Both are true.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She nods. “Alright. I can understand that.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“It is. I’m comfortable with you. I just don’t talk every second.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "Her face relaxes. “Good. Because I’m having a good time too.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“Yeah. I’ve actually been having a really good time with you.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles. “I was starting to wonder.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Of course it’s going okay.” *Beat.* “I’m just... not exactly acting relaxed.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I know.” She gives a small laugh. “You don’t have to convince me.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“It is. I swear. I’m just nervous because I really do like you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“You’re okay.” She smiles, but now she is managing both their anxiety instead of enjoying the date."
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Yeah. Pretty sure we’re doing alright.” *He smiles at her.*",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Alright.” She smiles. “Then give me something to work with.”"
+  },
+  {
+    "slotIndex": 6,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "“I... don’t know.”",
+    "isWordless": false,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She looks away, disappointment setting in. “Yeah. That’s kind of what I thought.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Yeah. I think we’re having a good night.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles, satisfied by the simple honesty."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“I hope so. I mean, I think so. I’m not exactly objective right now.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Hey, it’s okay.” She eases back slightly, giving him room after hearing how much pressure he feels."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Pretty much. I was wondering when you’d say it.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I had a feeling you’d say that.” She grins, enjoying the certainty."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "*He smiles.* “Yeah. Very much.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She holds his gaze, clearly pleased."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I think so. I’m nervous, but the good kind.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She smiles warmly. “Good. That’s kind of what I was hoping.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Yeah. I’d say we’re doing pretty well.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I’m glad.” She leans in again, more comfortable now."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "“Yeah. I’ve been feeling that too.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her smile turns shy for a second. “Yeah?” She stays close."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Obviously.” *He grins, then catches himself.* “I mean... yeah, I think so.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a small laugh, but pulls back a little. “You don’t have to make this a performance.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“I really hope so. I’ve been trying not to get too excited about you.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Okay.” Her smile softens. “You don’t have to be perfect about it.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Yeah. I was hoping you’d ask.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Good.” She smiles like she already knew. “I was hoping I wasn’t imagining it.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He flushes, leaning back slightly, breath catching in his throat.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She smiles knowingly, amusement dancing in her eyes. “I’ll take that as a yes.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“That I’m much less interesting than I’ve made myself sound.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Exactly.” She smiles, happy he played along without forcing it."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Oh, God. Probably that I overthink everything.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“You’re okay.” She laughs. “There’s no trick answer here.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“That I’m somehow even more charming than this.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Oh, now that’s a good answer.” She grins and clearly wants to keep teasing."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“That I’ve been trying very hard not to flirt with you too much.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Maybe there is.” She smiles, enjoying how interested he sounds."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“Probably that I’m calmer than I look right now.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Fair.” She laughs. “I’ll give you one chance to recover.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“That I’m actually pretty competitive, but I try to hide it.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“See? This is why I asked.” She looks genuinely entertained."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“That I’ve been paying more attention to you than to the conversation.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“You’re curious now.” She grins, pleased with the attention."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“That I’m secretly very mysterious.” *Beat.* “Or just anxious. One of those.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She laughs. “Okay, okay. You don’t have to win the question.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“That I’ve already thought about what I’d say if you asked me this.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“That was supposed to be fun.” She smiles, trying to pull him back into the lighter mood."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“That I’m trouble once I’m comfortable.” *He smiles.*",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Oh, I like that answer.” She gives him a playful look."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He tries to come up with something witty, blanks completely, and gives a defeated grin.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She laughs. “Top secret, huh? Fine, keep your mystery.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "*He notices, but keeps the conversation easy.* “Everything catch your eye over there?”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She notices him wait instead of chasing her attention and comes back on her own. “Sorry.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“Sorry, was I talking about something boring?”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Sorry, what were you saying?” She tries to recover, but the repeated checking makes her feel guilty."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“You can tell me if I’ve lost you.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“You’re fine.” She looks back at him, appreciating that he did not make the moment awkward."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "*He waits until she looks back, smiling.* “You back?”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She catches his smile and returns it, but the quiet reaction feels slightly more intimate than she expected."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“You okay? No worries if you got distracted.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Sorry, I zoned out.” She smiles apologetically."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“What were you looking at?”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She comes back to him naturally. “I’m sorry. I was listening.” The ease returns quickly."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“Something interesting?” *He smiles.*",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She notices his patience and smiles more warmly when she turns back."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“I know that look.” *He laughs nervously.* “You’ve left the conversation.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I’m listening.” She says it almost defensively, which makes the moment less easy."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Sorry—did I lose you?”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Sorry.” She gives him a sympathetic smile. “I just lost my train of thought.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Hey, come back. I was getting to the good part.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“You noticed.” She smiles. “I’m back.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He watches her look away, withdrawing into his own thoughts without speaking.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She turns back, but noticing his retreat, she doesn't try to restart the thread."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“We alright?”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“I’m okay.” She puts the phone down again. “I just needed to know what time it was.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Do you need to go? You can just tell me.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“No, it’s okay.” She reassures him, but the question makes her more conscious of leaving."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“Okay, that’s the second time. I’m noticing.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Yeah, I checked.” She answers honestly, though his tone makes it awkward."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Please tell me you’re checking the time because you forgot what time it was, not because you want out.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "She shakes her head. “I’m not laughing because I want to leave.” The defensiveness shows he hit a nerve."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“If you need to leave, it’s okay. I’d rather you tell me than sit here feeling stuck.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Okay.” She smiles. “I appreciate you asking instead of guessing.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“You good on time?”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I’m fine for time.” She puts the phone away and settles back."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“You alright? I’d like you to stay, but I don’t want you to feel trapped here.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I’m okay.” She smiles, though the restlessness has not completely gone."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Okay, I get it.” *Beat.* “I’m not going to pretend I didn’t notice.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I know.” She laughs softly. “It was just a time check.”"
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Is this not going well? You can be honest with me.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, I’m not bored.” She says it quickly, frustrated that the idea is now part of the conversation."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Twice now? I was hoping I was keeping you entertained.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“You’re optimistic.” She smiles, but the romantic line is a little much when she is already checking out the clock."
+  },
+  {
+    "slotIndex": 7,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He follows her glance to the time and goes quiet.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She checks her watch one more time and folds her napkin deliberately."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“I’ll take adorable.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I can work with that.” She smiles, clearly pleased that the nerves are not derailing him."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Oh. Great. So it really is that obvious.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Hey, it’s okay.” She softens immediately, trying not to make him feel exposed."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Good. I was going for charming.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“You’re hiding it well.” She grins, amused by the contradiction."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "*He smiles, a little embarrassed.* “You think so?”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “I was hoping you’d hear it as a compliment.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I’m glad it’s at least entertaining.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That’s okay.” She smiles gently, but the compliment does not quite make the nerves disappear."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“I can live with that.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Exactly.” She smiles warmly. “It’s kind of cute when you’re not fighting it.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "*He smiles warmly.* “I kind of like hearing that from you.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She laughs softly. “See? You’re not nearly as hard to read as you think.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Adorable?” *He laughs.* “I was going for intimidating.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I didn’t mean it as a challenge.” She gives him a careful smile after the defensive response."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“You actually think it’s cute? Because I’m trying very hard not to completely embarrass myself here.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Hey.” She smiles. “You don’t have to hide it from me.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Careful. Keep calling me adorable and I’m going to start believing you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“See?” She grins. “That confidence suits you better.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He shakes his head with a bashful, speechless smile.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She beams, finding it endearing. “See? Proving my point right now.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“Yeah. Good nervous.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “I was hoping it was that kind.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Yeah... I think so. I hope so.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“You’re okay.” Her tone softens when she hears how worried he is about being read correctly."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“Definitely good nervous.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Mostly?” She smiles, but the certainty feels a little over-managed."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“Yeah. That’s what happens when I really like someone.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Yeah.” She smiles. “I was getting that feeling.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“Yeah. It’s the good kind. I’m nervous because I care.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“That’s kind of where I’m at too.” She looks relieved by the honesty."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“Good nervous. I know what I’m doing; I’m just enjoying it.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Good nervous.” She laughs. “You say that like you’re giving yourself a review.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“Good nervous. I’ve been having a pretty good time.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Good.” Her smile lingers. “I’ve been having a good time too.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“Good nervous. Obviously.” *Beat.* “Mostly.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Sure.” She smiles, but the forced certainty makes her less sure what he actually feels."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah. Good nervous. I just... really want this to go well.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Yeah.” She nods. “I get it.” The sincerity helps, even if the nerves are obvious."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Very good nervous. I’m enjoying myself.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Very good nervous?” she teases. “Okay, I’ll take it.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He rubs his forehead, smiling sheepishly, nodding without words.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She smiles encouragingly. “Good. As long as you’re having fun.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“Mostly the situation. You’re making it better, not worse.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles. “I was starting to worry I was making it harder.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“Probably the date. I get in my head sometimes.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I get it.” She nods. “You don’t have to blame the date for everything.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“It’s you a little.” *He smiles.* “In a good way.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“A little.” She smiles, but waits for him to say more."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“You, definitely.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "She laughs. “Okay. I can handle that answer.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“A little of both. I was nervous before I got here.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“That makes sense.” She smiles gently. “At least it wasn’t all me.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“The date. You’re actually pretty easy to be around.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “I can live with being part of it.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“You, a little. I like you, so that doesn’t help.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her smile gets a little shy. “Okay... I’m definitely taking that as a compliment.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“Not you.” *Beat.* “Okay, maybe a little you.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“Not me?” She raises an eyebrow. “You changed your answer pretty fast.” The playfulness becomes guarded."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“Definitely you. I was nervous before, but being here made it worse—in a good way.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She laughs softly. “Okay, that’s a lot of honesty at once.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“You. I was fine until I saw you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“You were fine until you saw me?” She grins. “I’ll take that.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He freezes, eyes darting, unable to answer either way.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She sighs softly. “You really don’t have to walk on eggshells around me.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“No. I’m having a good time. I just take a while to settle in.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She nods. “Okay. I can understand taking a while to settle.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“No, it’s landing. I swear. I just... don’t know how to make that obvious.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I know.” She gives him a reassuring smile. “You don’t have to convince me.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“No. If it wasn’t landing, you’d know.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Alright.” She nods, but the certainty makes her wonder why he looks so uncomfortable."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“It’s landing. Very much.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “Because I was starting to hope it was.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“No. I’m nervous, but that’s not because I want to be anywhere else.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Okay.” She seems relieved to hear it is nerves, not disinterest."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“No. I’m comfortable. I just don’t look as relaxed as I feel.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“That actually makes me feel better.” She smiles, finally relaxing into the date herself."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“It’s landing. I like being here with you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Good.” She smiles warmly. “I like being here with you too.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“No. Obviously not.” *Beat.* “Okay, maybe I could be doing a better job of showing it.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a tiny laugh, but her expression says she still is not convinced. “Okay... if you say so.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“It is. I promise. I’m just nervous because I really like you.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I believe you.” She smiles. “You’re just making it hard for me to tell.”"
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“It’s landing. I think you know that.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I think I do.” She smiles knowingly, but does not press him further."
+  },
+  {
+    "slotIndex": 8,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "“I... I don’t know.”",
+    "isWordless": false,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She leans back, looking tired. “Right. That tells me what I needed to know.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Probably disappointing people once they actually get to know me.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She nods thoughtfully. “Yeah. I think that’s probably one of mine too.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“A lot, probably. I worry I’m going to say the wrong thing and make people regret getting close.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "Her expression softens. “You don’t have to give me every fear at once.” She keeps the moment safe."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“I don’t spend much time on insecurities. I’ve got things I’m still working on, obviously.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“That’s fair.” She smiles, but she senses the answer stayed at arm’s length."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Probably not being enough for someone I really care about.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She looks at him a little more carefully. “That’s a pretty vulnerable answer.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“I worry about letting people down. I can usually keep it under control, but it’s there.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She nods slowly. “I get that.” Her voice drops a little, matching his honesty."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“I’m probably hardest on myself when I care about someone’s opinion of me.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Yeah.” She smiles. “I can relate to that more than I’d like.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "“I think... being known really well and then still not being chosen.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her expression softens. “That’s a hard one.” She stays with the vulnerability instead of joking it away."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“I’m not insecure.” *Beat.* “Okay, that sounded convincing for about half a second.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She gives a small, sympathetic smile. “You don’t have to prove anything to me.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“Probably being rejected once someone actually sees all of me. That one’s... real.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“That makes sense.” She nods. “I think most people are afraid of being fully known.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Losing someone I actually care about. I can handle a no; I don’t love the idea of having something good and messing it up.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I get that.” Her smile is gentle, but the answer carries more weight than she expected."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He swallows, looking at her with genuine, quiet vulnerability, unable to speak.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "Her expression softens completely. “Hey. It’s okay. You don’t have to lay it all out.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“It’s okay. I think I worry about being misunderstood.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Yeah.” She nods. “I worry about that too sometimes.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“That’s... a pretty big question.” *He laughs nervously.* “I guess I worry people won’t like the real version of me.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“It is a big question.” She smiles gently. “You can take your time.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“It’s not too much. I’d say I’m still figuring out what I actually want.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She nods once. “Okay.” The answer feels safe, but not especially vulnerable."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“I worry that when I really like someone, I care too much about whether they like me back.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "Her expression softens. “That makes sense.” She seems touched, but slightly cautious about the intensity."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“It’s a big question, but... I’d say I worry about letting people down.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“I appreciate you answering it.” She smiles, visibly relieved by the honesty."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“I’m probably insecure about whether I’m as good at relationships as I am at everything else.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I can see that.” She smiles, but the comparison makes the answer feel a little polished."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“Being vulnerable, honestly. I like being in control, and liking someone makes that harder.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She looks down briefly, then back up. “Yeah... I get that.” The vulnerability clearly lands."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“It’s not too much.” *Beat.* “I definitely didn’t just need three seconds to prepare an answer.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs softly. “You definitely did need those three seconds.” The joke is kind, but the moment loses some depth."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“I worry that if I like someone too much, I’ll give them every reason to leave.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“That’s a hard one.” Her voice gets quieter. “I understand that more than I probably want to admit.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Probably caring more than I let people see. It’s not my favorite thing about myself.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Yeah.” She smiles. “I think caring that much can be a scary thing.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He hesitates, tracing the rim of his glass, overwhelmed by the question.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She nods understandingly. “Forget I asked. Too deep for halfway through a drink.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“You can ask. I’ll tell you if I don’t want to answer.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She smiles. “Okay.” The permission seems to make her more willing to continue."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“Now I really want to know what you were going to ask.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Forget it.” She smiles quickly. “It’s probably not worth making this weird.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“You’ve already started. Might as well finish.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Maybe I will.” She smiles, but the invitation feels a little abrupt."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“You can ask me.” *He smiles.* “I’m curious.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I might.” She smiles, but the curiosity in his voice makes her choose her words more carefully."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“You can ask. No promises I’ll answer perfectly.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She takes a breath. “Then I’ll ask.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“Go on. I’m comfortable with you asking.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Alright.” She nods, seeming more comfortable about continuing."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“You can ask me. I trust where this is going.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "She holds his eyes. “Okay.” The trust makes her decide not to pull the question back."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“You can say it.” *Beat.* “I can handle one unfinished sentence.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs under her breath. “Okay, okay.” She lets the unfinished thought go instead."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“You can ask. I promise I won’t judge you for wanting to know.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Maybe another time.” She smiles, still appreciative that he did not judge her hesitation."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Now you definitely have to finish that thought.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She laughs. “Fine. You made me curious enough to finish it.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He stays quiet, letting her unfinished question evaporate into the room.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She lets out a quiet breath, turning her attention back to her drink."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“A little. I’ve been in my head, but I’m here with you.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles, relieved. “I just wanted to know you were with me.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Yeah... maybe. I’m sorry. I don’t mean to make you feel like you’re talking to yourself.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“I know you don’t mean to.” She smiles gently, but she is clearly tired of carrying the conversation."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“I wouldn’t say a wall. You’ve definitely got my attention.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Okay.” She gives him a small look. “Then help me out a little.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“No. I’m listening. I just get quiet when I care.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her expression softens. “Okay.” She smiles. “That actually makes me feel a lot better.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“A little, yeah. I’m not checked out—I’m just trying too hard to get things right.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“I get that.” She nods. “I can tell you’re trying.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“Fair. I can do better. I don’t want you carrying the whole conversation.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Thank you.” She smiles. “That’s all I needed to hear.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“Fair. I’ve been listening more than talking. I do like being here with you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“I know.” She smiles. “You’ve been listening. I just wasn’t sure what was happening in your head.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“No, it’s not that bad.” *Beat.* “Okay. It probably is a little that bad.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "She laughs softly. “A little.” The honesty makes the moment uncomfortable, but at least real."
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah... it’s fair. I’m sorry. I like you, and somehow that’s making me worse at talking.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "Her face softens, but she looks tired. “I know. And I don't want to make you feel bad, but I need you to meet me halfway.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Fair enough. Give me a second—I’ve got more for you than that.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Alright.” She smiles. “That’s more like it.”"
+  },
+  {
+    "slotIndex": 9,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He looks at her, but the answer never quite forms.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She shakes her head slowly. “I think that answers it.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "Calm",
+    "answerText": "“Yeah. I’d like to see you again.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "Her smile comes easily. “Yeah. I’d like that.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "Anxiety",
+    "answerText": "“Yeah. I mean—if you want to. I’d like to.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Yeah?” She smiles. “Okay. Good.” She keeps it simple so he does not overthink it."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "Confidence",
+    "answerText": "“Yeah. Definitely.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She laughs softly. “I was hoping you’d say yes.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "Attraction",
+    "answerText": "“Yeah. I was already hoping you’d ask.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Really?” She smiles, but the intensity makes her answer less immediate."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "CalmAnxiety",
+    "answerText": "“Yeah. I’d like that. I’m nervous saying it, but yeah.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Okay.” She smiles reassuringly. “You don’t have to sound like you’re announcing something important.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "CalmConfidence",
+    "answerText": "“Absolutely. I had a good time with you.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“I’d like that.” She nods, relaxed."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "CalmAttraction",
+    "answerText": "*He smiles.* “Yeah. I’d really like to see you again.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her whole expression warms. “Yeah.” A tiny smile. “I’d really like that.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "AnxietyConfidence",
+    "answerText": "“Obviously.” *Beat.* “I mean... yes. Definitely yes.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs softly. “You can just say yes.” Her tone is kind, but the overcompensation is obvious."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah. I really, really would.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She smiles gently. “Okay.” She lets him have the answer without making him keep proving it."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Yeah. I was hoping I’d get another date out of you.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Good.” She smiles. “Because I was already thinking about it.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 4,
+    "state": "FrozenBlank",
+    "answerText": "*He breaks into a wide, slightly stunned smile, nodding emphatically before words come.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She laughs happily, eyes sparkling. “I’m taking that enthusiastic nod as a yes.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "Calm",
+    "answerText": "“Yeah. No pressure on you either, but I had a good time.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles, visibly relieved. “I had a good time too.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "Anxiety",
+    "answerText": "“Yeah. Definitely. Sorry, that came out way too fast.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "She laughs softly. “You can breathe.” Then: “Yes, I’d like that.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "Confidence",
+    "answerText": "“Yeah. I wouldn’t be here this long if I didn’t.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “I was hoping you wouldn’t make me ask twice.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "Attraction",
+    "answerText": "“Yeah. I’d like that.” *He smiles.*",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Yeah.” She smiles back, warm but not surprised."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "CalmAnxiety",
+    "answerText": "“I would. I’m trying not to overthink the answer, so... yes.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Okay.” She nods. “You don’t have to overthink it.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "CalmConfidence",
+    "answerText": "“Yeah. I’d be happy to do this again.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "“Good.” Her smile is immediate. “I’d like another one too.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "CalmAttraction",
+    "answerText": "“Yeah. I’ve really liked tonight.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "“Yeah.” She looks genuinely pleased. “I’ve really liked tonight.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "AnxietyConfidence",
+    "answerText": "“Of course.” *Beat.* “Yes. I mean, yes. Very much.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“Yes.” She laughs gently. “You can stop proving the point now.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yeah. I’d really like another date. No pressure from me either.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I’d like that too.” She smiles, but the intensity tells her he is still very nervous."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Definitely. I was already planning on asking you.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "“I figured you might ask.” She smiles politely, but the certainty takes some of the softness out of the moment."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 3,
+    "state": "FrozenBlank",
+    "answerText": "*He hesitates, nervous smile trembling, nodding quietly.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She smiles with a touch of relief. “Okay. Good to hear.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "Calm",
+    "answerText": "“It went well. I had a good time, and I’d like to see you again.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "Her face relaxes. “Okay. I’m glad.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "Anxiety",
+    "answerText": "“I’m sorry I made it hard to tell. Yes. I liked tonight.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“I believe you.” She smiles, though she still wishes he had shown it earlier."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "Confidence",
+    "answerText": "“I thought it went well. I’d absolutely do it again.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“Good.” She smiles. “I just wish I’d known that sooner.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "Attraction",
+    "answerText": "“Yeah. I liked tonight more than I expected.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“I’m glad you did.” She smiles, but the intensity suggests he had been holding back more than she realized."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "CalmAnxiety",
+    "answerText": "“It went well for me. I’m just bad at showing it when I’m nervous.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles. “That actually helps.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "CalmConfidence",
+    "answerText": "“It went well. I’d like another date.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She nods. “I’d like that.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "CalmAttraction",
+    "answerText": "“It went really well. I’ve genuinely liked being with you tonight.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her expression softens completely. “Good. Because I really enjoyed being with you.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "AnxietyConfidence",
+    "answerText": "“It went well.” *Beat.* “I know I haven’t exactly made that easy to read.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“I know.” She gives a small smile. “You haven’t exactly made it easy to read.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "AnxietyAttraction",
+    "answerText": "“It went really well. I’m sorry if I made you doubt that—I actually like you a lot.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "Her face brightens. “Really?” She smiles. “Okay. I’m glad I asked.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "ConfidenceAttraction",
+    "answerText": "“I think you know the answer.” *He smiles.* “Yeah.”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She smiles, but the “you know the answer” certainty makes her feel like she was expected to know. “Okay.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 2,
+    "state": "FrozenBlank",
+    "answerText": "*He looks at her uncertainly, frozen between yes and no.*",
+    "isWordless": true,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She gives a small, wistful smile. “It’s okay. We don’t have to decide right this second.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "Calm",
+    "answerText": "“Honestly? Yes. I’d like to see you again.”",
+    "isWordless": false,
+    "connectionDelta": 9,
+    "band": "Reasonable",
+    "reactionText": "She exhales quietly. “Okay.” The relief is obvious in her smile."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "Anxiety",
+    "answerText": "“Yes. I’m sorry if I made it look like no.”",
+    "isWordless": false,
+    "connectionDelta": -14,
+    "band": "ActivelyWrong",
+    "reactionText": "“No, it’s okay.” She smiles gently. “I believe you.” She does not punish the nervousness."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "Confidence",
+    "answerText": "“Yes. No hesitation.”",
+    "isWordless": false,
+    "connectionDelta": 6,
+    "band": "Reasonable",
+    "reactionText": "“Okay.” She smiles. “That was clearer.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "Attraction",
+    "answerText": "“Yes. I don’t really want tonight to be over yet.”",
+    "isWordless": false,
+    "connectionDelta": -5,
+    "band": "Poor",
+    "reactionText": "“You don’t have to stay just because you don’t want the night to end yet.” Her tone stays kind, but she needs the answer to feel grounded."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "CalmAnxiety",
+    "answerText": "“Yes. I’m nervous saying it, but I mean it.”",
+    "isWordless": false,
+    "connectionDelta": -1,
+    "band": "Poor",
+    "reactionText": "“Okay.” She smiles. “I’m glad you said it.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "CalmConfidence",
+    "answerText": "“Yes. I’m sure.”",
+    "isWordless": false,
+    "connectionDelta": 18,
+    "band": "HighFit",
+    "reactionText": "Her shoulders visibly relax. “Good.” She smiles. “I wanted to hear that.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "CalmAttraction",
+    "answerText": "“Yes. I’ve liked being with you tonight.”",
+    "isWordless": false,
+    "connectionDelta": 14,
+    "band": "HighFit",
+    "reactionText": "She smiles warmly. “Me too.” She holds his eyes for a second."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "AnxietyConfidence",
+    "answerText": "“Of course I would.” *Beat.* “Why did I say that like I was arguing a case?”",
+    "isWordless": false,
+    "connectionDelta": -18,
+    "band": "ActivelyWrong",
+    "reactionText": "She laughs softly. “You can just say yes without arguing your case.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "AnxietyAttraction",
+    "answerText": "“Yes. Absolutely. I was scared you didn’t want to, too.”",
+    "isWordless": false,
+    "connectionDelta": -8,
+    "band": "Poor",
+    "reactionText": "“Okay.” Her expression softens. “I’m glad.” She looks relieved, though still a little unsure."
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "ConfidenceAttraction",
+    "answerText": "“Yeah. I’d like another one.” *He smiles.* “I’m not exactly trying to hide that.”",
+    "isWordless": false,
+    "connectionDelta": 2,
+    "band": "Reasonable",
+    "reactionText": "“Good.” She smiles. “Then I guess we’re on the same page.”"
+  },
+  {
+    "slotIndex": 10,
+    "tier": 1,
+    "state": "FrozenBlank",
+    "answerText": "*He takes a breath, looks at her, and nods.* “Yeah.”",
+    "isWordless": false,
+    "connectionDelta": -12,
+    "band": "FrozenBlank",
+    "reactionText": "She gives a sad, polite nod, knowing the truth. “Thanks for being honest.”"
+  }
+]

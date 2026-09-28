@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 25eb8b33338c446328796dd6d78bdcf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6144313119132540425
+    second: Haya-expecting_0
+  - first:
+      213: -917337845698101660
+    second: Haya-expecting_1
+  - first:
+      213: -7767449412951867573
+    second: Haya-expecting_2
+  - first:
+      213: -9192899455226367000
+    second: Haya-expecting_3
+  - first:
+      213: 1827884839141123492
+    second: Haya-expecting_4
+  - first:
+      213: -9017790414686721610
+    second: Haya-expecting_5
+  - first:
+      213: -3398902316533375852
+    second: Haya-expecting_6
+  - first:
+      213: -6900270556059932267
+    second: Haya-expecting_7
+  - first:
+      213: -5128069558596916423
+    second: Haya-expecting_8
+  - first:
+      213: 2109080047461067445
+    second: Haya-expecting_9
+  - first:
+      213: -919600949390502974
+    second: Haya-expecting_10
+  - first:
+      213: 5150445838466974031
+    second: Haya-expecting_11
+  - first:
+      213: -6028379997189352866
+    second: Haya-expecting_12
+  - first:
+      213: -6087992491733788298
+    second: Haya-expecting_13
+  - first:
+      213: -331352151989361938
+    second: Haya-expecting_14
+  - first:
+      213: -8755122880148898324
+    second: Haya-expecting_15
+  - first:
+      213: -9091056788648964658
+    second: Haya-expecting_16
+  - first:
+      213: -9211013553952776834
+    second: Haya-expecting_17
+  - first:
+      213: 4405372767566594972
+    second: Haya-expecting_18
+  - first:
+      213: 6106574352052175641
+    second: Haya-expecting_19
+  - first:
+      213: 8936325885328870780
+    second: Haya-expecting_20
+  - first:
+      213: -1793734843899776615
+    second: Haya-expecting_21
+  - first:
+      213: 5362547934669815316
+    second: Haya-expecting_22
+  - first:
+      213: 2386440569833937326
+    second: Haya-expecting_23
+  - first:
+      213: -2697797928078312363
+    second: Haya-expecting_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Haya-expecting_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1038
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f12559a5c30bbaa0800000000000000
+      internalID: -6144313119132540425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1038
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e7420f616f443f0800000000000000
+      internalID: -917337845698101660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1038
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fff22a9e9743490800000000000000
+      internalID: -7767449412951867573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1038
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3b95bc6a24c6080800000000000000
+      internalID: -9192899455226367000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1038
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5245f9393fd5910800000000000000
+      internalID: 1827884839141123492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 782
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9eca9656f5ad280800000000000000
+      internalID: -9017790414686721610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 782
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c96cce95ca4d0d0800000000000000
+      internalID: -3398902316533375852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 782
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599e5fb0d705d30a0800000000000000
+      internalID: -6900270556059932267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_8
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 782
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b2658f7ef65d8b0800000000000000
+      internalID: -5128069558596916423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_9
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 782
+        width: 143
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bae7c7f025f44d10800000000000000
+      internalID: 2109080047461067445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 526
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3977c0fcbec33f0800000000000000
+      internalID: -919600949390502974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 526
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4186bca33f0a7740800000000000000
+      internalID: 5150445838466974031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_12
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 526
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5255701554e65ca0800000000000000
+      internalID: -6028379997189352866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 526
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67956f6951b138ba0800000000000000
+      internalID: -6087992491733788298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_14
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 526
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2ec1d29fcc66bf0800000000000000
+      internalID: -331352151989361938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 270
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced74db802e8f7680800000000000000
+      internalID: -8755122880148898324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 270
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdcca7640416d180800000000000000
+      internalID: -9091056788648964658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_17
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 270
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d165789f7eb2080800000000000000
+      internalID: -9211013553952776834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_18
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 270
+        width: 144
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c938cf10137032d30800000000000000
+      internalID: 4405372767566594972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_19
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 270
+        width: 144
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913c498e409eeb450800000000000000
+      internalID: 6106574352052175641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 14
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dc728cb05340c70800000000000000
+      internalID: 8936325885328870780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_21
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 14
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991fc10c9af5b17e0800000000000000
+      internalID: -1793734843899776615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_22
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 14
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ebff04fe89b6a40800000000000000
+      internalID: 5362547934669815316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_23
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 14
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9588aed075e1120800000000000000
+      internalID: 2386440569833937326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haya-expecting_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 14
+        width: 142
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c7b15f31f7f8ad0800000000000000
+      internalID: -2697797928078312363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Haya-expecting_0: -6144313119132540425
+      Haya-expecting_1: -917337845698101660
+      Haya-expecting_10: -919600949390502974
+      Haya-expecting_11: 5150445838466974031
+      Haya-expecting_12: -6028379997189352866
+      Haya-expecting_13: -6087992491733788298
+      Haya-expecting_14: -331352151989361938
+      Haya-expecting_15: -8755122880148898324
+      Haya-expecting_16: -9091056788648964658
+      Haya-expecting_17: -9211013553952776834
+      Haya-expecting_18: 4405372767566594972
+      Haya-expecting_19: 6106574352052175641
+      Haya-expecting_2: -7767449412951867573
+      Haya-expecting_20: 8936325885328870780
+      Haya-expecting_21: -1793734843899776615
+      Haya-expecting_22: 5362547934669815316
+      Haya-expecting_23: 2386440569833937326
+      Haya-expecting_24: -2697797928078312363
+      Haya-expecting_3: -9192899455226367000
+      Haya-expecting_4: 1827884839141123492
+      Haya-expecting_5: -9017790414686721610
+      Haya-expecting_6: -3398902316533375852
+      Haya-expecting_7: -6900270556059932267
+      Haya-expecting_8: -5128069558596916423
+      Haya-expecting_9: 2109080047461067445
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

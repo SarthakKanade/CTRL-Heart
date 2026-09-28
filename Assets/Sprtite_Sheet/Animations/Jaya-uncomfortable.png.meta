@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 780b0d101214a47688742ea94aac8d65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7960115254139443009
+    second: Jaya-uncomfortable_0
+  - first:
+      213: -4899969724522988050
+    second: Jaya-uncomfortable_1
+  - first:
+      213: 1517109577879512536
+    second: Jaya-uncomfortable_2
+  - first:
+      213: -3705161608560346293
+    second: Jaya-uncomfortable_3
+  - first:
+      213: -6914946099888640507
+    second: Jaya-uncomfortable_4
+  - first:
+      213: -567504383376053674
+    second: Jaya-uncomfortable_5
+  - first:
+      213: -6226263435349813773
+    second: Jaya-uncomfortable_6
+  - first:
+      213: -695707109650931498
+    second: Jaya-uncomfortable_7
+  - first:
+      213: 4817461609381375258
+    second: Jaya-uncomfortable_8
+  - first:
+      213: -3756421606160686186
+    second: Jaya-uncomfortable_9
+  - first:
+      213: 3433681846118334564
+    second: Jaya-uncomfortable_10
+  - first:
+      213: -3516565324166357722
+    second: Jaya-uncomfortable_11
+  - first:
+      213: -1435399565110058583
+    second: Jaya-uncomfortable_12
+  - first:
+      213: 7414682533969850303
+    second: Jaya-uncomfortable_13
+  - first:
+      213: 456074727918462524
+    second: Jaya-uncomfortable_14
+  - first:
+      213: -2094896054054821997
+    second: Jaya-uncomfortable_15
+  - first:
+      213: 748712180206474128
+    second: Jaya-uncomfortable_16
+  - first:
+      213: 90001566369795069
+    second: Jaya-uncomfortable_17
+  - first:
+      213: 4611627597124458669
+    second: Jaya-uncomfortable_18
+  - first:
+      213: 4113135565042033244
+    second: Jaya-uncomfortable_19
+  - first:
+      213: -8524677618911145678
+    second: Jaya-uncomfortable_20
+  - first:
+      213: 2205523071463035142
+    second: Jaya-uncomfortable_21
+  - first:
+      213: -844425949578241899
+    second: Jaya-uncomfortable_22
+  - first:
+      213: -4323517999114706842
+    second: Jaya-uncomfortable_23
+  - first:
+      213: -4532967907336701339
+    second: Jaya-uncomfortable_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1037
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147562e26a2087e60800000000000000
+      internalID: 7960115254139443009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1037
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed73a72f7fcffbb0800000000000000
+      internalID: -4899969724522988050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1037
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5e9d28f1bdd0510800000000000000
+      internalID: 1517109577879512536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1037
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b7856d52f949cc0800000000000000
+      internalID: -3705161608560346293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_4
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1037
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e2a2bb82d2900a0800000000000000
+      internalID: -6914946099888640507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 781
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65aa46425c1df18f0800000000000000
+      internalID: -567504383376053674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 781
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f598f9c46ed799a0800000000000000
+      internalID: -6226263435349813773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_7
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 781
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0ea8dd11a5856f0800000000000000
+      internalID: -695707109650931498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_8
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 781
+        width: 146
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d224a4fcf0bd240800000000000000
+      internalID: 4817461609381375258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_9
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 781
+        width: 147
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693a03a93728edbc0800000000000000
+      internalID: -3756421606160686186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 525
+        width: 147
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46047955273e6af20800000000000000
+      internalID: 3433681846118334564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 525
+        width: 147
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d9b9f1876a23fc0800000000000000
+      internalID: -3516565324166357722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_12
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 525
+        width: 149
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a16dda53bf641ce0800000000000000
+      internalID: -1435399565110058583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 525
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfe09fda7e36e660800000000000000
+      internalID: 7414682533969850303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_14
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 525
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36ec947c8d445600800000000000000
+      internalID: 456074727918462524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 269
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fd1b8532f6de2e0800000000000000
+      internalID: -2094896054054821997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_16
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 269
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0931734d2c5f36a00800000000000000
+      internalID: 748712180206474128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_17
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 269
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb43b0a2ffbf3100800000000000000
+      internalID: 90001566369795069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_18
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 269
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8ddfabddacfff30800000000000000
+      internalID: 4611627597124458669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_19
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 269
+        width: 148
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c522b5b010bc41930800000000000000
+      internalID: 4113135565042033244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 13
+        width: 147
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231141c0fd242b980800000000000000
+      internalID: -8524677618911145678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 13
+        width: 148
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6019b725c879b9e10800000000000000
+      internalID: 2205523071463035142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 13
+        width: 148
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5985444a21ff744f0800000000000000
+      internalID: -844425949578241899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_23
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 13
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660a2ca6947cff3c0800000000000000
+      internalID: -4323517999114706842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaya-uncomfortable_24
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 13
+        width: 148
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a33f874b9a711c0800000000000000
+      internalID: -4532967907336701339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jaya-uncomfortable_0: 7960115254139443009
+      Jaya-uncomfortable_1: -4899969724522988050
+      Jaya-uncomfortable_10: 3433681846118334564
+      Jaya-uncomfortable_11: -3516565324166357722
+      Jaya-uncomfortable_12: -1435399565110058583
+      Jaya-uncomfortable_13: 7414682533969850303
+      Jaya-uncomfortable_14: 456074727918462524
+      Jaya-uncomfortable_15: -2094896054054821997
+      Jaya-uncomfortable_16: 748712180206474128
+      Jaya-uncomfortable_17: 90001566369795069
+      Jaya-uncomfortable_18: 4611627597124458669
+      Jaya-uncomfortable_19: 4113135565042033244
+      Jaya-uncomfortable_2: 1517109577879512536
+      Jaya-uncomfortable_20: -8524677618911145678
+      Jaya-uncomfortable_21: 2205523071463035142
+      Jaya-uncomfortable_22: -844425949578241899
+      Jaya-uncomfortable_23: -4323517999114706842
+      Jaya-uncomfortable_24: -4532967907336701339
+      Jaya-uncomfortable_3: -3705161608560346293
+      Jaya-uncomfortable_4: -6914946099888640507
+      Jaya-uncomfortable_5: -567504383376053674
+      Jaya-uncomfortable_6: -6226263435349813773
+      Jaya-uncomfortable_7: -695707109650931498
+      Jaya-uncomfortable_8: 4817461609381375258
+      Jaya-uncomfortable_9: -3756421606160686186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

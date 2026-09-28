@@ -10,8 +10,8 @@ namespace CtrlHeart.Core.Data
     /// </summary>
     public static class SimulationMath
     {
-        public const float MIXTURE_PERCENT_DIFF_THRESHOLD = 15f;
-        public const float MIXTURE_MIN_PERCENT_THRESHOLD = 25f;
+        public const float MIXTURE_PERCENT_DIFF_THRESHOLD = 25f;
+        public const float MIXTURE_MIN_PERCENT_THRESHOLD = 20f;
 
         /// <summary>
         /// Calculates Oxygen regen rate based on current Lungs health (0 - 100).
@@ -19,15 +19,6 @@ namespace CtrlHeart.Core.Data
         public static float CalculateOxygenRegen(float lungsHealth, float baseRegenRate)
         {
             float healthFactor = Mathf.Clamp01(lungsHealth / 100f);
-            return baseRegenRate * healthFactor;
-        }
-
-        /// <summary>
-        /// Calculates Focus regen rate based on current Brain health (0 - 100).
-        /// </summary>
-        public static float CalculateFocusRegen(float brainHealth, float baseRegenRate)
-        {
-            float healthFactor = Mathf.Clamp01(brainHealth / 100f);
             return baseRegenRate * healthFactor;
         }
 
@@ -56,8 +47,8 @@ namespace CtrlHeart.Core.Data
             var first = list[0];
             var second = list[1];
 
-            // If nothing dominant / all zero
-            if (first.influence <= 0.01f)
+            // If nothing dominant / all zero or under 25% threshold (tie / nothing sent)
+            if (first.influence <= MIXTURE_MIN_PERCENT_THRESHOLD)
             {
                 return EmotionState.FrozenBlank;
             }
@@ -101,12 +92,12 @@ namespace CtrlHeart.Core.Data
                 e2 = temp;
             }
 
-            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Anxiety) return EmotionState.Mixture_1;
-            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Confidence) return EmotionState.Mixture_2;
-            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Attraction) return EmotionState.Mixture_3;
-            if (e1 == CoreEmotion.Anxiety && e2 == CoreEmotion.Confidence) return EmotionState.Mixture_4;
-            if (e1 == CoreEmotion.Anxiety && e2 == CoreEmotion.Attraction) return EmotionState.Mixture_5;
-            if (e1 == CoreEmotion.Confidence && e2 == CoreEmotion.Attraction) return EmotionState.Mixture_6;
+            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Anxiety) return EmotionState.CalmAnxiety;
+            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Confidence) return EmotionState.CalmConfidence;
+            if (e1 == CoreEmotion.Calm && e2 == CoreEmotion.Attraction) return EmotionState.CalmAttraction;
+            if (e1 == CoreEmotion.Anxiety && e2 == CoreEmotion.Confidence) return EmotionState.AnxietyConfidence;
+            if (e1 == CoreEmotion.Anxiety && e2 == CoreEmotion.Attraction) return EmotionState.AnxietyAttraction;
+            if (e1 == CoreEmotion.Confidence && e2 == CoreEmotion.Attraction) return EmotionState.ConfidenceAttraction;
 
             return EmotionState.FrozenBlank;
         }

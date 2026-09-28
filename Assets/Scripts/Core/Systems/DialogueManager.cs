@@ -11,7 +11,6 @@ namespace CtrlHeart.Core.Systems
     /// Implements:
     /// - Question selected by slot index + ConnectionTier (Master Design Bible Part 5 §5.3)
     /// - Resolution on timer expiry via Primary Target Node dominant emotion (Part 5 §5.2)
-    /// - Focus Filter (low focus locks out mixture states, restricts to 4 core emotions)
     /// - Body Override (critical Body health forces Frozen/Blank answer)
     /// - Reaction selection by question + post-answer ConnectionTier (Part 5 §5.5)
     /// </summary>
@@ -53,7 +52,7 @@ namespace CtrlHeart.Core.Systems
             return null;
         }
 
-        public AnswerData ResolveAnswer(QuestionData question, EmotionState dominantState, bool isLowFocus, bool isCriticalBody)
+        public AnswerData ResolveAnswer(QuestionData question, EmotionState dominantState, bool isCriticalBody)
         {
             if (question == null) return null;
 
@@ -61,11 +60,6 @@ namespace CtrlHeart.Core.Systems
             if (isCriticalBody)
             {
                 dominantState = EmotionState.FrozenBlank;
-            }
-            // 2. Focus Filter: low focus locks out mixture states (Mixture_1 to Mixture_6)
-            else if (isLowFocus && IsMixtureState(dominantState))
-            {
-                dominantState = FallbackToCoreEmotion(dominantState);
             }
 
             // Look up exact match
@@ -98,13 +92,23 @@ namespace CtrlHeart.Core.Systems
             return null;
         }
 
-        public ReactionData SelectReaction(QuestionData question, ConnectionTier postAnswerTier)
+        public ReactionData SelectReaction(QuestionData question, EmotionState state)
         {
             if (question == null) return null;
 
+            // 1:1 lookup by question and player emotion state
             foreach (var r in registeredReactions)
             {
-                if (r != null && r.parentQuestion == question && r.resultingTier == postAnswerTier)
+                if (r != null && r.parentQuestion == question && r.emotionState == state)
+                {
+                    return r;
+                }
+            }
+
+            // Fallback: match by question and Frozen/Blank
+            foreach (var r in registeredReactions)
+            {
+                if (r != null && r.parentQuestion == question && r.emotionState == EmotionState.FrozenBlank)
                 {
                     return r;
                 }
@@ -119,9 +123,29 @@ namespace CtrlHeart.Core.Systems
             return null;
         }
 
+        public ReactionData SelectReaction(QuestionData question, ConnectionTier postAnswerTier)
+        {
+            if (question == null) return null;
+
+            foreach (var r in registeredReactions)
+            {
+                if (r != null && r.parentQuestion == question && r.resultingTier == postAnswerTier)
+                {
+                    return r;
+                }
+            }
+
+            foreach (var r in registeredReactions)
+            {
+                if (r != null && r.parentQuestion == question) return r;
+            }
+
+            return null;
+        }
+
         private bool IsMixtureState(EmotionState state)
         {
-            return state >= EmotionState.Mixture_1 && state <= EmotionState.Mixture_6;
+            return state >= EmotionState.CalmAnxiety && state <= EmotionState.ConfidenceAttraction;
         }
 
         private EmotionState FallbackToCoreEmotion(EmotionState mixture)
@@ -129,12 +153,12 @@ namespace CtrlHeart.Core.Systems
             // Maps each mixture back to its lead core emotion
             return mixture switch
             {
-                EmotionState.Mixture_1 => EmotionState.Calm,       // Calm + Anxiety -> Calm
-                EmotionState.Mixture_2 => EmotionState.Confidence, // Calm + Confidence -> Confidence
-                EmotionState.Mixture_3 => EmotionState.Attraction, // Calm + Attraction -> Attraction
-                EmotionState.Mixture_4 => EmotionState.Anxiety,    // Anxiety + Confidence -> Anxiety
-                EmotionState.Mixture_5 => EmotionState.Attraction, // Anxiety + Attraction -> Attraction
-                EmotionState.Mixture_6 => EmotionState.Confidence, // Confidence + Attraction -> Confidence
+                EmotionState.CalmAnxiety => EmotionState.Calm,              // Calm + Anxiety -> Calm
+                EmotionState.CalmConfidence => EmotionState.Confidence,    // Calm + Confidence -> Confidence
+                EmotionState.CalmAttraction => EmotionState.Attraction,    // Calm + Attraction -> Attraction
+                EmotionState.AnxietyConfidence => EmotionState.Anxiety,    // Anxiety + Confidence -> Anxiety
+                EmotionState.AnxietyAttraction => EmotionState.Attraction, // Anxiety + Attraction -> Attraction
+                EmotionState.ConfidenceAttraction => EmotionState.Confidence, // Confidence + Attraction -> Confidence
                 _ => EmotionState.Calm
             };
         }

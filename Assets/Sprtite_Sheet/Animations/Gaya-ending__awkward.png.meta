@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: a292bd97f4c2249eba46ab3191fcf993
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7857833712493801183
+    second: Gaya-ending__awkward_0
+  - first:
+      213: 6869248537106142106
+    second: Gaya-ending__awkward_1
+  - first:
+      213: -6921682968731774020
+    second: Gaya-ending__awkward_2
+  - first:
+      213: -3615720209131363280
+    second: Gaya-ending__awkward_3
+  - first:
+      213: 5380196869008132957
+    second: Gaya-ending__awkward_4
+  - first:
+      213: 6347069597784704130
+    second: Gaya-ending__awkward_5
+  - first:
+      213: 5466278823089117341
+    second: Gaya-ending__awkward_6
+  - first:
+      213: 5937039393675061660
+    second: Gaya-ending__awkward_7
+  - first:
+      213: 6467189337441260443
+    second: Gaya-ending__awkward_8
+  - first:
+      213: -1520816205175371873
+    second: Gaya-ending__awkward_9
+  - first:
+      213: 594930148009124195
+    second: Gaya-ending__awkward_10
+  - first:
+      213: -698953124923556420
+    second: Gaya-ending__awkward_11
+  - first:
+      213: -4604098737424548931
+    second: Gaya-ending__awkward_12
+  - first:
+      213: -1183948905610685039
+    second: Gaya-ending__awkward_13
+  - first:
+      213: -5425551562720677165
+    second: Gaya-ending__awkward_14
+  - first:
+      213: -2079562668291679966
+    second: Gaya-ending__awkward_15
+  - first:
+      213: 2963030523433280362
+    second: Gaya-ending__awkward_16
+  - first:
+      213: -4273408992208861720
+    second: Gaya-ending__awkward_17
+  - first:
+      213: 8873427159682185676
+    second: Gaya-ending__awkward_18
+  - first:
+      213: 457597666085576955
+    second: Gaya-ending__awkward_19
+  - first:
+      213: -6623753670712461462
+    second: Gaya-ending__awkward_20
+  - first:
+      213: -5222156736651506299
+    second: Gaya-ending__awkward_21
+  - first:
+      213: 148452187901699050
+    second: Gaya-ending__awkward_22
+  - first:
+      213: -1606647207688581897
+    second: Gaya-ending__awkward_23
+  - first:
+      213: 7816052521725339301
+    second: Gaya-ending__awkward_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1034
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde28410122ac0d60800000000000000
+      internalID: 7857833712493801183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1034
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9355105629745f50800000000000000
+      internalID: 6869248537106142106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1034
+        width: 127
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb31fd8330e31ff90800000000000000
+      internalID: -6921682968731774020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_3
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1034
+        width: 127
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034268f60a162ddc0800000000000000
+      internalID: -3615720209131363280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_4
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1034
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b06eefb8c4aaa40800000000000000
+      internalID: 5380196869008132957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 778
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28483a4cb22551850800000000000000
+      internalID: 6347069597784704130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 778
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d989775c0af1cdb40800000000000000
+      internalID: 5466278823089117341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_7
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 778
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99a08d6fd9946250800000000000000
+      internalID: 5937039393675061660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_8
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 778
+        width: 126
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b935161107210c950800000000000000
+      internalID: 6467189337441260443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_9
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 778
+        width: 126
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f974dd118b9f4eae0800000000000000
+      internalID: -1520816205175371873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 522
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361214a41dd914800800000000000000
+      internalID: 594930148009124195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 522
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd384a06d1dc46f0800000000000000
+      internalID: -698953124923556420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_12
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 522
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb3cf48794fa10c0800000000000000
+      internalID: -4604098737424548931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_13
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 522
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195dcd04eb4c19fe0800000000000000
+      internalID: -1183948905610685039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_14
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 522
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2f779799194b4b0800000000000000
+      internalID: -5425551562720677165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 266
+        width: 126
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2299f4c65c8e323e0800000000000000
+      internalID: -2079562668291679966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_16
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 266
+        width: 126
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6361efef8cce1920800000000000000
+      internalID: 2963030523433280362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_17
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 266
+        width: 126
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e54e6fb92dc1b4c0800000000000000
+      internalID: -4273408992208861720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_18
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 266
+        width: 126
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9f8210dfeb42b70800000000000000
+      internalID: 8873427159682185676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_19
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 266
+        width: 130
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0241127a6b95600800000000000000
+      internalID: 457597666085576955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 10
+        width: 129
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a677e717123b314a0800000000000000
+      internalID: -6623753670712461462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_21
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 9
+        width: 129
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d497ebd1c2787b0800000000000000
+      internalID: -5222156736651506299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_22
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 10
+        width: 128
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3a2067a786f0200800000000000000
+      internalID: 148452187901699050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_23
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 10
+        width: 129
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc495280ea04b9e0800000000000000
+      internalID: -1606647207688581897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gaya-ending__awkward_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 10
+        width: 129
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a62c377b52387c60800000000000000
+      internalID: 7816052521725339301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gaya-ending__awkward_0: 7857833712493801183
+      Gaya-ending__awkward_1: 6869248537106142106
+      Gaya-ending__awkward_10: 594930148009124195
+      Gaya-ending__awkward_11: -698953124923556420
+      Gaya-ending__awkward_12: -4604098737424548931
+      Gaya-ending__awkward_13: -1183948905610685039
+      Gaya-ending__awkward_14: -5425551562720677165
+      Gaya-ending__awkward_15: -2079562668291679966
+      Gaya-ending__awkward_16: 2963030523433280362
+      Gaya-ending__awkward_17: -4273408992208861720
+      Gaya-ending__awkward_18: 8873427159682185676
+      Gaya-ending__awkward_19: 457597666085576955
+      Gaya-ending__awkward_2: -6921682968731774020
+      Gaya-ending__awkward_20: -6623753670712461462
+      Gaya-ending__awkward_21: -5222156736651506299
+      Gaya-ending__awkward_22: 148452187901699050
+      Gaya-ending__awkward_23: -1606647207688581897
+      Gaya-ending__awkward_24: 7816052521725339301
+      Gaya-ending__awkward_3: -3615720209131363280
+      Gaya-ending__awkward_4: 5380196869008132957
+      Gaya-ending__awkward_5: 6347069597784704130
+      Gaya-ending__awkward_6: 5466278823089117341
+      Gaya-ending__awkward_7: 5937039393675061660
+      Gaya-ending__awkward_8: 6467189337441260443
+      Gaya-ending__awkward_9: -1520816205175371873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

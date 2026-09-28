@@ -20,6 +20,9 @@ namespace CtrlHeart.Core.Data.ScriptableObjects
         [TextArea(2, 4)]
         public string questionText;
 
+        [Tooltip("Scenario Type description (e.g. Type 2 – Compliment)")]
+        public string scenarioType;
+
         [Header("Social Event Profile")]
         [Tooltip("The authored RTS disruption and target profile linked to this question")]
         public SocialEventProfile socialEventProfile = new SocialEventProfile();

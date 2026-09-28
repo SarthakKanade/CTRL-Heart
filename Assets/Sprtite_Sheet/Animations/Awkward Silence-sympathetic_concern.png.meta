@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 7e2bdcc755a3944518d321206825fccb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4500378647249551231
+    second: Awkward Silence-sympathetic_concern_0
+  - first:
+      213: -3363256678698514818
+    second: Awkward Silence-sympathetic_concern_1
+  - first:
+      213: -5109449498087002155
+    second: Awkward Silence-sympathetic_concern_2
+  - first:
+      213: -5917728258655151342
+    second: Awkward Silence-sympathetic_concern_3
+  - first:
+      213: -5960222344209254839
+    second: Awkward Silence-sympathetic_concern_4
+  - first:
+      213: -8468090635531650477
+    second: Awkward Silence-sympathetic_concern_5
+  - first:
+      213: 7769208310198346277
+    second: Awkward Silence-sympathetic_concern_6
+  - first:
+      213: -479170068753240732
+    second: Awkward Silence-sympathetic_concern_7
+  - first:
+      213: -2005485988508795566
+    second: Awkward Silence-sympathetic_concern_8
+  - first:
+      213: -6131855890529371069
+    second: Awkward Silence-sympathetic_concern_9
+  - first:
+      213: -5181272174992089554
+    second: Awkward Silence-sympathetic_concern_10
+  - first:
+      213: 5277353736068802152
+    second: Awkward Silence-sympathetic_concern_11
+  - first:
+      213: -9058844180578175521
+    second: Awkward Silence-sympathetic_concern_12
+  - first:
+      213: -976836340931369794
+    second: Awkward Silence-sympathetic_concern_13
+  - first:
+      213: -3168898458107468065
+    second: Awkward Silence-sympathetic_concern_14
+  - first:
+      213: -42980243279612899
+    second: Awkward Silence-sympathetic_concern_15
+  - first:
+      213: -4072176573740811033
+    second: Awkward Silence-sympathetic_concern_16
+  - first:
+      213: 5741704331210911429
+    second: Awkward Silence-sympathetic_concern_17
+  - first:
+      213: 5591723684475977440
+    second: Awkward Silence-sympathetic_concern_18
+  - first:
+      213: -8541209490371530272
+    second: Awkward Silence-sympathetic_concern_19
+  - first:
+      213: 1881161336247868075
+    second: Awkward Silence-sympathetic_concern_20
+  - first:
+      213: 208246757873763755
+    second: Awkward Silence-sympathetic_concern_21
+  - first:
+      213: -2243807275798389982
+    second: Awkward Silence-sympathetic_concern_22
+  - first:
+      213: -4951851157604724956
+    second: Awkward Silence-sympathetic_concern_23
+  - first:
+      213: 4107292832674661553
+    second: Awkward Silence-sympathetic_concern_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1030
+        width: 160
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fff00298e847e30800000000000000
+      internalID: 4500378647249551231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1031
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7607b9bedf4351d0800000000000000
+      internalID: -3363256678698514818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1030
+        width: 160
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfe9b4a0c69719b0800000000000000
+      internalID: -5109449498087002155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_3
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1030
+        width: 160
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b9191908100eda0800000000000000
+      internalID: -5917728258655151342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_4
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1031
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946bf074b59094da0800000000000000
+      internalID: -5960222344209254839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 775
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35af25fce6c4b7a80800000000000000
+      internalID: -8468090635531650477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_6
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 775
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522a26b8bc5c1db60800000000000000
+      internalID: 7769208310198346277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 775
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46da6f87c55a959f0800000000000000
+      internalID: -479170068753240732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_8
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 775
+        width: 160
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25df8e47e151b24e0800000000000000
+      internalID: -2005485988508795566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_9
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 774
+        width: 160
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c3c173e8547eaa0800000000000000
+      internalID: -6131855890529371069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 518
+        width: 161
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e1bfc886c6818b0800000000000000
+      internalID: -5181272174992089554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_11
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 518
+        width: 161
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8662678234dec3940800000000000000
+      internalID: 5277353736068802152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_12
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 519
+        width: 163
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5f50da635884280800000000000000
+      internalID: -9058844180578175521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_13
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 519
+        width: 164
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4e71ff5849172f0800000000000000
+      internalID: -976836340931369794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_14
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 519
+        width: 164
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6a83354afc504d0800000000000000
+      internalID: -3168898458107468065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_15
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 263
+        width: 164
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1475fa42bd476ff0800000000000000
+      internalID: -42980243279612899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_16
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 263
+        width: 163
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecf2834bf8bc77c0800000000000000
+      internalID: -4072176573740811033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_17
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 263
+        width: 162
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cee52b1ba1aeaf40800000000000000
+      internalID: 5741704331210911429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_18
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 263
+        width: 161
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee3457901bc99d40800000000000000
+      internalID: 5591723684475977440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_19
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 263
+        width: 159
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1b536c837877980800000000000000
+      internalID: -8541209490371530272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_20
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 159
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baad04cb44a3b1a10800000000000000
+      internalID: 1881161336247868075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 6
+        width: 159
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba541bca257d3e200800000000000000
+      internalID: 208246757873763755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_22
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 6
+        width: 159
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b999dbb256cd0e0800000000000000
+      internalID: -2243807275798389982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_23
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 6
+        width: 159
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f0d52bb9d774bb0800000000000000
+      internalID: -4951851157604724956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awkward Silence-sympathetic_concern_24
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 7
+        width: 159
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4c418e119000930800000000000000
+      internalID: 4107292832674661553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Awkward Silence-sympathetic_concern_0: 4500378647249551231
+      Awkward Silence-sympathetic_concern_1: -3363256678698514818
+      Awkward Silence-sympathetic_concern_10: -5181272174992089554
+      Awkward Silence-sympathetic_concern_11: 5277353736068802152
+      Awkward Silence-sympathetic_concern_12: -9058844180578175521
+      Awkward Silence-sympathetic_concern_13: -976836340931369794
+      Awkward Silence-sympathetic_concern_14: -3168898458107468065
+      Awkward Silence-sympathetic_concern_15: -42980243279612899
+      Awkward Silence-sympathetic_concern_16: -4072176573740811033
+      Awkward Silence-sympathetic_concern_17: 5741704331210911429
+      Awkward Silence-sympathetic_concern_18: 5591723684475977440
+      Awkward Silence-sympathetic_concern_19: -8541209490371530272
+      Awkward Silence-sympathetic_concern_2: -5109449498087002155
+      Awkward Silence-sympathetic_concern_20: 1881161336247868075
+      Awkward Silence-sympathetic_concern_21: 208246757873763755
+      Awkward Silence-sympathetic_concern_22: -2243807275798389982
+      Awkward Silence-sympathetic_concern_23: -4951851157604724956
+      Awkward Silence-sympathetic_concern_24: 4107292832674661553
+      Awkward Silence-sympathetic_concern_3: -5917728258655151342
+      Awkward Silence-sympathetic_concern_4: -5960222344209254839
+      Awkward Silence-sympathetic_concern_5: -8468090635531650477
+      Awkward Silence-sympathetic_concern_6: 7769208310198346277
+      Awkward Silence-sympathetic_concern_7: -479170068753240732
+      Awkward Silence-sympathetic_concern_8: -2005485988508795566
+      Awkward Silence-sympathetic_concern_9: -6131855890529371069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

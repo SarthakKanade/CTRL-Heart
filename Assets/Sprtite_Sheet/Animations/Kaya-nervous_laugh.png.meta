@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 48ccb6c6f6eaf4fd4a6802b798bf26ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3647080023981847870
+    second: Kaya-nervous_laugh_0
+  - first:
+      213: -5961319081026535217
+    second: Kaya-nervous_laugh_1
+  - first:
+      213: 8893275831409005578
+    second: Kaya-nervous_laugh_2
+  - first:
+      213: 8424702297201736603
+    second: Kaya-nervous_laugh_3
+  - first:
+      213: -1661617748608289933
+    second: Kaya-nervous_laugh_4
+  - first:
+      213: 3955369123454738212
+    second: Kaya-nervous_laugh_5
+  - first:
+      213: -826515420236309457
+    second: Kaya-nervous_laugh_6
+  - first:
+      213: 8595951822657885313
+    second: Kaya-nervous_laugh_7
+  - first:
+      213: -3047448023784276144
+    second: Kaya-nervous_laugh_8
+  - first:
+      213: -2055900542332322964
+    second: Kaya-nervous_laugh_9
+  - first:
+      213: -2547554866698787130
+    second: Kaya-nervous_laugh_10
+  - first:
+      213: -8403404079125300845
+    second: Kaya-nervous_laugh_11
+  - first:
+      213: -4986883340564965184
+    second: Kaya-nervous_laugh_12
+  - first:
+      213: -1202668319468520969
+    second: Kaya-nervous_laugh_13
+  - first:
+      213: -4238279742243588598
+    second: Kaya-nervous_laugh_14
+  - first:
+      213: 3609885139192645629
+    second: Kaya-nervous_laugh_15
+  - first:
+      213: 6023001305259147122
+    second: Kaya-nervous_laugh_16
+  - first:
+      213: 2899645881662044840
+    second: Kaya-nervous_laugh_17
+  - first:
+      213: -500617802784607141
+    second: Kaya-nervous_laugh_18
+  - first:
+      213: 9124056383606919397
+    second: Kaya-nervous_laugh_19
+  - first:
+      213: 7888794738323064883
+    second: Kaya-nervous_laugh_20
+  - first:
+      213: -3512245230780869996
+    second: Kaya-nervous_laugh_21
+  - first:
+      213: -6128958675490461423
+    second: Kaya-nervous_laugh_22
+  - first:
+      213: 4214660377822084835
+    second: Kaya-nervous_laugh_23
+  - first:
+      213: 2908418654389400383
+    second: Kaya-nervous_laugh_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1032
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca832f8a08f26dc0800000000000000
+      internalID: -3647080023981847870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1032
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0c7a651e3254da0800000000000000
+      internalID: -5961319081026535217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1032
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0453b400434b6b70800000000000000
+      internalID: 8893275831409005578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_3
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1032
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b70237a1e8ae470800000000000000
+      internalID: 8424702297201736603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_4
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 1032
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373f7b5167fb0f8e0800000000000000
+      internalID: -1661617748608289933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 776
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f5117e24b44e630800000000000000
+      internalID: 3955369123454738212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 776
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c9e67ba90a784f0800000000000000
+      internalID: -826515420236309457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_7
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 776
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18415efa3a4fa4770800000000000000
+      internalID: 8595951822657885313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_8
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 776
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f3fde1b2a45b5d0800000000000000
+      internalID: -3047448023784276144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_9
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 776
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bbfb07959f773e0800000000000000
+      internalID: -2055900542332322964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 520
+        width: 150
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6e994a85445acd0800000000000000
+      internalID: -2547554866698787130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_11
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 520
+        width: 150
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399faaf538c116b80800000000000000
+      internalID: -8403404079125300845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_12
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 520
+        width: 147
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8df4df5080bcab0800000000000000
+      internalID: -4986883340564965184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_13
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 520
+        width: 147
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9767319834f4fe0800000000000000
+      internalID: -1202668319468520969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_14
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 520
+        width: 147
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0636d0a70b9e25c0800000000000000
+      internalID: -4238279742243588598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 264
+        width: 146
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df70a897863e81230800000000000000
+      internalID: 3609885139192645629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_16
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 264
+        width: 147
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f7fa1a6cff59350800000000000000
+      internalID: 6023001305259147122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_17
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 264
+        width: 146
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaf3eef09c9d3820800000000000000
+      internalID: 2899645881662044840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_18
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 264
+        width: 146
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5479c0c2c27d09f0800000000000000
+      internalID: -500617802784607141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_19
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 264
+        width: 146
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0968780f82f9e70800000000000000
+      internalID: 9124056383606919397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_20
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 8
+        width: 148
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33887b39401aa7d60800000000000000
+      internalID: 7888794738323064883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_21
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 8
+        width: 150
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4921f3f329ff14fc0800000000000000
+      internalID: -3512245230780869996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_22
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 8
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119a758ae8091faa0800000000000000
+      internalID: -6128958675490461423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_23
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 8
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eebffc884b7d7a30800000000000000
+      internalID: 4214660377822084835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaya-nervous_laugh_24
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 8
+        width: 151
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33fff05b57cc5820800000000000000
+      internalID: 2908418654389400383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kaya-nervous_laugh_0: -3647080023981847870
+      Kaya-nervous_laugh_1: -5961319081026535217
+      Kaya-nervous_laugh_10: -2547554866698787130
+      Kaya-nervous_laugh_11: -8403404079125300845
+      Kaya-nervous_laugh_12: -4986883340564965184
+      Kaya-nervous_laugh_13: -1202668319468520969
+      Kaya-nervous_laugh_14: -4238279742243588598
+      Kaya-nervous_laugh_15: 3609885139192645629
+      Kaya-nervous_laugh_16: 6023001305259147122
+      Kaya-nervous_laugh_17: 2899645881662044840
+      Kaya-nervous_laugh_18: -500617802784607141
+      Kaya-nervous_laugh_19: 9124056383606919397
+      Kaya-nervous_laugh_2: 8893275831409005578
+      Kaya-nervous_laugh_20: 7888794738323064883
+      Kaya-nervous_laugh_21: -3512245230780869996
+      Kaya-nervous_laugh_22: -6128958675490461423
+      Kaya-nervous_laugh_23: 4214660377822084835
+      Kaya-nervous_laugh_24: 2908418654389400383
+      Kaya-nervous_laugh_3: 8424702297201736603
+      Kaya-nervous_laugh_4: -1661617748608289933
+      Kaya-nervous_laugh_5: 3955369123454738212
+      Kaya-nervous_laugh_6: -826515420236309457
+      Kaya-nervous_laugh_7: 8595951822657885313
+      Kaya-nervous_laugh_8: -3047448023784276144
+      Kaya-nervous_laugh_9: -2055900542332322964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: e6772b7298200444c94734f8bbf8e8ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 780051735239655857
+    second: Paya-napkin_catch_0
+  - first:
+      213: -8673931938465286661
+    second: Paya-napkin_catch_1
+  - first:
+      213: -8361842346795870176
+    second: Paya-napkin_catch_2
+  - first:
+      213: 6455772890214677756
+    second: Paya-napkin_catch_3
+  - first:
+      213: -8406814078827267891
+    second: Paya-napkin_catch_4
+  - first:
+      213: -8913775778631588984
+    second: Paya-napkin_catch_5
+  - first:
+      213: -5336811244735852289
+    second: Paya-napkin_catch_6
+  - first:
+      213: 8379391722599194440
+    second: Paya-napkin_catch_7
+  - first:
+      213: 3196622290084307830
+    second: Paya-napkin_catch_8
+  - first:
+      213: 8568918856095601514
+    second: Paya-napkin_catch_9
+  - first:
+      213: -3111003551357789044
+    second: Paya-napkin_catch_10
+  - first:
+      213: 3417993434140295189
+    second: Paya-napkin_catch_11
+  - first:
+      213: -1860135944423685426
+    second: Paya-napkin_catch_12
+  - first:
+      213: -9161549523182262554
+    second: Paya-napkin_catch_13
+  - first:
+      213: 6955228301459597905
+    second: Paya-napkin_catch_14
+  - first:
+      213: 5738642970654300590
+    second: Paya-napkin_catch_15
+  - first:
+      213: -2265936175148683801
+    second: Paya-napkin_catch_16
+  - first:
+      213: -459857631988300642
+    second: Paya-napkin_catch_17
+  - first:
+      213: -2478324959434079763
+    second: Paya-napkin_catch_18
+  - first:
+      213: 753753329069503709
+    second: Paya-napkin_catch_19
+  - first:
+      213: -6230839677415612547
+    second: Paya-napkin_catch_20
+  - first:
+      213: 5780453737986471053
+    second: Paya-napkin_catch_21
+  - first:
+      213: 7878935422923134746
+    second: Paya-napkin_catch_22
+  - first:
+      213: 2644778356090998830
+    second: Paya-napkin_catch_23
+  - first:
+      213: 1665537815822238799
+    second: Paya-napkin_catch_24
+  - first:
+      213: -124347668924868707
+    second: Paya-napkin_catch_25
+  - first:
+      213: 6122419093110047006
+    second: Paya-napkin_catch_26
+  - first:
+      213: -8808270232079229439
+    second: Paya-napkin_catch_27
+  - first:
+      213: -7293929422024495187
+    second: Paya-napkin_catch_28
+  - first:
+      213: -8253762665607408900
+    second: Paya-napkin_catch_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Paya-napkin_catch_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1041
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b103699bec43da00800000000000000
+      internalID: 780051735239655857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1244
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf57cd1cbd000a780800000000000000
+      internalID: -8673931938465286661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1041
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028d96340b4c4fb80800000000000000
+      internalID: -8361842346795870176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1243
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcb7df4d33879950800000000000000
+      internalID: 6455772890214677756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_4
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1041
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc87fb2f22ff45b80800000000000000
+      internalID: -8406814078827267891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1237
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ee231828eb4480800000000000000
+      internalID: -8913775778631588984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_6
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1040
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff09534d276dfe5b0800000000000000
+      internalID: -5336811244735852289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_7
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1231
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f9f533064994470800000000000000
+      internalID: 8379391722599194440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_8
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1041
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6732291590fac5c20800000000000000
+      internalID: 3196622290084307830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_9
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1226
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6399beac4aeae670800000000000000
+      internalID: 8568918856095601514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 785
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c175ab0ce73d4d0800000000000000
+      internalID: -3111003551357789044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_11
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 785
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510cc864be62f6f20800000000000000
+      internalID: 3417993434140295189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_12
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 785
+        width: 142
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2c0b6c6387f26e0800000000000000
+      internalID: -1860135944423685426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_13
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 784
+        width: 141
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e66296af33abd080800000000000000
+      internalID: -9161549523182262554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_14
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 784
+        width: 140
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a2e303a4fe58060800000000000000
+      internalID: 6955228301459597905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 528
+        width: 140
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea954ae8061c3af40800000000000000
+      internalID: 5738642970654300590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_16
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 528
+        width: 140
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed2e8cdd07cd80e0800000000000000
+      internalID: -2265936175148683801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_17
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 529
+        width: 141
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c51e8be14e99f0800000000000000
+      internalID: -459857631988300642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_18
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 529
+        width: 142
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de182f284983b9dd0800000000000000
+      internalID: -2478324959434079763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_19
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 529
+        width: 143
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4b473c8aed57a00800000000000000
+      internalID: 753753329069503709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 273
+        width: 143
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f9b37635c9789a0800000000000000
+      internalID: -6230839677415612547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_21
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 273
+        width: 143
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84334d6c0c483050800000000000000
+      internalID: 5780453737986471053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_22
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 273
+        width: 143
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a175393d50a975d60800000000000000
+      internalID: 7878935422923134746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_23
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 272
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e201278f6e324b420800000000000000
+      internalID: 2644778356090998830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_24
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 273
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f448010b1dd2d1710800000000000000
+      internalID: 1665537815822238799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_25
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 17
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97d515347a364ef0800000000000000
+      internalID: -124347668924868707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_26
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 17
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11c4ea2ab337f450800000000000000
+      internalID: 6122419093110047006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_27
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 17
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e154364ecb2c580800000000000000
+      internalID: -8808270232079229439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_28
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 17
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafa577e5d1c6ca90800000000000000
+      internalID: -7293929422024495187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paya-napkin_catch_29
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 16
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2d610069eb47d80800000000000000
+      internalID: -8253762665607408900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Paya-napkin_catch_0: 780051735239655857
+      Paya-napkin_catch_1: -8673931938465286661
+      Paya-napkin_catch_10: -3111003551357789044
+      Paya-napkin_catch_11: 3417993434140295189
+      Paya-napkin_catch_12: -1860135944423685426
+      Paya-napkin_catch_13: -9161549523182262554
+      Paya-napkin_catch_14: 6955228301459597905
+      Paya-napkin_catch_15: 5738642970654300590
+      Paya-napkin_catch_16: -2265936175148683801
+      Paya-napkin_catch_17: -459857631988300642
+      Paya-napkin_catch_18: -2478324959434079763
+      Paya-napkin_catch_19: 753753329069503709
+      Paya-napkin_catch_2: -8361842346795870176
+      Paya-napkin_catch_20: -6230839677415612547
+      Paya-napkin_catch_21: 5780453737986471053
+      Paya-napkin_catch_22: 7878935422923134746
+      Paya-napkin_catch_23: 2644778356090998830
+      Paya-napkin_catch_24: 1665537815822238799
+      Paya-napkin_catch_25: -124347668924868707
+      Paya-napkin_catch_26: 6122419093110047006
+      Paya-napkin_catch_27: -8808270232079229439
+      Paya-napkin_catch_28: -7293929422024495187
+      Paya-napkin_catch_29: -8253762665607408900
+      Paya-napkin_catch_3: 6455772890214677756
+      Paya-napkin_catch_4: -8406814078827267891
+      Paya-napkin_catch_5: -8913775778631588984
+      Paya-napkin_catch_6: -5336811244735852289
+      Paya-napkin_catch_7: 8379391722599194440
+      Paya-napkin_catch_8: 3196622290084307830
+      Paya-napkin_catch_9: 8568918856095601514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

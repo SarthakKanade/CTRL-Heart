@@ -21,5 +21,11 @@ namespace CtrlHeart.Core.Data.ScriptableObjects
 
         [Tooltip("The pre-authored Connection delta applied immediately upon selection")]
         public float connectionDelta = 0f;
+
+        [Tooltip("The authored grade band (HighFit, Reasonable, Poor, ActivelyWrong, FrozenBlank)")]
+        public string band = "Reasonable";
+
+        [Tooltip("True if answerText contains only stage direction and no spoken dialogue")]
+        public bool isWordless = false;
     }
 }

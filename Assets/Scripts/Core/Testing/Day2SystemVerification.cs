@@ -38,7 +38,7 @@ namespace CtrlHeart.Core.Testing
             eventEngine.Initialize(mindMap, resources);
 
             // 2. Register Slot 1 content
-            var (questions, answers, reactions) = Day2TestHarness.CreateSlot1Content();
+            var (questions, answers, reactions) = FullDateContent.CreateSlotContent(1);
             dialogueManager.RegisterContent(questions, answers, reactions);
             Debug.Log($"[Verification] Registered {questions.Count} questions, {answers.Count} answers, {reactions.Count} reactions.");
 
@@ -48,7 +48,7 @@ namespace CtrlHeart.Core.Testing
 
             // 4. Trigger Question's Social Event Profile (Panic on Brain & Voice)
             eventEngine.TriggerSocialEvent(activeQuestion.socialEventProfile);
-            Debug.Log($"[Verification] Social Event Triggered: Brain Health={mindMap.GetNode(InternalNodeType.Brain).currentHealth}, Focus={resources.CurrentState.focus}");
+            Debug.Log($"[Verification] Social Event Triggered: Brain Health={mindMap.GetNode(InternalNodeType.Brain).currentHealth}, Composure={resources.CurrentState.composure}");
 
             // 5. Test Drag/Influence: Apply Calm to Brain to stabilize it
             mindMap.ApplyInfluence(InternalNodeType.Brain, CoreEmotion.Calm, 50f);
@@ -56,9 +56,8 @@ namespace CtrlHeart.Core.Testing
             Debug.Log($"[Verification] Brain Dominant Emotion after Calm application: {dominantState}");
 
             // 6. Test Resolution
-            bool isLowFocus = resources.IsFocusLow();
             bool isCriticalBody = mindMap.IsBodyCriticallyLow();
-            var resolvedAnswer = dialogueManager.ResolveAnswer(activeQuestion, dominantState, isLowFocus, isCriticalBody);
+            var resolvedAnswer = dialogueManager.ResolveAnswer(activeQuestion, dominantState, isCriticalBody);
             Debug.Log($"[Verification] Resolved Answer: \"{resolvedAnswer.spokenText}\" (Delta: {resolvedAnswer.connectionDelta:+#;-#;0})");
 
             // 7. Apply Delta & Test Reaction Selection
@@ -69,7 +68,7 @@ namespace CtrlHeart.Core.Testing
 
             // 8. Test Body Override rule (§5.7)
             mindMap.ApplyDamage(InternalNodeType.Body, 90f); // Critically low Body
-            var bodyOverrideAnswer = dialogueManager.ResolveAnswer(activeQuestion, EmotionState.Confidence, false, mindMap.IsBodyCriticallyLow());
+            var bodyOverrideAnswer = dialogueManager.ResolveAnswer(activeQuestion, EmotionState.Confidence, mindMap.IsBodyCriticallyLow());
             Debug.Log($"[Verification] Body Override Test (Critical Body): \"{bodyOverrideAnswer.spokenText}\" (EmotionState: {bodyOverrideAnswer.emotionState})");
 
             Debug.Log("<color=green>=== DAY 2 VERIFICATION PASSED SUCCESSFULLY ===</color>");
