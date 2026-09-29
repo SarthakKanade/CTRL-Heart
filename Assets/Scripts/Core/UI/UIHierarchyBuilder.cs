@@ -60,6 +60,11 @@ namespace CtrlHeart.Core.UI
             var floatingFeedback = rootGO.GetComponent<UIFloatingFeedback>() ?? rootGO.AddComponent<UIFloatingFeedback>();
 
             var defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
+#if UNITY_EDITOR
+            var pixelFont = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>("Assets/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf") ?? defaultFont;
+#else
+            var pixelFont = defaultFont;
+#endif
 
             // ── Full Dark Backdrop ──
             var bgGO = CreateUIObject("BiomeBackground", rootGO.transform);
@@ -563,6 +568,228 @@ namespace CtrlHeart.Core.UI
             coreUI.AssignUnifiedDialogue(dialogBoxGO, speakerText, dialogueText, metaSubtext, null, null, null);
 
             coreUI.AssignBottomSystems(resourceBars, heartRateMonitor, neuralPathways, floatingFeedback);
+
+            // ══════════════════════════════════════════════════════════════════
+            // 3. IN-GAME PAUSE BUTTON & PAUSE MODAL OVERLAY
+            // ══════════════════════════════════════════════════════════════════
+            var pauseBtnGO = CreateUIObject("InGamePauseButton", rootGO.transform);
+            var pbRect = pauseBtnGO.GetComponent<RectTransform>();
+            SetAnchor(pbRect, new Vector2(0.952f, 0.940f), new Vector2(0.990f, 0.985f), Vector2.zero, Vector2.zero);
+            var pbImg = pauseBtnGO.AddComponent<Image>();
+            pbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_square_brown");
+            pbImg.type = Image.Type.Sliced;
+            var pauseBtn = pauseBtnGO.AddComponent<Button>();
+
+            var pauseIconGO = CreateUIObject("PauseIcon", pauseBtnGO.transform);
+            var piRect = pauseIconGO.GetComponent<RectTransform>();
+            SetAnchor(piRect, new Vector2(0.20f, 0.20f), new Vector2(0.80f, 0.80f), Vector2.zero, Vector2.zero);
+            var piImg = pauseIconGO.AddComponent<Image>();
+            piImg.sprite = UIProceduralTextureGenerator.GetSprite("icon_pause");
+            piImg.color = VisualTheme.ColorParchmentText;
+            piImg.raycastTarget = false;
+
+            // Pause Modal Canvas Overlay
+            var pauseOverlayGO = CreateUIObject("PauseOverlay", rootGO.transform);
+            var poRect = pauseOverlayGO.GetComponent<RectTransform>();
+            SetAnchor(poRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            var poBg = pauseOverlayGO.AddComponent<Image>();
+            poBg.color = new Color(0.04f, 0.04f, 0.06f, 0.80f);
+            poBg.raycastTarget = true;
+
+            var pauseModalGO = CreateUIObject("PauseModal", pauseOverlayGO.transform);
+            var pmRect = pauseModalGO.GetComponent<RectTransform>();
+            pmRect.anchorMin = new Vector2(0.5f, 0.5f);
+            pmRect.anchorMax = new Vector2(0.5f, 0.5f);
+            pmRect.sizeDelta = new Vector2(460, 320);
+            pmRect.anchoredPosition = Vector2.zero;
+            var pmImg = pauseModalGO.AddComponent<Image>();
+            pmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
+            pmImg.type = Image.Type.Sliced;
+
+            var pmHeaderGO = CreateUIObject("Header", pauseModalGO.transform);
+            var pmhRect = pmHeaderGO.GetComponent<RectTransform>();
+            SetAnchor(pmhRect, new Vector2(0.06f, 0.76f), new Vector2(0.94f, 0.94f), Vector2.zero, Vector2.zero);
+            var pmhImg = pmHeaderGO.AddComponent<Image>();
+            pmhImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            pmhImg.type = Image.Type.Sliced;
+            CreateText(pmHeaderGO.transform, "Title", "GAME PAUSED", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            CreateText(pauseModalGO.transform, "Subtitle", "Maya is waiting patiently...", 16, FontStyle.Italic, new Color(0.85f, 0.80f, 0.75f, 1f), TextAnchor.MiddleCenter,
+                new Vector2(0.08f, 0.58f), new Vector2(0.92f, 0.72f), defaultFont);
+
+            var resumeBtnGO = CreateUIObject("ResumeButton", pauseModalGO.transform);
+            var resRect = resumeBtnGO.GetComponent<RectTransform>();
+            resRect.anchorMin = new Vector2(0.5f, 0.5f);
+            resRect.anchorMax = new Vector2(0.5f, 0.5f);
+            resRect.sizeDelta = new Vector2(260, 48);
+            resRect.anchoredPosition = new Vector2(0, -10);
+            var resImg = resumeBtnGO.AddComponent<Image>();
+            resImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
+            resImg.type = Image.Type.Sliced;
+            var resumeBtn = resumeBtnGO.AddComponent<Button>();
+            CreateText(resumeBtnGO.transform, "Label", "RESUME", 18, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            var pauseMenuBtnGO = CreateUIObject("MainMenuButton", pauseModalGO.transform);
+            var pmbRect = pauseMenuBtnGO.GetComponent<RectTransform>();
+            pmbRect.anchorMin = new Vector2(0.5f, 0.5f);
+            pmbRect.anchorMax = new Vector2(0.5f, 0.5f);
+            pmbRect.sizeDelta = new Vector2(260, 48);
+            pmbRect.anchoredPosition = new Vector2(0, -68);
+            var pmbImg = pauseMenuBtnGO.AddComponent<Image>();
+            pmbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
+            pmbImg.type = Image.Type.Sliced;
+            var pauseMenuBtn = pauseMenuBtnGO.AddComponent<Button>();
+            CreateText(pauseMenuBtnGO.transform, "Label", "MAIN MENU", 18, FontStyle.Bold, new Color(0.92f, 0.88f, 0.80f, 1f), TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            pauseOverlayGO.SetActive(false);
+
+            // ══════════════════════════════════════════════════════════════════
+            // 4. END GAME RESULTS OVERLAY (FULL SCREEN DIMMER & VERDICT)
+            // ══════════════════════════════════════════════════════════════════
+            var resultsOverlayGO = CreateUIObject("ResultsOverlay", rootGO.transform);
+            var roRect = resultsOverlayGO.GetComponent<RectTransform>();
+            SetAnchor(roRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            var roBg = resultsOverlayGO.AddComponent<Image>();
+            roBg.color = new Color(0.05f, 0.05f, 0.07f, 0.88f); // Dark grey dimmer over entire game
+            roBg.raycastTarget = true;
+
+            var resultsModalGO = CreateUIObject("ResultsModal", resultsOverlayGO.transform);
+            var rmRect = resultsModalGO.GetComponent<RectTransform>();
+            rmRect.anchorMin = new Vector2(0.5f, 0.5f);
+            rmRect.anchorMax = new Vector2(0.5f, 0.5f);
+            rmRect.sizeDelta = new Vector2(800, 600);
+            rmRect.anchoredPosition = Vector2.zero;
+            var rmImg = resultsModalGO.AddComponent<Image>();
+            rmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
+            rmImg.type = Image.Type.Sliced;
+
+            // Verdict Header
+            var rmHeaderGO = CreateUIObject("VerdictHeader", resultsModalGO.transform);
+            var rmhRect = rmHeaderGO.GetComponent<RectTransform>();
+            SetAnchor(rmhRect, new Vector2(0.04f, 0.87f), new Vector2(0.96f, 0.97f), Vector2.zero, Vector2.zero);
+            var rmhImg = rmHeaderGO.AddComponent<Image>();
+            rmhImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            rmhImg.type = Image.Type.Sliced;
+            var verdictTitleTxt = CreateText(rmHeaderGO.transform, "Title", "SECOND DATE SECURED!", 24, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            // Outcome Narrative Box
+            var narrativeBoxGO = CreateUIObject("NarrativeBox", resultsModalGO.transform);
+            var nbRect = narrativeBoxGO.GetComponent<RectTransform>();
+            SetAnchor(nbRect, new Vector2(0.04f, 0.56f), new Vector2(0.96f, 0.85f), Vector2.zero, Vector2.zero);
+            var nbImg = narrativeBoxGO.AddComponent<Image>();
+            nbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            nbImg.type = Image.Type.Sliced;
+            var verdictBodyTxt = CreateText(narrativeBoxGO.transform, "Body", "Maya smiled warmly...", 16, FontStyle.Normal, Color.white, TextAnchor.UpperLeft,
+                new Vector2(0.03f, 0.05f), new Vector2(0.97f, 0.95f), defaultFont);
+
+            // Maya's Final Quote
+            var quoteBoxGO = CreateUIObject("QuoteBox", resultsModalGO.transform);
+            var qbRect = quoteBoxGO.GetComponent<RectTransform>();
+            SetAnchor(qbRect, new Vector2(0.04f, 0.42f), new Vector2(0.96f, 0.54f), Vector2.zero, Vector2.zero);
+            var quoteTxt = CreateText(quoteBoxGO.transform, "Quote", "\"I had such a wonderful time today!\"", 15, FontStyle.Italic, new Color(0.98f, 0.86f, 0.52f, 1f), TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, defaultFont);
+
+            // Stats Section (Inside Inset Box)
+            var statsBoxGO = CreateUIObject("StatsBox", resultsModalGO.transform);
+            var rsbRect = statsBoxGO.GetComponent<RectTransform>();
+            SetAnchor(rsbRect, new Vector2(0.04f, 0.16f), new Vector2(0.96f, 0.40f), Vector2.zero, Vector2.zero);
+            var rsbImg = statsBoxGO.AddComponent<Image>();
+            rsbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            rsbImg.type = Image.Type.Sliced;
+
+            var tierBadgeTxt = CreateText(statsBoxGO.transform, "TierBadge", "OUTCOME: TIER 4 - PASSIONATE CHEMISTRY", 15, FontStyle.Bold, new Color(0.43f, 0.90f, 0.72f, 1f), TextAnchor.MiddleCenter,
+                new Vector2(0.04f, 0.68f), new Vector2(0.96f, 0.95f), pixelFont);
+
+            // Connection Progress Row
+            var connScoreTxt = CreateText(statsBoxGO.transform, "ConnScore", "CONNECTION: 85 / 100", 14, FontStyle.Bold, VisualTheme.ColorConnection, TextAnchor.MiddleLeft,
+                new Vector2(0.05f, 0.38f), new Vector2(0.35f, 0.65f), defaultFont);
+
+            var connBarBgGO = CreateUIObject("ConnBarBg", statsBoxGO.transform);
+            var cbRect = connBarBgGO.GetComponent<RectTransform>();
+            SetAnchor(cbRect, new Vector2(0.36f, 0.40f), new Vector2(0.95f, 0.62f), Vector2.zero, Vector2.zero);
+            var cbImg = connBarBgGO.AddComponent<Image>();
+            cbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
+            cbImg.type = Image.Type.Sliced;
+
+            var connFillGO = CreateUIObject("ConnFill", connBarBgGO.transform);
+            var cfRect = connFillGO.GetComponent<RectTransform>();
+            SetAnchor(cfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            var connBarFill = connFillGO.AddComponent<Image>();
+            connBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_yellow");
+            connBarFill.type = Image.Type.Filled;
+            connBarFill.fillMethod = Image.FillMethod.Horizontal;
+            connBarFill.fillAmount = 0.85f;
+
+            // Composure Progress Row
+            var compScoreTxt = CreateText(statsBoxGO.transform, "CompScore", "COMPOSURE: 70 / 100", 14, FontStyle.Bold, VisualTheme.ColorComposure, TextAnchor.MiddleLeft,
+                new Vector2(0.05f, 0.08f), new Vector2(0.35f, 0.35f), defaultFont);
+
+            var compBarBgGO = CreateUIObject("CompBarBg", statsBoxGO.transform);
+            var compbRect = compBarBgGO.GetComponent<RectTransform>();
+            SetAnchor(compbRect, new Vector2(0.36f, 0.10f), new Vector2(0.95f, 0.32f), Vector2.zero, Vector2.zero);
+            var compbImg = compBarBgGO.AddComponent<Image>();
+            compbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
+            compbImg.type = Image.Type.Sliced;
+
+            var compFillGO = CreateUIObject("CompFill", compBarBgGO.transform);
+            var compfRect = compFillGO.GetComponent<RectTransform>();
+            SetAnchor(compfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            var compBarFill = compFillGO.AddComponent<Image>();
+            compBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_red");
+            compBarFill.type = Image.Type.Filled;
+            compBarFill.fillMethod = Image.FillMethod.Horizontal;
+            compBarFill.fillAmount = 0.70f;
+
+            // Buttons: Main Menu & Play Again
+            var resultsMenuBtnGO = CreateUIObject("MainMenuButton", resultsModalGO.transform);
+            var rmbRect = resultsMenuBtnGO.GetComponent<RectTransform>();
+            rmbRect.anchorMin = new Vector2(0.5f, 0.5f);
+            rmbRect.anchorMax = new Vector2(0.5f, 0.5f);
+            rmbRect.sizeDelta = new Vector2(230, 48);
+            rmbRect.anchoredPosition = new Vector2(-130, -250);
+            var rmbImg = resultsMenuBtnGO.AddComponent<Image>();
+            rmbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
+            rmbImg.type = Image.Type.Sliced;
+            var resultsMenuBtn = resultsMenuBtnGO.AddComponent<Button>();
+            CreateText(resultsMenuBtnGO.transform, "Label", "MAIN MENU", 18, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            var resultsRetryBtnGO = CreateUIObject("PlayAgainButton", resultsModalGO.transform);
+            var rrbRect = resultsRetryBtnGO.GetComponent<RectTransform>();
+            rrbRect.anchorMin = new Vector2(0.5f, 0.5f);
+            rrbRect.anchorMax = new Vector2(0.5f, 0.5f);
+            rrbRect.sizeDelta = new Vector2(230, 48);
+            rrbRect.anchoredPosition = new Vector2(130, -250);
+            var rrbImg = resultsRetryBtnGO.AddComponent<Image>();
+            rrbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
+            rrbImg.type = Image.Type.Sliced;
+            var resultsRetryBtn = resultsRetryBtnGO.AddComponent<Button>();
+            CreateText(resultsRetryBtnGO.transform, "Label", "PLAY AGAIN", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
+
+            resultsOverlayGO.SetActive(false);
+
+            // Wire into coreUI
+            coreUI.WireOverlays(
+                pauseBtn,
+                pauseOverlayGO,
+                resumeBtn,
+                pauseMenuBtn,
+                resultsOverlayGO,
+                verdictTitleTxt,
+                verdictBodyTxt,
+                quoteTxt,
+                connScoreTxt,
+                connBarFill,
+                compScoreTxt,
+                compBarFill,
+                tierBadgeTxt,
+                resultsMenuBtn,
+                resultsRetryBtn);
 
             return coreUI;
         }

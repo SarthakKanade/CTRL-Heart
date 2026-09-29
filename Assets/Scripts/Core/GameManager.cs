@@ -7,6 +7,7 @@ using CtrlHeart.Core.Systems;
 using CtrlHeart.Core.UI;
 using CtrlHeart.Core.Visuals;
 using CtrlHeart.Core.Testing;
+using CtrlHeart.Core.Audio;
 
 namespace CtrlHeart.Core
 {
@@ -36,6 +37,7 @@ namespace CtrlHeart.Core
         [SerializeField] private SocialEventEngine eventEngine;
         [SerializeField] private DialogueManager dialogueManager;
         [SerializeField] private CoreGameUI ui;
+        [SerializeField] private AudioFeedbackManager audioFeedback;
 
         [Header("Phase Timing (Total 30s per slot)")]
         [SerializeField] private float rtsPhaseDuration = 20.0f;
@@ -76,6 +78,10 @@ namespace CtrlHeart.Core
             if (eventEngine == null) eventEngine = GetComponent<SocialEventEngine>() ?? gameObject.AddComponent<SocialEventEngine>();
             if (dialogueManager == null) dialogueManager = GetComponent<DialogueManager>() ?? gameObject.AddComponent<DialogueManager>();
             if (ui == null) ui = FindFirstObjectByType<CoreGameUI>();
+            if (audioFeedback == null) audioFeedback = AudioFeedbackManager.Instance ?? FindFirstObjectByType<AudioFeedbackManager>();
+
+            // Start ambient cafe BGM playlist (Blithe A & B -> Cafe playlist)
+            audioFeedback?.StartBGM();
 
             mindMap.InitializeNodes();
             eventEngine.Initialize(mindMap, resources);
@@ -354,6 +360,8 @@ namespace CtrlHeart.Core
                 ui.OnEmotionInjected(targetNode, emotion);
             }
 
+            audioFeedback?.PlayEmotionDropSFX(emotion);
+
             RefreshProjectedAnswerPreview();
 
             Debug.Log($"<color=cyan>[GameManager] Player deployed {emotion} onto {targetNode} (-15 Oxygen)</color>");
@@ -378,6 +386,10 @@ namespace CtrlHeart.Core
             {
                 ui.UpdateResourceBars(state);
             }
+            if (audioFeedback != null)
+            {
+                audioFeedback.UpdateComposureHeartbeat(state.composure);
+            }
         }
 
         private void TriggerEnding(EndingType ending)
@@ -386,11 +398,16 @@ namespace CtrlHeart.Core
             var data = EndingsData.GetEnding(ending);
             Debug.Log($"<color=magenta>=== DATE ENDED: {data.title} ===</color>\n{data.summary}\nDate: {data.dateFinalQuote}");
 
+            // Resolve ending BGM (plays Till Death Do Us Part if second date agreed!)
+            if (audioFeedback == null) audioFeedback = AudioFeedbackManager.Instance ?? FindFirstObjectByType<AudioFeedbackManager>();
+            audioFeedback?.OnDateEnding(ending);
+
             if (ui != null)
             {
                 ui.SetupRtsPhase(currentSlotIndex, ConnectionTier.Tier0_Collapse, $"[DATE COMPLETE: {data.title.ToUpper()}]", 0f);
                 ui.SetupPlayerReplyPhase(data.summary, EmotionState.Calm, 0f);
                 ui.SetupDateReactionPhase(data.dateFinalQuote, "polite_smile", 0f, 0f);
+                ui.ShowEndResults(ending, resources.CurrentState);
             }
         }
     }

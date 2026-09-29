@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using CtrlHeart.Core.Data;
 using CtrlHeart.Core.Visuals;
@@ -62,6 +63,25 @@ namespace CtrlHeart.Core.UI
         [SerializeField] private UINeuralPathways neuralPathways;
         [SerializeField] private UIFloatingFeedback floatingFeedback;
 
+        [Header("Pause System")]
+        [SerializeField] private Button pauseButton;
+        [SerializeField] private GameObject pauseOverlayPanel;
+        [SerializeField] private Button pauseResumeButton;
+        [SerializeField] private Button pauseMainMenuButton;
+
+        [Header("End Game Results Overlay")]
+        [SerializeField] private GameObject resultsOverlayPanel;
+        [SerializeField] private Text resultsVerdictTitleText;
+        [SerializeField] private Text resultsVerdictBodyText;
+        [SerializeField] private Text resultsQuoteText;
+        [SerializeField] private Text resultsConnectionScoreText;
+        [SerializeField] private Image resultsConnectionBarFill;
+        [SerializeField] private Text resultsComposureScoreText;
+        [SerializeField] private Image resultsComposureBarFill;
+        [SerializeField] private Text resultsTierBadgeText;
+        [SerializeField] private Button resultsMainMenuButton;
+        [SerializeField] private Button resultsPlayAgainButton;
+
         private readonly Dictionary<InternalNodeType, UINodeView> nodeViews = new Dictionary<InternalNodeType, UINodeView>();
         private readonly Dictionary<CoreEmotion, UIEmotionDraggable> emotionDraggables = new Dictionary<CoreEmotion, UIEmotionDraggable>();
 
@@ -73,9 +93,51 @@ namespace CtrlHeart.Core.UI
                 return;
             }
             Instance = this;
+            Time.timeScale = 1f;
             EnsureInputModule();
             EnsureCameraBinding();
             AutoDiscoverHierarchyComponents();
+            BindOverlayButtons();
+        }
+
+        private void BindOverlayButtons()
+        {
+            if (pauseButton != null)
+            {
+                pauseButton.onClick.RemoveAllListeners();
+                pauseButton.onClick.AddListener(PauseGame);
+            }
+            if (pauseResumeButton != null)
+            {
+                pauseResumeButton.onClick.RemoveAllListeners();
+                pauseResumeButton.onClick.AddListener(ResumeGame);
+            }
+            if (pauseMainMenuButton != null)
+            {
+                pauseMainMenuButton.onClick.RemoveAllListeners();
+                pauseMainMenuButton.onClick.AddListener(GoToMainMenu);
+            }
+            if (resultsMainMenuButton != null)
+            {
+                resultsMainMenuButton.onClick.RemoveAllListeners();
+                resultsMainMenuButton.onClick.AddListener(GoToMainMenu);
+            }
+            if (resultsPlayAgainButton != null)
+            {
+                resultsPlayAgainButton.onClick.RemoveAllListeners();
+                resultsPlayAgainButton.onClick.AddListener(RestartGame);
+            }
+        }
+
+        private void Update()
+        {
+            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                if (resultsOverlayPanel == null || !resultsOverlayPanel.activeSelf)
+                {
+                    TogglePause();
+                }
+            }
         }
 
         public void AutoDiscoverHierarchyComponents()
@@ -485,6 +547,176 @@ namespace CtrlHeart.Core.UI
         public void SetDateExpression(string animationClipTag)
         {
             if (dateVisuals != null) dateVisuals.SetExpressionFromTag(animationClipTag);
+        }
+
+        public void WireOverlays(
+            Button pauseBtn,
+            GameObject pausePanel,
+            Button resumeBtn,
+            Button pauseMenuBtn,
+            GameObject resultsPanel,
+            Text verdictTitle,
+            Text verdictBody,
+            Text quoteTxt,
+            Text connScoreTxt,
+            Image connBarFill,
+            Text compScoreTxt,
+            Image compBarFill,
+            Text tierBadge,
+            Button resultsMenuBtn,
+            Button resultsRetryBtn)
+        {
+            pauseButton = pauseBtn;
+            pauseOverlayPanel = pausePanel;
+            pauseResumeButton = resumeBtn;
+            pauseMainMenuButton = pauseMenuBtn;
+
+            resultsOverlayPanel = resultsPanel;
+            resultsVerdictTitleText = verdictTitle;
+            resultsVerdictBodyText = verdictBody;
+            resultsQuoteText = quoteTxt;
+            resultsConnectionScoreText = connScoreTxt;
+            resultsConnectionBarFill = connBarFill;
+            resultsComposureScoreText = compScoreTxt;
+            resultsComposureBarFill = compBarFill;
+            resultsTierBadgeText = tierBadge;
+            resultsMainMenuButton = resultsMenuBtn;
+            resultsPlayAgainButton = resultsRetryBtn;
+
+            BindOverlayButtons();
+        }
+
+        public void TogglePause()
+        {
+            if (Time.timeScale == 0f)
+                ResumeGame();
+            else
+                PauseGame();
+        }
+
+        public void PauseGame()
+        {
+            Time.timeScale = 0f;
+            if (pauseOverlayPanel != null)
+                pauseOverlayPanel.SetActive(true);
+        }
+
+        public void ResumeGame()
+        {
+            Time.timeScale = 1f;
+            if (pauseOverlayPanel != null)
+                pauseOverlayPanel.SetActive(false);
+        }
+
+        public void GoToMainMenu()
+        {
+            Time.timeScale = 1f;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenuScene");
+        }
+
+        public void RestartGame()
+        {
+            Time.timeScale = 1f;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainDateScene");
+        }
+
+        public void ShowEndResults(EndingType ending, ResourceState finalResources)
+        {
+            if (resultsOverlayPanel == null) return;
+
+            resultsOverlayPanel.SetActive(true);
+
+            var endingData = EndingsData.GetEnding(ending);
+            var tier = finalResources.GetConnectionTier();
+            float conn = Mathf.Clamp(finalResources.connection, 0f, 100f);
+            float comp = Mathf.Clamp(finalResources.composure, 0f, 100f);
+
+            // Determine verdict narrative
+            string verdictTitle;
+            string verdictBody;
+
+            if (ending == EndingType.SecondDate_Tier3_4)
+            {
+                if (conn >= 80f)
+                {
+                    verdictTitle = "SHE ASKED YOU TO COME OVER!";
+                    verdictBody = "Maya leaned in with a warm, genuine smile: <i>“I really don't want this evening to end yet... Want to come over to my place? I have that vinyl record we were talking about.”</i>\n\n<color=#4ADE80><b>Verdict:</b> Exceptional romantic chemistry! You unlocked the deepest connection.</color>";
+                }
+                else
+                {
+                    verdictTitle = "SECOND DATE SECURED!";
+                    verdictBody = "Maya smiled warmly, holding your gaze: <i>“I had such a wonderful time tonight. Can we do this again this Saturday?”</i>\n\n<color=#4ADE80><b>Verdict:</b> Mutual attraction & comfort! She wants to see you again.</color>";
+                }
+            }
+            else if (ending == EndingType.Maybe_Tier2)
+            {
+                verdictTitle = "THE 'MAYBE' ZONE";
+                verdictBody = "A sweet, lingering smile and a gentle hug goodbye at the station. She said she'd text you later—the door is gently open, but left uncertain.\n\n<color=#FBBF24><b>Verdict:</b> Pleasant rapport, but needs more boldness next time.</color>";
+            }
+            else if (ending == EndingType.AwkwardEnding_Tier1)
+            {
+                verdictTitle = "POLITE FAREWELL";
+                verdictBody = "The conversation stayed polite, but the romantic spark never ignited. Maya waved goodbye with a soft smile and slipped into the evening crowd.\n\n<color=#F87171><b>Verdict:</b> Awkward friction hung between your words.</color>";
+            }
+            else if (ending == EndingType.Meltdown_ComposureZero)
+            {
+                verdictTitle = "AUTONOMIC MELTDOWN!";
+                verdictBody = "Composure plummeted to zero! Heart rate spiked frantically, hands shook, and your internal control system tripped the emergency brake.\n\n<color=#EF4444><b>Verdict:</b> Overstimulated panic spiral caused an abrupt end to the date.</color>";
+            }
+            else // DateCollapse_Tier0
+            {
+                verdictTitle = "DATE COLLAPSED";
+                verdictBody = "Connection dropped into icy silence. Maya found an early excuse to catch an early train home.\n\n<color=#EF4444><b>Verdict:</b> Emotional detachment severed all chemistry.</color>";
+            }
+
+            if (resultsVerdictTitleText != null)
+            {
+                resultsVerdictTitleText.text = verdictTitle;
+                resultsVerdictTitleText.color = endingData.bannerColor;
+            }
+
+            if (resultsVerdictBodyText != null)
+            {
+                resultsVerdictBodyText.text = $"{verdictBody}\n\n<size=14><color=#E2E8F0>{endingData.summary}</color></size>";
+            }
+
+            if (resultsQuoteText != null)
+            {
+                resultsQuoteText.text = $"Maya: {endingData.dateFinalQuote}";
+            }
+
+            if (resultsConnectionScoreText != null)
+            {
+                resultsConnectionScoreText.text = $"CONNECTION: {conn:F0} / 100";
+            }
+
+            if (resultsConnectionBarFill != null)
+            {
+                resultsConnectionBarFill.fillAmount = conn / 100f;
+            }
+
+            if (resultsComposureScoreText != null)
+            {
+                resultsComposureScoreText.text = $"COMPOSURE: {comp:F0} / 100";
+            }
+
+            if (resultsComposureBarFill != null)
+            {
+                resultsComposureBarFill.fillAmount = comp / 100f;
+            }
+
+            if (resultsTierBadgeText != null)
+            {
+                string tierName = tier switch
+                {
+                    ConnectionTier.Tier4_SecondDate => "Tier 4: Passionate Chemistry",
+                    ConnectionTier.Tier3_Strong => "Tier 3: Mutual Spark",
+                    ConnectionTier.Tier2_Maybe => "Tier 2: Polite Rapport",
+                    ConnectionTier.Tier1_Awkward => "Tier 1: Awkward Friction",
+                    _ => "Tier 0: Detached"
+                };
+                resultsTierBadgeText.text = $"OUTCOME: {tierName.ToUpper()}";
+            }
         }
     }
 }

@@ -43,11 +43,25 @@ namespace CtrlHeart.Core.UI
                 "rpg_icon_cross_brown" => "Assets/kenney_ui-pack-rpg-expansion/PNG/iconCross_brown.png",
                 "rpg_icon_circle_brown" => "Assets/kenney_ui-pack-rpg-expansion/PNG/iconCircle_brown.png",
                 "rpg_icon_circle_beige" => "Assets/kenney_ui-pack-rpg-expansion/PNG/iconCircle_beige.png",
+                "rpg_icon_cross_beige" => "Assets/kenney_ui-pack-rpg-expansion/PNG/iconCross_beige.png",
                 "rpg_icon_check_bronze" => "Assets/kenney_ui-pack-rpg-expansion/PNG/iconCheck_bronze.png",
                 "rpg_button_square_grey" => "Assets/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_grey.png",
                 "rpg_sprout_dialog" => "Assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box  big.png",
                 _ => null
             };
+
+            if (key == "sprout_play_button")
+            {
+                var subAssets = UnityEditor.AssetDatabase.LoadAllAssetsAtPath("Assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Big Play Button.png");
+                foreach (var a in subAssets)
+                {
+                    if (a is Sprite s && s.name == "UI Big Play Button_0")
+                    {
+                        cachedSprites[key] = s;
+                        return s;
+                    }
+                }
+            }
 
             if (!string.IsNullOrEmpty(rpgPath))
             {
@@ -80,6 +94,8 @@ namespace CtrlHeart.Core.UI
                 "icon_attraction" => CreateHeartSprite(128),
                 "icon_ecg" => CreatePulseIconSprite(128),
                 "icon_warning" => CreateWarningSprite(128),
+                "icon_book" => CreateBookSprite(128),
+                "icon_pause" => CreatePauseSprite(128),
                 "cell_impulse" => CreateImpulseCellSprite(64),
                 "ring_node" => CreateNodeRingSprite(256),
                 "panel_glass" => CreateGlassPanelSprite(128),
@@ -589,6 +605,113 @@ namespace CtrlHeart.Core.UI
                     }
 
                     tex.SetPixel(x, y, new Color(col.r, col.g, col.b, col.a * alpha));
+                }
+            }
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), 100f);
+        }
+
+        public static Sprite CreateBookSprite(int size = 128)
+        {
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            tex.filterMode = FilterMode.Bilinear;
+
+            for (int y = 0; y < size; y++)
+            {
+                for (int x = 0; x < size; x++)
+                {
+                    float nx = (x / (float)size) * 2f - 1f; // -1 to 1
+                    float ny = (y / (float)size) * 2f - 1f; // -1 to 1
+
+                    // Book dimensions
+                    if (Mathf.Abs(nx) > 0.85f || Mathf.Abs(ny) > 0.72f)
+                    {
+                        tex.SetPixel(x, y, Color.clear);
+                        continue;
+                    }
+
+                    // Leather cover outline / spine
+                    float coverDist = Mathf.Max(Mathf.Abs(nx) - 0.82f, Mathf.Abs(ny) - 0.70f);
+                    if (coverDist > 0f)
+                    {
+                        tex.SetPixel(x, y, Color.clear);
+                        continue;
+                    }
+
+                    // Spine in the middle
+                    bool isSpine = Mathf.Abs(nx) < 0.07f;
+
+                    // Left and right pages
+                    float pageDist = Mathf.Max(Mathf.Abs(nx) - 0.75f, Mathf.Abs(ny) - 0.63f);
+                    bool isPage = pageDist <= 0f && !isSpine;
+
+                    // Bookmark ribbon hanging down
+                    bool isRibbon = (nx > 0.02f && nx < 0.12f && ny > -0.80f && ny < 0.55f);
+
+                    Color col;
+                    if (isRibbon)
+                    {
+                        col = new Color(0.85f, 0.20f, 0.22f, 1f); // Crimson ribbon
+                        if (ny < -0.68f) col = new Color(0.72f, 0.15f, 0.18f, 1f); // darker ribbon tip
+                    }
+                    else if (isSpine)
+                    {
+                        col = new Color(0.35f, 0.18f, 0.08f, 1f); // Dark leather spine
+                    }
+                    else if (isPage)
+                    {
+                        // Slight page curvature shading
+                        float curve = Mathf.Sin((Mathf.Abs(nx) - 0.07f) / 0.68f * Mathf.PI);
+                        float shade = 0.92f + 0.08f * curve;
+                        col = new Color(0.98f * shade, 0.95f * shade, 0.88f * shade, 1f); // Parchment
+
+                        // Page margin crease
+                        if (Mathf.Abs(nx) < 0.14f)
+                        {
+                            col = new Color(0.82f, 0.78f, 0.70f, 1f);
+                        }
+
+                        // Decorative text lines
+                        float lineY = (ny + 0.45f) * 8f;
+                        int lineIndex = Mathf.FloorToInt(lineY);
+                        float fract = lineY - lineIndex;
+                        if (lineIndex >= 1 && lineIndex <= 6 && fract > 0.65f && Mathf.Abs(nx) > 0.20f && Mathf.Abs(nx) < 0.68f)
+                        {
+                            col = new Color(0.65f, 0.58f, 0.50f, 0.9f); // Soft ink lines
+                        }
+                    }
+                    else
+                    {
+                        // Leather cover trim
+                        col = new Color(0.48f, 0.26f, 0.12f, 1f); // Warm leather brown
+                    }
+
+                    tex.SetPixel(x, y, col);
+                }
+            }
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), 100f);
+        }
+
+        public static Sprite CreatePauseSprite(int size = 128)
+        {
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            tex.filterMode = FilterMode.Bilinear;
+
+            for (int y = 0; y < size; y++)
+            {
+                for (int x = 0; x < size; x++)
+                {
+                    float nx = (x / (float)size) * 2f - 1f; // -1 to 1
+                    float ny = (y / (float)size) * 2f - 1f; // -1 to 1
+
+                    // Two vertical bars: bar 1 at nx in [-0.55, -0.15], bar 2 at nx in [0.15, 0.55], ny in [-0.60, 0.60]
+                    float bar1 = Mathf.Max(Mathf.Abs(nx + 0.35f) - 0.18f, Mathf.Abs(ny) - 0.55f);
+                    float bar2 = Mathf.Max(Mathf.Abs(nx - 0.35f) - 0.18f, Mathf.Abs(ny) - 0.55f);
+                    float d = Mathf.Min(bar1, bar2);
+
+                    float alpha = Mathf.Clamp01(0.5f - d * (size * 0.5f));
+                    tex.SetPixel(x, y, new Color(1f, 0.97f, 0.90f, alpha));
                 }
             }
             tex.Apply();
