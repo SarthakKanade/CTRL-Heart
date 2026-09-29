@@ -52,10 +52,69 @@ namespace CtrlHeart.Core.Visuals
         [SerializeField] private float breathSpeed = 1.8f;
         [SerializeField] private float breathScaleMagnitude = 0.015f;
 
+        [Header("Clip Transition Crossfade")]
+        /// <remarks>
+        /// fadeOut starts near the END of the current beat — gives a natural animation-ending feel.
+        /// fadeIn happens at the START of the next beat — the new clip emerges smoothly.
+        /// holdDuration = brief pause at minAlpha between clips (the actual clip-swap moment).
+        /// </remarks>
+        [SerializeField] private float crossfadeFadeOutDuration = 0.28f;
+        [SerializeField] private float crossfadeFadeInDuration  = 0.35f;
+        [SerializeField] [Range(0f,1f)] private float crossfadeMinAlpha = 0.0f;
+        [SerializeField] private float crossfadeHoldDuration = 0.06f;
+
+        /// <summary>
+        /// Per-clip scale multipliers for sprite sheets where the artist drew the character
+        /// larger or smaller than the baseline 1.0x Idle sheet (Eaya-idle_).
+        /// </summary>
+        private static readonly Dictionary<string, float> ClipScaleTable = new Dictionary<string, float>
+        {
+            // Small clips (drawn smaller by artist) -> scale UP to match Idle
+            { "Date_Swirling_Drink",          1.065f },
+            { "Date_Eating_Sipping",          1.065f },
+
+            // Big clips (drawn larger / higher by artist) -> scale DOWN to match Idle
+            { "Date_Talk_Teasing_Smug",       0.927f },
+            { "Date_Talk_Serious_Vulnerable", 0.935f },
+            { "Date_Warm_Interest",           0.954f },
+            { "Date_Hair_Tuck_Shy",           0.958f },
+            { "Date_Sympathetic_Concern",     0.958f },
+            { "Date_Talk_Happy_Warm",         0.962f },
+            { "Date_Pull_Off",                0.962f },
+            { "Date_React_Flirty_Wink",       0.962f },
+        };
+
+        /// <summary>
+        /// Per-clip position offsets (in canvas units) to keep the character's base grounded
+        /// at the table and horizontally centered across all clip transitions.
+        /// </summary>
+        private static readonly Dictionary<string, Vector2> ClipOffsetTable = new Dictionary<string, Vector2>
+        {
+            // Small clips: upward offset cancels downward shift caused by top-pivot (0.5, 1.0) scaling
+            { "Date_Swirling_Drink",          new Vector2( 6.9f,  40.6f) },
+            { "Date_Eating_Sipping",          new Vector2( 3.8f,  40.8f) },
+
+            // Big clips: downward offset keeps base seated firmly at table level
+            { "Date_Talk_Teasing_Smug",       new Vector2(-4.2f, -44.8f) },
+            { "Date_Talk_Serious_Vulnerable", new Vector2(-1.7f, -41.8f) },
+            { "Date_Warm_Interest",           new Vector2(-3.4f, -27.6f) },
+            { "Date_Hair_Tuck_Shy",           new Vector2(-2.1f, -24.8f) },
+            { "Date_Sympathetic_Concern",     new Vector2(-6.4f, -24.8f) },
+            { "Date_Talk_Happy_Warm",         new Vector2( 2.0f, -24.7f) },
+            { "Date_Pull_Off",                new Vector2( 2.0f, -24.6f) },
+            { "Date_React_Flirty_Wink",       new Vector2( 0.7f, -21.7f) },
+
+            // Leaning in: smooth horizontal compensation so she leans naturally without snapping
+            { "Date_Leaning_In_Table",        new Vector2(15.0f,  -6.2f) },
+        };
+
         private RectTransform portraitRect;
         private Vector3 initialScale = Vector3.one;
+        private Vector2 initialAnchoredPos = Vector2.zero;
+        private float currentClipScale = 1f;  // set by ApplyClipScale; breathing multiplies on top
         private DateExpressionArchetype currentArchetype = DateExpressionArchetype.Neutral;
         private Coroutine activeReturnToIdleCoroutine;
+        private Coroutine activeCrossfadeCoroutine;
 
         // Current active state name
         private string currentPlayingClip = "Idle";
@@ -70,6 +129,7 @@ namespace CtrlHeart.Core.Visuals
                 portraitImage.preserveAspect = true;
                 portraitRect = portraitImage.GetComponent<RectTransform>();
                 initialScale = portraitRect != null ? portraitRect.localScale : Vector3.one;
+                initialAnchoredPos = portraitRect != null ? portraitRect.anchoredPosition : Vector2.zero;
             }
 
             if (characterAnimator == null)
@@ -92,7 +152,12 @@ namespace CtrlHeart.Core.Visuals
             if (enableProceduralBreathing && portraitRect != null)
             {
                 float breath = Mathf.Sin(Time.time * breathSpeed) * breathScaleMagnitude;
-                portraitRect.localScale = new Vector3(initialScale.x + breath, initialScale.y + breath, initialScale.z);
+                float s = currentClipScale;
+                portraitRect.localScale = new Vector3(
+                    initialScale.x * s + breath,
+                    initialScale.y * s + breath,
+                    initialScale.z
+                );
             }
         }
 
@@ -101,23 +166,14 @@ namespace CtrlHeart.Core.Visuals
         // ═══════════════════════════════════════════════════════════════════
 
         /// <summary>
-        /// Plays the default resting idle animation.
-        /// Primary is Eaya-idle_ (Date_Idle). Alternate is Maya-idle_maya_slow (Date_Idle_Slow) for recovery beats.
+        /// Plays the default resting idle animation (Date_Idle / Eaya-idle_).
         /// </summary>
-        public void PlayIdle(bool useSlow = false)
+        public void PlayIdle()
         {
-            string trigger = useSlow ? "PlayIdleSlow" : "PlayIdle";
-            currentPlayingClip = useSlow ? "Date_Idle_Slow" : "Date_Idle";
+            currentPlayingClip = "Date_Idle";
             currentArchetype = DateExpressionArchetype.Neutral;
-
-            if (characterAnimator != null && characterAnimator.runtimeAnimatorController != null)
-            {
-                characterAnimator.ResetTrigger("PlayIdle");
-                characterAnimator.ResetTrigger("PlayIdleSlow");
-                characterAnimator.SetTrigger(trigger);
-            }
-
-            UpdateBadgeDisplay(useSlow ? "Resting (Calm Breather)" : "Resting / Listening", DateExpressionArchetype.Neutral);
+            CrossfadeTrigger("PlayIdle");
+            UpdateBadgeDisplay("Resting / Listening", DateExpressionArchetype.Neutral);
         }
 
         /// <summary>
@@ -136,30 +192,45 @@ namespace CtrlHeart.Core.Visuals
 
         private IEnumerator SequenceRoutine(List<(string clip, float duration)> sequence, Action onComplete)
         {
+            // Ensure we start at full opacity
+            SetAlpha(1f);
+
             for (int i = 0; i < sequence.Count; i++)
             {
                 var beat = sequence[i];
                 currentPlayingClip = beat.clip;
                 currentArchetype = MapClipTagToArchetype(beat.clip);
 
-                if (characterAnimator != null && characterAnimator.runtimeAnimatorController != null)
-                {
-                    try
-                    {
-                        characterAnimator.ResetTrigger(beat.clip);
-                        characterAnimator.SetTrigger(beat.clip);
-                    }
-                    catch
-                    {
-                        characterAnimator.SetTrigger("PlayIdle");
-                    }
-                }
+                // Apply per-clip scale correction (e.g. drinking sprites are 6.2% smaller)
+                ApplyClipScale(beat.clip);
+
+                // Fire the animator trigger (we are already at minAlpha from previous fade-out,
+                // or at 1.0 on the very first beat)
+                FireAnimTrigger(beat.clip);
 
                 UpdateBadgeDisplay(FormatClipDisplayName(beat.clip), currentArchetype);
-                Debug.Log($"<color=#FF99BB>[DateVisuals] Sequence Beat [{i + 1}/{sequence.Count}]: {beat.clip} ({beat.duration:F1}s)</color>");
+                Debug.Log($"<color=#FF99BB>[DateVisuals] Beat [{i + 1}/{sequence.Count}]: {beat.clip} ({beat.duration:F1}s)</color>");
 
-                yield return new WaitForSeconds(beat.duration);
+                // --- Fade IN slowly at the start of this beat ---
+                yield return FadeToAlpha(1f, crossfadeFadeInDuration);
+
+                // --- Hold at full opacity for the main body of the beat ---
+                float holdTime = beat.duration - crossfadeFadeInDuration - crossfadeFadeOutDuration - crossfadeHoldDuration;
+                if (holdTime > 0f)
+                    yield return new WaitForSeconds(holdTime);
+
+                // --- Fade OUT near the end of the beat ---
+                yield return FadeToAlpha(crossfadeMinAlpha, crossfadeFadeOutDuration);
+
+                // --- Brief hold at minAlpha: the clip-swap moment ---
+                if (crossfadeHoldDuration > 0f)
+                    yield return new WaitForSeconds(crossfadeHoldDuration);
+
+                // Loop continues: next iteration fires the new trigger while still at minAlpha
             }
+
+            // Restore scale to normal before returning to idle
+            ApplyClipScale("Date_Idle");
 
             activeReturnToIdleCoroutine = null;
             if (onComplete != null)
@@ -168,7 +239,105 @@ namespace CtrlHeart.Core.Visuals
             }
             else
             {
-                PlayIdle();
+                // Fire idle trigger while still at minAlpha, then fade in
+                currentPlayingClip = "Date_Idle";
+                currentArchetype = DateExpressionArchetype.Neutral;
+                FireAnimTrigger("PlayIdle");
+                UpdateBadgeDisplay("Resting / Listening", DateExpressionArchetype.Neutral);
+                yield return FadeToAlpha(1f, crossfadeFadeInDuration);
+            }
+        }
+
+        // ═══════════════════════════════════════════════════════════════════
+        // CROSSFADE HELPERS
+        // ═══════════════════════════════════════════════════════════════════
+
+        /// <summary>
+        /// Used by PlayIdle() and PlayTalking() (outside of sequences).
+        /// Dips to minAlpha, swaps clip, then fades back in.
+        /// </summary>
+        private void CrossfadeTrigger(string trigger)
+        {
+            if (activeCrossfadeCoroutine != null)
+                StopCoroutine(activeCrossfadeCoroutine);
+            activeCrossfadeCoroutine = StartCoroutine(CrossfadeSwitchRoutine(trigger));
+        }
+
+        private IEnumerator CrossfadeSwitchRoutine(string trigger)
+        {
+            yield return FadeToAlpha(crossfadeMinAlpha, crossfadeFadeOutDuration);
+            ApplyClipScale(trigger);
+            FireAnimTrigger(trigger);
+            if (crossfadeHoldDuration > 0f)
+                yield return new WaitForSeconds(crossfadeHoldDuration);
+            yield return FadeToAlpha(1f, crossfadeFadeInDuration);
+            activeCrossfadeCoroutine = null;
+        }
+
+        /// <summary>Lerps portraitImage alpha from current to target over duration seconds.</summary>
+        private IEnumerator FadeToAlpha(float target, float duration)
+        {
+            if (portraitImage == null || duration <= 0f)
+            {
+                if (portraitImage != null) SetAlpha(target);
+                yield break;
+            }
+            float elapsed = 0f;
+            Color c = portraitImage.color;
+            float start = c.a;
+            while (elapsed < duration)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                c.a = Mathf.Lerp(start, target, elapsed / duration);
+                portraitImage.color = c;
+                yield return null;
+            }
+            c.a = target;
+            portraitImage.color = c;
+        }
+
+        private void SetAlpha(float a)
+        {
+            if (portraitImage == null) return;
+            Color c = portraitImage.color;
+            c.a = a;
+            portraitImage.color = c;
+        }
+
+        /// <summary>
+        /// Applies localScale and anchoredPosition adjustments to portraitRect for clips where
+        /// the character was drawn at a different scale or position than the baseline Idle sheet.
+        /// Resets to initialScale and initialAnchoredPos for baseline clips.
+        /// </summary>
+        private void ApplyClipScale(string clipName)
+        {
+            if (portraitRect == null) return;
+            if (clipName == "PlayIdle") clipName = "Date_Idle";
+
+            float s = ClipScaleTable.TryGetValue(clipName, out float v) ? v : 1f;
+            Vector2 offset = ClipOffsetTable.TryGetValue(clipName, out Vector2 off) ? off : Vector2.zero;
+
+            currentClipScale = s;
+            portraitRect.localScale = new Vector3(
+                initialScale.x * s,
+                initialScale.y * s,
+                initialScale.z
+            );
+            portraitRect.anchoredPosition = initialAnchoredPos + offset;
+        }
+
+        /// <summary>Fires an Animator trigger safely, falling back to PlayIdle on failure.</summary>
+        private void FireAnimTrigger(string trigger)
+        {
+            if (characterAnimator == null || characterAnimator.runtimeAnimatorController == null) return;
+            try
+            {
+                characterAnimator.ResetTrigger(trigger);
+                characterAnimator.SetTrigger(trigger);
+            }
+            catch
+            {
+                characterAnimator.SetTrigger("PlayIdle");
             }
         }
 
@@ -189,13 +358,7 @@ namespace CtrlHeart.Core.Visuals
 
             currentPlayingClip = trigger;
             currentArchetype = DateExpressionArchetype.Talking;
-
-            if (characterAnimator != null && characterAnimator.runtimeAnimatorController != null)
-            {
-                characterAnimator.ResetTrigger(trigger);
-                characterAnimator.SetTrigger(trigger);
-            }
-
+            CrossfadeTrigger(trigger);
             UpdateBadgeDisplay(FormatClipDisplayName(trigger), DateExpressionArchetype.Talking);
         }
 
@@ -206,13 +369,7 @@ namespace CtrlHeart.Core.Visuals
         public void PlayScenarioIntro(int slotIndex, ConnectionTier tier, string promptText)
         {
             var sequence = MapScenarioToAnimationSequence(slotIndex, tier);
-
-            // Special recovery beat: Slot 6 Tier 2 uses alternate slow idle after eating/sipping
-            Action onDone = (slotIndex == 6 && tier == ConnectionTier.Tier2_Maybe)
-                ? () => PlayIdle(useSlow: true)
-                : (Action)null;
-
-            PlaySequence(sequence, onDone);
+            PlaySequence(sequence, null);
         }
 
         /// <summary>

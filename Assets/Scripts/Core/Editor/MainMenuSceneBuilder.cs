@@ -133,8 +133,8 @@ namespace CtrlHeart.Core.Editor
                 new Vector2(0f, 0.18f), new Vector2(1f, 0.40f), pixelFont);
 
             // Flavour Tagline
-            CreateText(titleBoxGO.transform, "TaglineText", "Balance your internal organs. Steady your pulse. Win Maya's heart.", 16, FontStyle.Italic, new Color(0.90f, 0.86f, 0.80f, 0.9f), TextAnchor.MiddleCenter,
-                new Vector2(0f, 0f), new Vector2(1f, 0.20f), defaultFont);
+            CreateText(titleBoxGO.transform, "TaglineText", "Balance your internal organs. Steady your pulse. Win Maya's heart.", 18, FontStyle.Normal, new Color(0.98f, 0.94f, 0.85f, 0.95f), TextAnchor.MiddleCenter,
+                new Vector2(0f, 0f), new Vector2(1f, 0.20f), pixelFont);
 
             // ── Center START / PLAY Button ──
             var playBtnGO = CreateUIObject("StartPlayButton", canvasGO.transform);
@@ -174,22 +174,22 @@ namespace CtrlHeart.Core.Editor
             biImg.raycastTarget = false;
 
             // Small label beneath book button
-            CreateText(bookBtnGO.transform, "BookLabel", "HOW TO PLAY", 11, FontStyle.Bold, new Color(1f, 0.92f, 0.70f, 1f), TextAnchor.UpperCenter,
-                new Vector2(-0.5f, -0.40f), new Vector2(1.5f, 0f), pixelFont);
+            CreateText(bookBtnGO.transform, "BookLabel", "HOW TO PLAY", 14, FontStyle.Bold, new Color(1f, 0.92f, 0.70f, 1f), TextAnchor.UpperCenter,
+                new Vector2(-0.5f, -0.42f), new Vector2(1.5f, 0f), pixelFont);
 
             // ── "How to Play" Overlay Canvas / Div ──
             var howToPlayOverlayGO = CreateUIObject("HowToPlayOverlay", canvasGO.transform);
             var htpRect = howToPlayOverlayGO.GetComponent<RectTransform>();
             SetAnchor(htpRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var htpoBg = howToPlayOverlayGO.AddComponent<Image>();
-            htpoBg.color = new Color(0.04f, 0.04f, 0.06f, 0.82f);
+            htpoBg.color = new Color(0.04f, 0.04f, 0.06f, 0.88f);
             htpoBg.raycastTarget = true;
 
             var htpModalGO = CreateUIObject("ModalPanel", howToPlayOverlayGO.transform);
             var htpmRect = htpModalGO.GetComponent<RectTransform>();
             htpmRect.anchorMin = new Vector2(0.5f, 0.5f);
             htpmRect.anchorMax = new Vector2(0.5f, 0.5f);
-            htpmRect.sizeDelta = new Vector2(860, 680);
+            htpmRect.sizeDelta = new Vector2(920, 720);
             htpmRect.anchoredPosition = Vector2.zero;
             var htpmImg = htpModalGO.AddComponent<Image>();
             htpmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
@@ -198,19 +198,20 @@ namespace CtrlHeart.Core.Editor
             // Modal Header Box
             var htpHeaderGO = CreateUIObject("HeaderBox", htpModalGO.transform);
             var htphRect = htpHeaderGO.GetComponent<RectTransform>();
-            SetAnchor(htphRect, new Vector2(0.04f, 0.88f), new Vector2(0.96f, 0.97f), Vector2.zero, Vector2.zero);
+            SetAnchor(htphRect, new Vector2(0.03f, 0.895f), new Vector2(0.97f, 0.975f), Vector2.zero, Vector2.zero);
             var htphImg = htpHeaderGO.AddComponent<Image>();
             htphImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             htphImg.type = Image.Type.Sliced;
+            htphImg.color = new Color(0.16f, 0.10f, 0.08f, 0.95f);
 
-            CreateText(htpHeaderGO.transform, "Title", "GUIDE: HOW TO PLAY CTRL+HEART", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(htpHeaderGO.transform, "Title", "GUIDE: HOW TO PLAY CTRL+HEART", 24, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             // Close Button (X in corner)
             var closeBtnGO = CreateUIObject("CloseButton", htpModalGO.transform);
             var cbRect = closeBtnGO.GetComponent<RectTransform>();
-            cbRect.anchorMin = new Vector2(0.93f, 0.89f);
-            cbRect.anchorMax = new Vector2(0.98f, 0.96f);
+            cbRect.anchorMin = new Vector2(0.93f, 0.905f);
+            cbRect.anchorMax = new Vector2(0.975f, 0.965f);
             cbRect.offsetMin = Vector2.zero;
             cbRect.offsetMax = Vector2.zero;
             var cbImg = closeBtnGO.AddComponent<Image>();
@@ -218,47 +219,64 @@ namespace CtrlHeart.Core.Editor
             cbImg.type = Image.Type.Sliced;
             var closeBtn = closeBtnGO.AddComponent<Button>();
 
-            CreateText(closeBtnGO.transform, "XText", "X", 18, FontStyle.Bold, new Color(0.95f, 0.4f, 0.4f, 1f), TextAnchor.MiddleCenter,
+            CreateText(closeBtnGO.transform, "XText", "X", 22, FontStyle.Bold, new Color(1f, 0.45f, 0.45f, 1f), TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
-            // Content Panel (Inset Beige/Brown)
+            // Content Panel (Cards Container)
             var contentBoxGO = CreateUIObject("ContentBox", htpModalGO.transform);
             var cbContRect = contentBoxGO.GetComponent<RectTransform>();
-            SetAnchor(cbContRect, new Vector2(0.04f, 0.14f), new Vector2(0.96f, 0.86f), Vector2.zero, Vector2.zero);
-            var cbContImg = contentBoxGO.AddComponent<Image>();
-            cbContImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
-            cbContImg.type = Image.Type.Sliced;
+            SetAnchor(cbContRect, new Vector2(0.03f, 0.12f), new Vector2(0.97f, 0.88f), Vector2.zero, Vector2.zero);
 
-            string guideText =
-                "<b><size=17><color=#FBBF24>1. THE DATE (10 SLOTS)</color></size></b>\n" +
-                "You are sitting across from Maya at an outdoor café. Each slot presents a conversational moment.\n\n" +
+            var vlg = contentBoxGO.AddComponent<VerticalLayoutGroup>();
+            vlg.spacing = 10;
+            vlg.padding = new RectOffset(0, 0, 0, 0);
+            vlg.childControlWidth = true;
+            vlg.childControlHeight = true;
+            vlg.childForceExpandWidth = true;
+            vlg.childForceExpandHeight = false;
 
-                "<b><size=17><color=#38BDF8>2. PHASE 1: RTS INTERVENTION (20 SECONDS)</color></size></b>\n" +
-                "Drag 4 core emotional affects onto your 5 internal organs to shape your thoughts:\n" +
-                " • <color=#60A5FA><b>Calm</b></color>: Stabilizes heart rate, protects composure, grounds speech.\n" +
-                " • <color=#C084FC><b>Anxiety</b></color>: Heightens alertness & sharp responses, but stresses composure.\n" +
-                " • <color=#FDE047><b>Confidence</b></color>: Drives playful banter and boldness; shines when Maya teases.\n" +
-                " • <color=#F87171><b>Attraction</b></color>: Deepens intimacy and vulnerability; creates romantic sparks.\n" +
-                "<b>Organs:</b> Brain (Logic), Voice (Speech), Heart (Passion), Body (Presence), Lungs (Generates Oxygen).\n" +
-                "<i>*Note: Deploying affects costs 15 Oxygen (supplied by Lungs).</i>\n\n" +
+            // Card 1: The Date
+            CreateInstructionCard(contentBoxGO.transform, "Card1_Date", 
+                "1. THE DATE (10 CONVERSATION TURNS)",
+                new Color(0.98f, 0.75f, 0.20f, 1f),
+                "You are sitting across from Maya at an outdoor cafe patio. Each conversational turn presents a social moment where Maya tests your personality, reacts to your autonomic state, or shares intimate thoughts.",
+                pixelFont, 82f);
 
-                "<b><size=17><color=#4ADE80>3. PHASE 2: YOUR SPOKEN WORDS (5 SECONDS)</color></size></b>\n" +
-                "Your autonomic organ balance dictates what words and tone you actually speak aloud!\n\n" +
+            // Card 2: RTS Intervention
+            CreateInstructionCard(contentBoxGO.transform, "Card2_Rts", 
+                "2. RTS INTERVENTION PHASE (20 SECONDS)",
+                new Color(0.22f, 0.74f, 0.97f, 1f),
+                "Deploy 4 core emotional affects onto your 5 internal organs to direct your responses:\n" +
+                "  - Calm (Blue): Stabilizes heart rate, protects composure, and grounds speech.\n" +
+                "  - Anxiety (Purple): Emergency alertness; rapid reflexes, but taxes composure.\n" +
+                "  - Confidence (Gold): Playful banter & bold charm; counters Maya's teasing.\n" +
+                "  - Attraction (Pink): Romantic warmth, emotional intimacy & sparks.\n" +
+                "Organs: Brain (Logic), Voice (Speech), Heart (Passion), Body (Presence), Lungs (Oxygen).\n" +
+                "Cost: Deploying an affect costs 15 Oxygen (supplied by Lungs).",
+                pixelFont, 192f);
 
-                "<b><size=17><color=#F472B6>4. PHASE 3: MAYA'S REACTION & THE VERDICT (5 SECONDS)</color></size></b>\n" +
+            // Card 3: Spoken Words
+            CreateInstructionCard(contentBoxGO.transform, "Card3_Words", 
+                "3. YOUR SPOKEN WORDS (5 SECONDS)",
+                new Color(0.29f, 0.87f, 0.50f, 1f),
+                "Your autonomic organ balance dictates what words and tone you actually speak aloud! Steady composure unlocks confident, charming lines.",
+                pixelFont, 80f);
+
+            // Card 4: Maya's Reaction & Verdict
+            CreateInstructionCard(contentBoxGO.transform, "Card4_Reaction", 
+                "4. MAYA'S REACTION & THE VERDICT (5 SECONDS)",
+                new Color(0.96f, 0.45f, 0.71f, 1f),
                 "Watch Maya's facial micro-expressions. If Composure hits 0, you suffer an autonomic Meltdown!\n" +
-                "Reach <b>Connection Tier 3 or 4</b> by Slot 10 to secure a second date—or even be invited over!";
-
-            CreateText(contentBoxGO.transform, "GuideBody", guideText, 14, FontStyle.Normal, new Color(0.96f, 0.94f, 0.90f, 1f), TextAnchor.UpperLeft,
-                new Vector2(0.04f, 0.03f), new Vector2(0.96f, 0.97f), defaultFont);
+                "Reach Connection Tier 3 or 4 by Turn 10 to secure a second date - or even be invited over!",
+                pixelFont, 85f);
 
             // Bottom Confirm Button: "UNDERSTOOD"
             var bottomBtnGO = CreateUIObject("UnderstoodButton", htpModalGO.transform);
             var btbRect = bottomBtnGO.GetComponent<RectTransform>();
             btbRect.anchorMin = new Vector2(0.5f, 0.5f);
             btbRect.anchorMax = new Vector2(0.5f, 0.5f);
-            btbRect.sizeDelta = new Vector2(260, 48);
-            btbRect.anchoredPosition = new Vector2(0, -295);
+            btbRect.sizeDelta = new Vector2(320, 52);
+            btbRect.anchoredPosition = new Vector2(0, -320);
 
             var btbImg = bottomBtnGO.AddComponent<Image>();
             btbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
@@ -266,7 +284,7 @@ namespace CtrlHeart.Core.Editor
             var bottomBtn = bottomBtnGO.AddComponent<Button>();
             bottomBtn.onClick.AddListener(menuController.OnCloseHowToPlay);
 
-            CreateText(bottomBtnGO.transform, "Label", "UNDERSTOOD", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(bottomBtnGO.transform, "Label", "GOT IT - START DATE", 22, FontStyle.Bold, new Color(1f, 0.95f, 0.65f, 1f), TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             howToPlayOverlayGO.SetActive(false);
@@ -319,6 +337,52 @@ namespace CtrlHeart.Core.Editor
             rect.anchorMax = max;
             rect.offsetMin = offsetMin;
             rect.offsetMax = offsetMax;
+        }
+
+        private static void CreateInstructionCard(Transform parent, string name, string headerText, Color headerColor, string bodyText, Font font, float preferredHeight)
+        {
+            var cardGO = CreateUIObject(name, parent);
+            var cardImg = cardGO.AddComponent<Image>();
+            cardImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            cardImg.type = Image.Type.Sliced;
+            cardImg.color = new Color(0.16f, 0.10f, 0.08f, 0.95f);
+
+            var le = cardGO.AddComponent<LayoutElement>();
+            le.preferredHeight = preferredHeight;
+            le.flexibleWidth = 1f;
+
+            var vlg = cardGO.AddComponent<VerticalLayoutGroup>();
+            vlg.padding = new RectOffset(16, 16, 8, 8);
+            vlg.spacing = 4;
+            vlg.childControlWidth = true;
+            vlg.childControlHeight = true;
+            vlg.childForceExpandWidth = true;
+            vlg.childForceExpandHeight = false;
+
+            // Header Text
+            var headGO = CreateUIObject("Header", cardGO.transform);
+            var hTxt = headGO.AddComponent<Text>();
+            hTxt.text = headerText;
+            hTxt.fontSize = 18;
+            hTxt.fontStyle = FontStyle.Bold;
+            hTxt.color = headerColor;
+            hTxt.font = font;
+            hTxt.alignment = TextAnchor.MiddleLeft;
+            hTxt.raycastTarget = false;
+            var hLe = headGO.AddComponent<LayoutElement>();
+            hLe.preferredHeight = 26;
+
+            // Body Text
+            var bodyGO = CreateUIObject("Body", cardGO.transform);
+            var bTxt = bodyGO.AddComponent<Text>();
+            bTxt.text = bodyText;
+            bTxt.fontSize = 15;
+            bTxt.fontStyle = FontStyle.Normal;
+            bTxt.lineSpacing = 1.25f;
+            bTxt.color = new Color(0.98f, 0.95f, 0.88f, 1f); // Warm crisp cream
+            bTxt.font = font;
+            bTxt.alignment = TextAnchor.UpperLeft;
+            bTxt.raycastTarget = false;
         }
     }
 }

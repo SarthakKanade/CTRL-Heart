@@ -282,19 +282,20 @@ namespace CtrlHeart.Core.UI
             if (phaseStatusBG != null) phaseStatusBG.color = new Color(0.1f, 0.45f, 0.8f, 0.85f);
 
             // Phase 1: Her Opening Scenario Beat in Unified Box
+            bool promptIsAction = !string.IsNullOrEmpty(prompt) && prompt.Trim().StartsWith("*") && !prompt.Contains("\"") && !prompt.Contains("“");
             if (speakerNameBadge != null)
             {
-                speakerNameBadge.text = "DATE";
+                speakerNameBadge.text = promptIsAction ? "MAYA [ACTION]" : "MAYA";
                 speakerNameBadge.color = new Color(0.92f, 0.40f, 0.55f); // Romantic Rose
             }
             if (dialogueBodyText != null)
             {
-                dialogueBodyText.text = prompt;
-                dialogueBodyText.color = VisualTheme.ColorDateText; // Dark Walnut Ink
+                dialogueBodyText.text = VisualTheme.FormatDialogue(prompt, isPlayer: false);
+                dialogueBodyText.color = Color.white;
             }
             if (dialogueMetaSubtext != null) dialogueMetaSubtext.text = "";
 
-            if (dialoguePromptText != null) dialoguePromptText.text = prompt;
+            if (dialoguePromptText != null && dialoguePromptText != dialogueBodyText) dialoguePromptText.text = VisualTheme.SanitizeText(prompt);
             if (playerAnswerContainer != null && playerAnswerContainer != unifiedDialogueBox) playerAnswerContainer.SetActive(false);
             if (dateReactionContainer != null && dateReactionContainer != unifiedDialogueBox) dateReactionContainer.SetActive(false);
             if (projectedFitText != null && projectedFitText.transform.parent != null)
@@ -317,15 +318,16 @@ namespace CtrlHeart.Core.UI
             if (phaseStatusBG != null) phaseStatusBG.color = new Color(0.2f, 0.65f, 0.35f, 0.9f);
 
             // Phase 2: Player's Spoken Answer replaces previous in Unified Box
+            bool answerIsAction = !string.IsNullOrEmpty(spokenAnswer) && spokenAnswer.Trim().StartsWith("*") && !spokenAnswer.Contains("\"") && !spokenAnswer.Contains("“");
             if (speakerNameBadge != null)
             {
-                speakerNameBadge.text = "YOU";
+                speakerNameBadge.text = answerIsAction ? "YOU [ACTION]" : "YOU";
                 speakerNameBadge.color = VisualTheme.ColorGoldAccent; // Radiant Antique Gold
             }
             if (dialogueBodyText != null)
             {
-                dialogueBodyText.text = spokenAnswer;
-                dialogueBodyText.color = VisualTheme.ColorPlayerAnswerText; // Royal Indigo Ink
+                dialogueBodyText.text = VisualTheme.FormatDialogue(spokenAnswer, isPlayer: true);
+                dialogueBodyText.color = Color.white;
             }
             if (dialogueMetaSubtext != null)
             {
@@ -353,15 +355,16 @@ namespace CtrlHeart.Core.UI
             if (phaseStatusBG != null) phaseStatusBG.color = new Color(0.8f, 0.35f, 0.1f, 0.9f);
 
             // Phase 3: Her Reaction replaces previous in Unified Box
+            bool reactionIsAction = !string.IsNullOrEmpty(reactionText) && !reactionText.Contains("\"") && !reactionText.Contains("“");
             if (speakerNameBadge != null)
             {
-                speakerNameBadge.text = "DATE";
+                speakerNameBadge.text = reactionIsAction ? "MAYA [REACTION]" : "MAYA";
                 speakerNameBadge.color = new Color(0.92f, 0.40f, 0.55f); // Romantic Rose
             }
             if (dialogueBodyText != null)
             {
-                dialogueBodyText.text = reactionText;
-                dialogueBodyText.color = VisualTheme.ColorDateReactionText; // Forest Emerald Ink
+                dialogueBodyText.text = VisualTheme.FormatDialogue(reactionText, isPlayer: false);
+                dialogueBodyText.color = Color.white;
             }
 
             string deltaString = connectionDelta >= 0 ? $"+{connectionDelta:0} CONNECTION" : $"{connectionDelta:0} CONNECTION";
@@ -640,18 +643,18 @@ namespace CtrlHeart.Core.UI
                 if (conn >= 80f)
                 {
                     verdictTitle = "SHE ASKED YOU TO COME OVER!";
-                    verdictBody = "Maya leaned in with a warm, genuine smile: <i>“I really don't want this evening to end yet... Want to come over to my place? I have that vinyl record we were talking about.”</i>\n\n<color=#4ADE80><b>Verdict:</b> Exceptional romantic chemistry! You unlocked the deepest connection.</color>";
+                    verdictBody = "Maya leaned in with a warm, genuine smile: <i>\"I really don't want this evening to end yet... Want to come over to my place? I have that vinyl record we were talking about.\"</i>\n\n<color=#4ADE80><b>Verdict:</b> Exceptional romantic chemistry! You unlocked the deepest connection.</color>";
                 }
                 else
                 {
                     verdictTitle = "SECOND DATE SECURED!";
-                    verdictBody = "Maya smiled warmly, holding your gaze: <i>“I had such a wonderful time tonight. Can we do this again this Saturday?”</i>\n\n<color=#4ADE80><b>Verdict:</b> Mutual attraction & comfort! She wants to see you again.</color>";
+                    verdictBody = "Maya smiled warmly, holding your gaze: <i>\"I had such a wonderful time tonight. Can we do this again this Saturday?\"</i>\n\n<color=#4ADE80><b>Verdict:</b> Mutual attraction & comfort! She wants to see you again.</color>";
                 }
             }
             else if (ending == EndingType.Maybe_Tier2)
             {
                 verdictTitle = "THE 'MAYBE' ZONE";
-                verdictBody = "A sweet, lingering smile and a gentle hug goodbye at the station. She said she'd text you later—the door is gently open, but left uncertain.\n\n<color=#FBBF24><b>Verdict:</b> Pleasant rapport, but needs more boldness next time.</color>";
+                verdictBody = "A sweet, lingering smile and a gentle hug goodbye at the station. She said she'd text you later - the door is gently open, but left uncertain.\n\n<color=#FBBF24><b>Verdict:</b> Pleasant rapport, but needs more boldness next time.</color>";
             }
             else if (ending == EndingType.AwkwardEnding_Tier1)
             {
@@ -671,18 +674,18 @@ namespace CtrlHeart.Core.UI
 
             if (resultsVerdictTitleText != null)
             {
-                resultsVerdictTitleText.text = verdictTitle;
+                resultsVerdictTitleText.text = VisualTheme.SanitizeText(verdictTitle);
                 resultsVerdictTitleText.color = endingData.bannerColor;
             }
 
             if (resultsVerdictBodyText != null)
             {
-                resultsVerdictBodyText.text = $"{verdictBody}\n\n<size=14><color=#E2E8F0>{endingData.summary}</color></size>";
+                resultsVerdictBodyText.text = $"{VisualTheme.SanitizeText(verdictBody)}\n\n<color=#E2E8F0>{VisualTheme.SanitizeText(endingData.summary)}</color>";
             }
 
             if (resultsQuoteText != null)
             {
-                resultsQuoteText.text = $"Maya: {endingData.dateFinalQuote}";
+                resultsQuoteText.text = $"Maya: {VisualTheme.SanitizeText(endingData.dateFinalQuote)}";
             }
 
             if (resultsConnectionScoreText != null)

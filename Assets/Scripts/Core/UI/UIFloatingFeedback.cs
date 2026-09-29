@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CtrlHeart.Core.Visuals;
 
 namespace CtrlHeart.Core.UI
 {
@@ -23,7 +24,7 @@ namespace CtrlHeart.Core.UI
                 return;
             }
             Instance = this;
-            uiFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
+            uiFont = VisualTheme.GetPixelFont();
         }
 
         public void SpawnText(Vector3 screenOrWorldPos, string message, Color color, float duration = 1.6f, float floatDistance = 45f)

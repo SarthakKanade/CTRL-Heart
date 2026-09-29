@@ -82,5 +82,103 @@ namespace CtrlHeart.Core.Visuals
                 _ => Color.white
             };
         }
+
+        private static Font cachedPixelFont;
+
+        public static Font GetPixelFont()
+        {
+            if (cachedPixelFont != null) return cachedPixelFont;
+
+#if UNITY_EDITOR
+            cachedPixelFont = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>("Assets/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf");
+#endif
+            if (cachedPixelFont == null)
+            {
+                cachedPixelFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
+            }
+            return cachedPixelFont;
+        }
+
+        public static string SanitizeText(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return input;
+            return input
+                .Replace('“', '"')
+                .Replace('”', '"')
+                .Replace('‘', '\'')
+                .Replace('’', '\'')
+                .Replace('—', '-')
+                .Replace('–', '-')
+                .Replace('•', '-')
+                .Replace('★', '*')
+                .Replace('⚠', '!');
+        }
+
+        /// <summary>
+        /// Formats dialogue strings into rich text distinguishing verbal spoken dialogue (bold ink in quotes)
+        /// from physical actions, gestures, and narrative descriptions (warm sepia italics).
+        /// </summary>
+        public static string FormatDialogue(string input, bool isPlayer = false)
+        {
+            if (string.IsNullOrEmpty(input)) return input;
+            string clean = SanitizeText(input).Trim();
+
+            // Rich text palette on parchment paper:
+            // Verbal: Dark Walnut (#1E130D) for Date, Royal Indigo (#1D2B53) for Player
+            // Action/Narrative: Warm Terracotta Sepia (#7C4D32)
+            string spokenColor = isPlayer ? "#1D2B53" : "#1E130D";
+            string actionColor = "#7C4D32";
+
+            // If text contains neither quotes nor asterisks, treat the entire string as spoken dialogue
+            if (!clean.Contains("\"") && !clean.Contains("*"))
+            {
+                return $"<color={spokenColor}><b>\"{clean}\"</b></color>";
+            }
+
+            // Regex matches either quoted speech ("...") or asterisked actions (*...*)
+            var regex = new System.Text.RegularExpressions.Regex("(\"[^\"]*\")|(\\*[^*]*\\*)");
+            var matches = regex.Matches(clean);
+
+            var sb = new System.Text.StringBuilder();
+            int lastEnd = 0;
+
+            foreach (System.Text.RegularExpressions.Match m in matches)
+            {
+                if (m.Index > lastEnd)
+                {
+                    string narrative = clean.Substring(lastEnd, m.Index - lastEnd).Trim();
+                    if (!string.IsNullOrEmpty(narrative))
+                    {
+                        if (sb.Length > 0) sb.Append(" ");
+                        sb.Append($"<color={actionColor}><i>{narrative}</i></color>");
+                    }
+                }
+
+                if (m.Groups[1].Success) // Quoted speech
+                {
+                    if (sb.Length > 0) sb.Append(" ");
+                    sb.Append($"<color={spokenColor}><b>{m.Groups[1].Value}</b></color>");
+                }
+                else if (m.Groups[2].Success) // Asterisked action
+                {
+                    if (sb.Length > 0) sb.Append(" ");
+                    sb.Append($"<color={actionColor}><i>{m.Groups[2].Value}</i></color>");
+                }
+
+                lastEnd = m.Index + m.Length;
+            }
+
+            if (lastEnd < clean.Length)
+            {
+                string narrative = clean.Substring(lastEnd).Trim();
+                if (!string.IsNullOrEmpty(narrative))
+                {
+                    if (sb.Length > 0) sb.Append(" ");
+                    sb.Append($"<color={actionColor}><i>{narrative}</i></color>");
+                }
+            }
+
+            return sb.ToString();
+        }
     }
 }

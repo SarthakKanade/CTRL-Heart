@@ -59,12 +59,8 @@ namespace CtrlHeart.Core.UI
             var coreUI = rootGO.GetComponent<CoreGameUI>() ?? rootGO.AddComponent<CoreGameUI>();
             var floatingFeedback = rootGO.GetComponent<UIFloatingFeedback>() ?? rootGO.AddComponent<UIFloatingFeedback>();
 
-            var defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
-#if UNITY_EDITOR
-            var pixelFont = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>("Assets/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf") ?? defaultFont;
-#else
-            var pixelFont = defaultFont;
-#endif
+            var pixelFont = VisualTheme.GetPixelFont();
+            var defaultFont = pixelFont;
 
             // ── Full Dark Backdrop ──
             var bgGO = CreateUIObject("BiomeBackground", rootGO.transform);
@@ -110,29 +106,34 @@ namespace CtrlHeart.Core.UI
             rbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             rbImg.type = Image.Type.Sliced;
             rbImg.color = Color.white;
-            var roundText = CreateText(roundBadgeGO.transform, "RoundCounter", "ROUND 1 / 10", 16, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
-                Vector2.zero, Vector2.one, defaultFont);
+            var roundText = CreateText(roundBadgeGO.transform, "RoundCounter", "ROUND 1 / 10", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
 
             // Master Timer Container
             var timerContainerGO = CreateUIObject("TimerContainer", headerRowGO.transform);
             var tcRect = timerContainerGO.GetComponent<RectTransform>();
             SetAnchor(tcRect, new Vector2(0.74f, 0.05f), new Vector2(0.99f, 0.95f), Vector2.zero, Vector2.zero);
             var tcBg = timerContainerGO.AddComponent<Image>();
-            tcBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
+            tcBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_frame");
             tcBg.type = Image.Type.Sliced;
             tcBg.color = Color.white;
 
-            var timerFillGO = CreateUIObject("TimerFill", timerContainerGO.transform);
+            var timerMaskGO = CreateUIObject("TimerMask", timerContainerGO.transform);
+            var tmRect = timerMaskGO.GetComponent<RectTransform>();
+            SetAnchor(tmRect, Vector2.zero, Vector2.one, new Vector2(4, 3), new Vector2(-4, -3));
+            timerMaskGO.AddComponent<RectMask2D>();
+
+            var timerFillGO = CreateUIObject("TimerFill", timerMaskGO.transform);
             var tfRect = timerFillGO.GetComponent<RectTransform>();
-            SetAnchor(tfRect, new Vector2(0.01f, 0.10f), new Vector2(0.99f, 0.90f), Vector2.zero, Vector2.zero);
+            SetAnchor(tfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var timerFillImg = timerFillGO.AddComponent<Image>();
-            timerFillImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_green");
+            timerFillImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_fill_green");
             timerFillImg.type = Image.Type.Filled;
             timerFillImg.fillMethod = Image.FillMethod.Horizontal;
             timerFillImg.color = Color.white;
 
-            var timerSecText = CreateText(timerContainerGO.transform, "TimerSeconds", "20.0s", 15, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleCenter,
-                Vector2.zero, Vector2.one, defaultFont);
+            var timerSecText = CreateText(timerContainerGO.transform, "TimerSeconds", "20.0s", 18, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
 
             // ── Centered Date Character (Bust-Up Seated Directly Above Dialogue Box in Upper 60%) ──
             var portraitFrameGO = CreateUIObject("DatePortraitFrame", topPanelGO.transform);
@@ -201,30 +202,31 @@ namespace CtrlHeart.Core.UI
             // Speaker Badge (Top-Left pinned)
             var speakerBadgeGO = CreateUIObject("SpeakerBadge", dialogBoxGO.transform);
             var spkBadgeRect = speakerBadgeGO.GetComponent<RectTransform>();
-            SetAnchor(spkBadgeRect, new Vector2(0.020f, 0.62f), new Vector2(0.16f, 0.97f), Vector2.zero, Vector2.zero);
+            SetAnchor(spkBadgeRect, new Vector2(0.015f, 0.60f), new Vector2(0.205f, 0.98f), Vector2.zero, Vector2.zero);
             var spkBadgeImg = speakerBadgeGO.AddComponent<Image>();
             spkBadgeImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
             spkBadgeImg.type = Image.Type.Sliced;
             spkBadgeImg.color = Color.white;
-            var speakerText = CreateText(speakerBadgeGO.transform, "SpeakerText", "DATE", 14, FontStyle.Bold, new Color(0.85f, 0.35f, 0.50f), TextAnchor.MiddleCenter,
-                Vector2.zero, Vector2.one, defaultFont);
+            var speakerText = CreateText(speakerBadgeGO.transform, "SpeakerText", "DATE", 16, FontStyle.Bold, new Color(0.95f, 0.45f, 0.65f), TextAnchor.MiddleCenter,
+                Vector2.zero, Vector2.one, pixelFont);
 
             // Spoken Dialogue Text (Dark Walnut Ink on Light Parchment)
-            var dialogueText = CreateText(dialogBoxGO.transform, "DialogueText", "\"Loading scenario...\"", 16, FontStyle.Normal, VisualTheme.ColorDateText, TextAnchor.MiddleLeft,
-                new Vector2(0.030f, 0.06f), new Vector2(0.955f, 0.62f), defaultFont);
+            var dialogueText = CreateText(dialogBoxGO.transform, "DialogueText", "\"Loading scenario...\"", 20, FontStyle.Normal, VisualTheme.ColorDateText, TextAnchor.MiddleLeft,
+                new Vector2(0.030f, 0.05f), new Vector2(0.955f, 0.64f), pixelFont);
+            dialogueText.lineSpacing = 1.25f;
 
             // Romantic Dialogue Continue Indicator
             var contGO = CreateUIObject("ContinueIndicator", dialogParchmentGO.transform);
             var cRect = contGO.GetComponent<RectTransform>();
-            SetAnchor(cRect, new Vector2(0.968f, 0.08f), new Vector2(0.988f, 0.34f), Vector2.zero, Vector2.zero);
+            SetAnchor(cRect, new Vector2(0.965f, 0.08f), new Vector2(0.990f, 0.38f), Vector2.zero, Vector2.zero);
             var cImg = contGO.AddComponent<Image>();
             cImg.sprite = UIProceduralTextureGenerator.GetSprite("icon_heart");
-            cImg.color = new Color(0.85f, 0.35f, 0.50f, 0.80f);
+            cImg.color = new Color(0.85f, 0.35f, 0.50f, 0.85f);
             cImg.preserveAspect = true;
 
             // Meta Subtext (Top-Right: Connection Delta or Tone Tag)
-            var metaSubtext = CreateText(dialogBoxGO.transform, "MetaSubtext", "", 13, FontStyle.Bold, new Color(0.15f, 0.55f, 0.25f), TextAnchor.MiddleRight,
-                new Vector2(0.60f, 0.62f), new Vector2(0.97f, 0.96f), defaultFont);
+            var metaSubtext = CreateText(dialogBoxGO.transform, "MetaSubtext", "", 16, FontStyle.Bold, new Color(0.15f, 0.55f, 0.25f), TextAnchor.MiddleRight,
+                new Vector2(0.55f, 0.60f), new Vector2(0.97f, 0.96f), pixelFont);
 
             // ══════════════════════════════════════════════════════════════════
             // 2. MIDDLE DIVIDER LINE (60-40 HORIZONTAL SPLIT)
@@ -253,8 +255,8 @@ namespace CtrlHeart.Core.UI
             lpImg.type = Image.Type.Sliced;
             lpImg.color = Color.white;
 
-            var lpTitle = CreateText(leftPanelGO.transform, "Title", "AFFECT UNITS", 15, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
-                new Vector2(0f, 0.91f), new Vector2(1f, 1f), defaultFont);
+            var lpTitle = CreateText(leftPanelGO.transform, "Title", "AFFECT UNITS", 16, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                new Vector2(0f, 0.91f), new Vector2(1f, 1f), pixelFont);
 
             var vlgGO = CreateUIObject("CardsLayout", leftPanelGO.transform);
             var vlgRect = vlgGO.GetComponent<RectTransform>();
@@ -291,13 +293,13 @@ namespace CtrlHeart.Core.UI
 
                 // Emotion Name (Center Top)
                 var label = CreateText(cardGO.transform, "Label", emotion.ToString().ToUpper(), 14, FontStyle.Bold, Color.white, TextAnchor.MiddleLeft,
-                    new Vector2(0.32f, 0.52f), new Vector2(0.96f, 0.92f), defaultFont);
+                    new Vector2(0.32f, 0.52f), new Vector2(0.96f, 0.92f), pixelFont);
                 label.horizontalOverflow = HorizontalWrapMode.Overflow;
                 label.verticalOverflow = VerticalWrapMode.Overflow;
 
                 // Role Subtitle (Center Bottom)
                 var roleText = CreateText(cardGO.transform, "Role", role, 12, FontStyle.Bold, new Color(0.95f, 0.95f, 0.95f, 1f), TextAnchor.MiddleLeft,
-                    new Vector2(0.32f, 0.10f), new Vector2(0.98f, 0.50f), defaultFont);
+                    new Vector2(0.32f, 0.10f), new Vector2(0.98f, 0.50f), pixelFont);
                 roleText.horizontalOverflow = HorizontalWrapMode.Overflow;
                 roleText.verticalOverflow = VerticalWrapMode.Overflow;
 
@@ -349,12 +351,12 @@ namespace CtrlHeart.Core.UI
             aiImg.preserveAspect = true;
 
             var eventHeadline = CreateText(bannerScrollGO.transform, "Headline", "⚠ SOCIAL THREAT DETECTED", 15, FontStyle.Bold, new Color(0.82f, 0.15f, 0.10f), TextAnchor.MiddleLeft,
-                new Vector2(0.08f, 0.50f), new Vector2(0.98f, 0.96f), defaultFont);
+                new Vector2(0.08f, 0.50f), new Vector2(0.98f, 0.96f), pixelFont);
             eventHeadline.horizontalOverflow = HorizontalWrapMode.Overflow;
             eventHeadline.verticalOverflow = VerticalWrapMode.Overflow;
 
             var eventDetails = CreateText(bannerScrollGO.transform, "Details", "Primary Answer Node: Brain | Impacting Composure and Organ Harmony", 13, FontStyle.Bold, new Color(0.12f, 0.08f, 0.06f, 1f), TextAnchor.MiddleLeft,
-                new Vector2(0.08f, 0.04f), new Vector2(0.98f, 0.50f), defaultFont);
+                new Vector2(0.08f, 0.04f), new Vector2(0.98f, 0.50f), pixelFont);
             eventDetails.horizontalOverflow = HorizontalWrapMode.Overflow;
             eventDetails.verticalOverflow = VerticalWrapMode.Overflow;
 
@@ -424,8 +426,8 @@ namespace CtrlHeart.Core.UI
                 tbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_beige");
                 tbImg.type = Image.Type.Sliced;
                 tbImg.color = Color.white;
-                var tbText = CreateText(targetBadgeGO.transform, "Text", "★ TARGET", 11, FontStyle.Bold, VisualTheme.ColorDateText, TextAnchor.MiddleCenter,
-                    Vector2.zero, Vector2.one, defaultFont);
+                var tbText = CreateText(targetBadgeGO.transform, "Text", "* TARGET *", 13, FontStyle.Bold, VisualTheme.ColorDateText, TextAnchor.MiddleCenter,
+                    Vector2.zero, Vector2.one, pixelFont);
                 targetBadgeGO.SetActive(false);
 
                 // Outer RPG Box Frame (Kenney buttonSquare_brown with 9-slice borders)
@@ -457,24 +459,29 @@ namespace CtrlHeart.Core.UI
 
                 // Node Name Text (e.g. BRAIN)
                 var nameText = CreateText(discGO.transform, "NodeName", kvp.Key.ToString().ToUpper(), 15, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
-                    new Vector2(0f, 0.02f), new Vector2(1f, 0.26f), defaultFont);
+                    new Vector2(0f, 0.02f), new Vector2(1f, 0.26f), pixelFont);
                 nameText.horizontalOverflow = HorizontalWrapMode.Overflow;
                 nameText.verticalOverflow = VerticalWrapMode.Overflow;
 
                 // Health Bar (RPG Bar Frame below square box)
                 var hpBarGO = CreateUIObject("HealthBar", nodeGO.transform);
                 var hpRect = hpBarGO.GetComponent<RectTransform>();
-                SetAnchor(hpRect, new Vector2(0.10f, 0.13f), new Vector2(0.90f, 0.19f), Vector2.zero, Vector2.zero);
+                SetAnchor(hpRect, new Vector2(0.08f, 0.12f), new Vector2(0.92f, 0.20f), Vector2.zero, Vector2.zero);
                 var hpBg = hpBarGO.AddComponent<Image>();
-                hpBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
+                hpBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_frame");
                 hpBg.type = Image.Type.Sliced;
                 hpBg.color = Color.white;
 
-                var hpFillGO = CreateUIObject("Fill", hpBarGO.transform);
+                var hpMaskGO = CreateUIObject("Mask", hpBarGO.transform);
+                var hpmRect = hpMaskGO.GetComponent<RectTransform>();
+                SetAnchor(hpmRect, Vector2.zero, Vector2.one, new Vector2(3, 2), new Vector2(-3, -2));
+                hpMaskGO.AddComponent<RectMask2D>();
+
+                var hpFillGO = CreateUIObject("Fill", hpMaskGO.transform);
                 var hpfRect = hpFillGO.GetComponent<RectTransform>();
                 SetAnchor(hpfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
                 var hpFill = hpFillGO.AddComponent<Image>();
-                hpFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_green");
+                hpFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_fill_green");
                 hpFill.type = Image.Type.Filled;
                 hpFill.fillMethod = Image.FillMethod.Horizontal;
                 hpFill.fillAmount = 1f;
@@ -483,14 +490,14 @@ namespace CtrlHeart.Core.UI
                 // Single Status Badge Underneath (Wider ribbon so full text like Awkward Silence fits cleanly)
                 var statusBadgeGO = CreateUIObject("StatusBadge", nodeGO.transform);
                 var sbRect = statusBadgeGO.GetComponent<RectTransform>();
-                SetAnchor(sbRect, new Vector2(-0.16f, -0.05f), new Vector2(1.16f, 0.11f), Vector2.zero, Vector2.zero);
+                SetAnchor(sbRect, new Vector2(-0.16f, -0.06f), new Vector2(1.16f, 0.11f), Vector2.zero, Vector2.zero);
                 var sbImg = statusBadgeGO.AddComponent<Image>();
                 sbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
                 sbImg.type = Image.Type.Sliced;
                 sbImg.color = Color.white;
 
                 var sbText = CreateText(statusBadgeGO.transform, "StatusText", "Stable", 14, FontStyle.Bold, new Color(0.40f, 0.95f, 0.60f, 1f), TextAnchor.MiddleCenter,
-                    Vector2.zero, Vector2.one, defaultFont);
+                    Vector2.zero, Vector2.one, pixelFont);
                 sbText.horizontalOverflow = HorizontalWrapMode.Overflow;
                 sbText.verticalOverflow = VerticalWrapMode.Overflow;
 
@@ -510,8 +517,8 @@ namespace CtrlHeart.Core.UI
             rpImg.type = Image.Type.Sliced;
             rpImg.color = Color.white;
 
-            var rpTitle = CreateText(rightPanelGO.transform, "Title", "INTERNAL RESOURCES", 15, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
-                new Vector2(0f, 0.91f), new Vector2(1f, 1f), defaultFont);
+            var rpTitle = CreateText(rightPanelGO.transform, "Title", "INTERNAL RESOURCES", 16, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                new Vector2(0f, 0.91f), new Vector2(1f, 1f), pixelFont);
 
             var resLayoutGO = CreateUIObject("ResLayout", rightPanelGO.transform);
             var resLRect = resLayoutGO.GetComponent<RectTransform>();
@@ -524,11 +531,11 @@ namespace CtrlHeart.Core.UI
             var resourceBars = rightPanelGO.AddComponent<UIResourceBars>();
 
             // Oxygen Row
-            var (o2Icon, o2Fill, o2Text) = CreateResourceRow(resLayoutGO.transform, "Oxygen", VisualTheme.ColorOxygen, defaultFont);
+            var (o2Icon, o2Fill, o2Text) = CreateResourceRow(resLayoutGO.transform, "Oxygen", VisualTheme.ColorOxygen, pixelFont);
             // Composure Row
-            var (cIcon, cFill, cText) = CreateResourceRow(resLayoutGO.transform, "Composure", VisualTheme.ColorComposure, defaultFont);
+            var (cIcon, cFill, cText) = CreateResourceRow(resLayoutGO.transform, "Composure", VisualTheme.ColorComposure, pixelFont);
             // Connection Row
-            var (connIcon, connFill, connText) = CreateResourceRow(resLayoutGO.transform, "Connection", VisualTheme.ColorConnection, defaultFont);
+            var (connIcon, connFill, connText) = CreateResourceRow(resLayoutGO.transform, "Connection", VisualTheme.ColorConnection, pixelFont);
 
             resourceBars.AssignReferences(o2Icon, o2Fill, o2Text, cIcon, cFill, cText, connIcon, connFill, connText);
 
@@ -541,8 +548,8 @@ namespace CtrlHeart.Core.UI
             bbImg.type = Image.Type.Sliced;
             bbImg.color = Color.white;
 
-            var hrTitle = CreateText(bottomBarGO.transform, "Title", "HEART RATE (Reflecting Composure)", 13, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleLeft,
-                new Vector2(0.02f, 0f), new Vector2(0.32f, 1f), defaultFont);
+            var hrTitle = CreateText(bottomBarGO.transform, "Title", "HEART RATE (Reflecting Composure)", 16, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleLeft,
+                new Vector2(0.02f, 0f), new Vector2(0.32f, 1f), pixelFont);
 
             var ecgFrameGO = CreateUIObject("EcgFrame", bottomBarGO.transform);
             var efRect = ecgFrameGO.GetComponent<RectTransform>();
@@ -564,8 +571,8 @@ namespace CtrlHeart.Core.UI
             hiImg.sprite = UIProceduralTextureGenerator.GetSprite("icon_heart");
             hiImg.color = VisualTheme.ColorComposure;
 
-            var bpmText = CreateText(bottomBarGO.transform, "BpmText", "72 bpm", 18, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleLeft,
-                new Vector2(0.89f, 0f), new Vector2(0.98f, 1f), defaultFont);
+            var bpmText = CreateText(bottomBarGO.transform, "BpmText", "72 bpm", 20, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleLeft,
+                new Vector2(0.89f, 0f), new Vector2(0.98f, 1f), pixelFont);
 
             var heartRateMonitor = bottomBarGO.AddComponent<UIHeartRateMonitor>();
             heartRateMonitor.Initialize(ecgRaw, bpmText, hiImg);
@@ -573,7 +580,7 @@ namespace CtrlHeart.Core.UI
             // Wire all root UI references (phase badge, tier badge, and eq gauge removed)
             coreUI.AssignTopPanel(
                 roundText, null, null, null,
-                dialogueText, null, null, null,
+                null, null, null, null,
                 null, null, null,
                 timerFillImg, timerSecText, dateVisuals);
 
@@ -605,14 +612,14 @@ namespace CtrlHeart.Core.UI
             var poRect = pauseOverlayGO.GetComponent<RectTransform>();
             SetAnchor(poRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var poBg = pauseOverlayGO.AddComponent<Image>();
-            poBg.color = new Color(0.04f, 0.04f, 0.06f, 0.80f);
+            poBg.color = new Color(0.04f, 0.03f, 0.05f, 0.85f);
             poBg.raycastTarget = true;
 
             var pauseModalGO = CreateUIObject("PauseModal", pauseOverlayGO.transform);
             var pmRect = pauseModalGO.GetComponent<RectTransform>();
             pmRect.anchorMin = new Vector2(0.5f, 0.5f);
             pmRect.anchorMax = new Vector2(0.5f, 0.5f);
-            pmRect.sizeDelta = new Vector2(460, 320);
+            pmRect.sizeDelta = new Vector2(500, 340);
             pmRect.anchoredPosition = Vector2.zero;
             var pmImg = pauseModalGO.AddComponent<Image>();
             pmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
@@ -624,36 +631,36 @@ namespace CtrlHeart.Core.UI
             var pmhImg = pmHeaderGO.AddComponent<Image>();
             pmhImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             pmhImg.type = Image.Type.Sliced;
-            CreateText(pmHeaderGO.transform, "Title", "GAME PAUSED", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(pmHeaderGO.transform, "Title", "GAME PAUSED", 26, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
-            CreateText(pauseModalGO.transform, "Subtitle", "Maya is waiting patiently...", 16, FontStyle.Italic, new Color(0.85f, 0.80f, 0.75f, 1f), TextAnchor.MiddleCenter,
-                new Vector2(0.08f, 0.58f), new Vector2(0.92f, 0.72f), defaultFont);
+            CreateText(pauseModalGO.transform, "Subtitle", "Maya is waiting patiently...", 18, FontStyle.Normal, new Color(1.0f, 0.98f, 0.92f, 1f), TextAnchor.MiddleCenter,
+                new Vector2(0.08f, 0.58f), new Vector2(0.92f, 0.72f), pixelFont);
 
             var resumeBtnGO = CreateUIObject("ResumeButton", pauseModalGO.transform);
             var resRect = resumeBtnGO.GetComponent<RectTransform>();
             resRect.anchorMin = new Vector2(0.5f, 0.5f);
             resRect.anchorMax = new Vector2(0.5f, 0.5f);
-            resRect.sizeDelta = new Vector2(260, 48);
+            resRect.sizeDelta = new Vector2(280, 50);
             resRect.anchoredPosition = new Vector2(0, -10);
             var resImg = resumeBtnGO.AddComponent<Image>();
             resImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
             resImg.type = Image.Type.Sliced;
             var resumeBtn = resumeBtnGO.AddComponent<Button>();
-            CreateText(resumeBtnGO.transform, "Label", "RESUME", 18, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
+            CreateText(resumeBtnGO.transform, "Label", "RESUME", 20, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             var pauseMenuBtnGO = CreateUIObject("MainMenuButton", pauseModalGO.transform);
             var pmbRect = pauseMenuBtnGO.GetComponent<RectTransform>();
             pmbRect.anchorMin = new Vector2(0.5f, 0.5f);
             pmbRect.anchorMax = new Vector2(0.5f, 0.5f);
-            pmbRect.sizeDelta = new Vector2(260, 48);
-            pmbRect.anchoredPosition = new Vector2(0, -68);
+            pmbRect.sizeDelta = new Vector2(280, 50);
+            pmbRect.anchoredPosition = new Vector2(0, -70);
             var pmbImg = pauseMenuBtnGO.AddComponent<Image>();
             pmbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
             pmbImg.type = Image.Type.Sliced;
             var pauseMenuBtn = pauseMenuBtnGO.AddComponent<Button>();
-            CreateText(pauseMenuBtnGO.transform, "Label", "MAIN MENU", 18, FontStyle.Bold, new Color(0.92f, 0.88f, 0.80f, 1f), TextAnchor.MiddleCenter,
+            CreateText(pauseMenuBtnGO.transform, "Label", "MAIN MENU", 20, FontStyle.Bold, new Color(0.95f, 0.90f, 0.82f, 1f), TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             pauseOverlayGO.SetActive(false);
@@ -665,123 +672,159 @@ namespace CtrlHeart.Core.UI
             var roRect = resultsOverlayGO.GetComponent<RectTransform>();
             SetAnchor(roRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var roBg = resultsOverlayGO.AddComponent<Image>();
-            roBg.color = new Color(0.05f, 0.05f, 0.07f, 0.88f); // Dark grey dimmer over entire game
+            roBg.color = new Color(0.04f, 0.03f, 0.05f, 0.90f); // Dark rich dimmer over entire game
             roBg.raycastTarget = true;
 
             var resultsModalGO = CreateUIObject("ResultsModal", resultsOverlayGO.transform);
             var rmRect = resultsModalGO.GetComponent<RectTransform>();
             rmRect.anchorMin = new Vector2(0.5f, 0.5f);
             rmRect.anchorMax = new Vector2(0.5f, 0.5f);
-            rmRect.sizeDelta = new Vector2(800, 600);
+            rmRect.sizeDelta = new Vector2(880, 680);
             rmRect.anchoredPosition = Vector2.zero;
             var rmImg = resultsModalGO.AddComponent<Image>();
             rmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
             rmImg.type = Image.Type.Sliced;
 
-            // Verdict Header
+            // Verdict Header Banner
             var rmHeaderGO = CreateUIObject("VerdictHeader", resultsModalGO.transform);
             var rmhRect = rmHeaderGO.GetComponent<RectTransform>();
-            SetAnchor(rmhRect, new Vector2(0.04f, 0.87f), new Vector2(0.96f, 0.97f), Vector2.zero, Vector2.zero);
+            SetAnchor(rmhRect, new Vector2(0.04f, 0.88f), new Vector2(0.96f, 0.97f), Vector2.zero, Vector2.zero);
             var rmhImg = rmHeaderGO.AddComponent<Image>();
             rmhImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             rmhImg.type = Image.Type.Sliced;
-            var verdictTitleTxt = CreateText(rmHeaderGO.transform, "Title", "SECOND DATE SECURED!", 24, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            var verdictTitleTxt = CreateText(rmHeaderGO.transform, "Title", "SECOND DATE SECURED!", 28, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
+            AddShadow(verdictTitleTxt.gameObject);
 
             // Outcome Narrative Box
             var narrativeBoxGO = CreateUIObject("NarrativeBox", resultsModalGO.transform);
             var nbRect = narrativeBoxGO.GetComponent<RectTransform>();
-            SetAnchor(nbRect, new Vector2(0.04f, 0.56f), new Vector2(0.96f, 0.85f), Vector2.zero, Vector2.zero);
+            SetAnchor(nbRect, new Vector2(0.04f, 0.57f), new Vector2(0.96f, 0.86f), Vector2.zero, Vector2.zero);
             var nbImg = narrativeBoxGO.AddComponent<Image>();
             nbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             nbImg.type = Image.Type.Sliced;
-            var verdictBodyTxt = CreateText(narrativeBoxGO.transform, "Body", "Maya smiled warmly...", 16, FontStyle.Normal, Color.white, TextAnchor.UpperLeft,
-                new Vector2(0.03f, 0.05f), new Vector2(0.97f, 0.95f), defaultFont);
+            nbImg.color = new Color(0.14f, 0.09f, 0.07f, 0.96f); // Deep dark mahogany background for exceptional text contrast
+            var verdictBodyTxt = CreateText(narrativeBoxGO.transform, "Body", "Maya smiled warmly...", 19, FontStyle.Normal, new Color(1.0f, 0.98f, 0.92f, 1f), TextAnchor.UpperLeft,
+                new Vector2(0.035f, 0.06f), new Vector2(0.965f, 0.94f), pixelFont);
+            verdictBodyTxt.lineSpacing = 1.25f;
 
-            // Maya's Final Quote
+            // Maya's Final Quote Box
             var quoteBoxGO = CreateUIObject("QuoteBox", resultsModalGO.transform);
             var qbRect = quoteBoxGO.GetComponent<RectTransform>();
-            SetAnchor(qbRect, new Vector2(0.04f, 0.42f), new Vector2(0.96f, 0.54f), Vector2.zero, Vector2.zero);
-            var quoteTxt = CreateText(quoteBoxGO.transform, "Quote", "\"I had such a wonderful time today!\"", 15, FontStyle.Italic, new Color(0.98f, 0.86f, 0.52f, 1f), TextAnchor.MiddleCenter,
-                Vector2.zero, Vector2.one, defaultFont);
+            SetAnchor(qbRect, new Vector2(0.04f, 0.44f), new Vector2(0.96f, 0.55f), Vector2.zero, Vector2.zero);
+            var qbImg = quoteBoxGO.AddComponent<Image>();
+            qbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
+            qbImg.type = Image.Type.Sliced;
+            qbImg.color = new Color(0.18f, 0.12f, 0.09f, 0.96f);
+
+            var quoteHeartGO = CreateUIObject("QuoteHeart", quoteBoxGO.transform);
+            var qhRect = quoteHeartGO.GetComponent<RectTransform>();
+            SetAnchor(qhRect, new Vector2(0.02f, 0.15f), new Vector2(0.06f, 0.85f), Vector2.zero, Vector2.zero);
+            var qhImg = quoteHeartGO.AddComponent<Image>();
+            qhImg.sprite = UIProceduralTextureGenerator.GetSprite("icon_heart");
+            qhImg.color = new Color(0.95f, 0.45f, 0.65f, 1f);
+            qhImg.preserveAspect = true;
+
+            var quoteTxt = CreateText(quoteBoxGO.transform, "Quote", "Maya: \"I had such a wonderful time today!\"", 15, FontStyle.Normal, new Color(1.0f, 0.88f, 0.50f, 1f), TextAnchor.MiddleLeft,
+                new Vector2(0.07f, 0f), new Vector2(0.98f, 1f), pixelFont);
 
             // Stats Section (Inside Inset Box)
             var statsBoxGO = CreateUIObject("StatsBox", resultsModalGO.transform);
             var rsbRect = statsBoxGO.GetComponent<RectTransform>();
-            SetAnchor(rsbRect, new Vector2(0.04f, 0.16f), new Vector2(0.96f, 0.40f), Vector2.zero, Vector2.zero);
+            SetAnchor(rsbRect, new Vector2(0.04f, 0.16f), new Vector2(0.96f, 0.42f), Vector2.zero, Vector2.zero);
             var rsbImg = statsBoxGO.AddComponent<Image>();
             rsbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             rsbImg.type = Image.Type.Sliced;
+            rsbImg.color = new Color(0.14f, 0.09f, 0.07f, 0.96f);
 
-            var tierBadgeTxt = CreateText(statsBoxGO.transform, "TierBadge", "OUTCOME: TIER 4 - PASSIONATE CHEMISTRY", 15, FontStyle.Bold, new Color(0.43f, 0.90f, 0.72f, 1f), TextAnchor.MiddleCenter,
-                new Vector2(0.04f, 0.68f), new Vector2(0.96f, 0.95f), pixelFont);
+            var tierBadgeTxt = CreateText(statsBoxGO.transform, "TierBadge", "OUTCOME: TIER 4 - PASSIONATE CHEMISTRY", 20, FontStyle.Bold, new Color(0.35f, 0.95f, 0.70f, 1f), TextAnchor.MiddleCenter,
+                new Vector2(0.04f, 0.72f), new Vector2(0.96f, 0.96f), pixelFont);
+            AddShadow(tierBadgeTxt.gameObject);
 
             // Connection Progress Row
-            var connScoreTxt = CreateText(statsBoxGO.transform, "ConnScore", "CONNECTION: 85 / 100", 14, FontStyle.Bold, VisualTheme.ColorConnection, TextAnchor.MiddleLeft,
-                new Vector2(0.05f, 0.38f), new Vector2(0.35f, 0.65f), defaultFont);
+            var connScoreTxt = CreateText(statsBoxGO.transform, "ConnScore", "CONNECTION: 85 / 100", 17, FontStyle.Bold, VisualTheme.ColorConnection, TextAnchor.MiddleLeft,
+                new Vector2(0.04f, 0.38f), new Vector2(0.36f, 0.68f), pixelFont);
+            AddShadow(connScoreTxt.gameObject);
 
-            var connBarBgGO = CreateUIObject("ConnBarBg", statsBoxGO.transform);
-            var cbRect = connBarBgGO.GetComponent<RectTransform>();
-            SetAnchor(cbRect, new Vector2(0.36f, 0.40f), new Vector2(0.95f, 0.62f), Vector2.zero, Vector2.zero);
-            var cbImg = connBarBgGO.AddComponent<Image>();
-            cbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
-            cbImg.type = Image.Type.Sliced;
+            var connBarFrameGO = CreateUIObject("ConnBarFrame", statsBoxGO.transform);
+            var cbfRect = connBarFrameGO.GetComponent<RectTransform>();
+            SetAnchor(cbfRect, new Vector2(0.38f, 0.40f), new Vector2(0.96f, 0.66f), Vector2.zero, Vector2.zero);
+            var cbfImg = connBarFrameGO.AddComponent<Image>();
+            cbfImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_frame");
+            cbfImg.type = Image.Type.Sliced;
+            cbfImg.color = Color.white;
 
-            var connFillGO = CreateUIObject("ConnFill", connBarBgGO.transform);
+            var connBarMaskGO = CreateUIObject("ConnBarMask", connBarFrameGO.transform);
+            var cbmRect = connBarMaskGO.GetComponent<RectTransform>();
+            SetAnchor(cbmRect, Vector2.zero, Vector2.one, new Vector2(4, 3), new Vector2(-4, -3));
+            connBarMaskGO.AddComponent<RectMask2D>();
+
+            var connFillGO = CreateUIObject("ConnFill", connBarMaskGO.transform);
             var cfRect = connFillGO.GetComponent<RectTransform>();
             SetAnchor(cfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var connBarFill = connFillGO.AddComponent<Image>();
-            connBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_yellow");
+            connBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_fill_yellow");
             connBarFill.type = Image.Type.Filled;
             connBarFill.fillMethod = Image.FillMethod.Horizontal;
             connBarFill.fillAmount = 0.85f;
+            connBarFill.color = Color.white;
 
             // Composure Progress Row
-            var compScoreTxt = CreateText(statsBoxGO.transform, "CompScore", "COMPOSURE: 70 / 100", 14, FontStyle.Bold, VisualTheme.ColorComposure, TextAnchor.MiddleLeft,
-                new Vector2(0.05f, 0.08f), new Vector2(0.35f, 0.35f), defaultFont);
+            var compScoreTxt = CreateText(statsBoxGO.transform, "CompScore", "COMPOSURE: 70 / 100", 17, FontStyle.Bold, VisualTheme.ColorComposure, TextAnchor.MiddleLeft,
+                new Vector2(0.04f, 0.08f), new Vector2(0.36f, 0.38f), pixelFont);
+            AddShadow(compScoreTxt.gameObject);
 
-            var compBarBgGO = CreateUIObject("CompBarBg", statsBoxGO.transform);
-            var compbRect = compBarBgGO.GetComponent<RectTransform>();
-            SetAnchor(compbRect, new Vector2(0.36f, 0.10f), new Vector2(0.95f, 0.32f), Vector2.zero, Vector2.zero);
-            var compbImg = compBarBgGO.AddComponent<Image>();
-            compbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
-            compbImg.type = Image.Type.Sliced;
+            var compBarFrameGO = CreateUIObject("CompBarFrame", statsBoxGO.transform);
+            var compbfRect = compBarFrameGO.GetComponent<RectTransform>();
+            SetAnchor(compbfRect, new Vector2(0.38f, 0.10f), new Vector2(0.96f, 0.36f), Vector2.zero, Vector2.zero);
+            var compbfImg = compBarFrameGO.AddComponent<Image>();
+            compbfImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_frame");
+            compbfImg.type = Image.Type.Sliced;
+            compbfImg.color = Color.white;
 
-            var compFillGO = CreateUIObject("CompFill", compBarBgGO.transform);
+            var compBarMaskGO = CreateUIObject("CompBarMask", compBarFrameGO.transform);
+            var compbmRect = compBarMaskGO.GetComponent<RectTransform>();
+            SetAnchor(compbmRect, Vector2.zero, Vector2.one, new Vector2(4, 3), new Vector2(-4, -3));
+            compBarMaskGO.AddComponent<RectMask2D>();
+
+            var compFillGO = CreateUIObject("CompFill", compBarMaskGO.transform);
             var compfRect = compFillGO.GetComponent<RectTransform>();
             SetAnchor(compfRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var compBarFill = compFillGO.AddComponent<Image>();
-            compBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_red");
+            compBarFill.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_fill_red");
             compBarFill.type = Image.Type.Filled;
             compBarFill.fillMethod = Image.FillMethod.Horizontal;
             compBarFill.fillAmount = 0.70f;
+            compBarFill.color = Color.white;
 
             // Buttons: Main Menu & Play Again
             var resultsMenuBtnGO = CreateUIObject("MainMenuButton", resultsModalGO.transform);
             var rmbRect = resultsMenuBtnGO.GetComponent<RectTransform>();
             rmbRect.anchorMin = new Vector2(0.5f, 0.5f);
             rmbRect.anchorMax = new Vector2(0.5f, 0.5f);
-            rmbRect.sizeDelta = new Vector2(230, 48);
-            rmbRect.anchoredPosition = new Vector2(-130, -250);
+            rmbRect.sizeDelta = new Vector2(250, 52);
+            rmbRect.anchoredPosition = new Vector2(-140, -285);
             var rmbImg = resultsMenuBtnGO.AddComponent<Image>();
             rmbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
             rmbImg.type = Image.Type.Sliced;
             var resultsMenuBtn = resultsMenuBtnGO.AddComponent<Button>();
-            CreateText(resultsMenuBtnGO.transform, "Label", "MAIN MENU", 18, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
+            var rmbTxt = CreateText(resultsMenuBtnGO.transform, "Label", "MAIN MENU", 22, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
+            AddShadow(rmbTxt.gameObject);
 
             var resultsRetryBtnGO = CreateUIObject("PlayAgainButton", resultsModalGO.transform);
             var rrbRect = resultsRetryBtnGO.GetComponent<RectTransform>();
             rrbRect.anchorMin = new Vector2(0.5f, 0.5f);
             rrbRect.anchorMax = new Vector2(0.5f, 0.5f);
-            rrbRect.sizeDelta = new Vector2(230, 48);
-            rrbRect.anchoredPosition = new Vector2(130, -250);
+            rrbRect.sizeDelta = new Vector2(250, 52);
+            rrbRect.anchoredPosition = new Vector2(140, -285);
             var rrbImg = resultsRetryBtnGO.AddComponent<Image>();
             rrbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
             rrbImg.type = Image.Type.Sliced;
             var resultsRetryBtn = resultsRetryBtnGO.AddComponent<Button>();
-            CreateText(resultsRetryBtnGO.transform, "Label", "PLAY AGAIN", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            var rrbTxt = CreateText(resultsRetryBtnGO.transform, "Label", "PLAY AGAIN", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
+            AddShadow(rrbTxt.gameObject);
 
             resultsOverlayGO.SetActive(false);
 
@@ -821,31 +864,36 @@ namespace CtrlHeart.Core.UI
             var iconImg = iconGO.AddComponent<Image>();
 
             // Title Label
-            var label = CreateText(rowGO.transform, "Title", title, 14, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleLeft,
+            var label = CreateText(rowGO.transform, "Title", title, 15, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleLeft,
                 new Vector2(0.28f, 0.52f), new Vector2(0.68f, 0.92f), font);
 
             // Numeric Readout (e.g. 80 / 100)
-            var valText = CreateText(rowGO.transform, "Value", "100 / 100", 13, FontStyle.Normal, VisualTheme.ColorParchmentText, TextAnchor.MiddleRight,
+            var valText = CreateText(rowGO.transform, "Value", "100 / 100", 14, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleRight,
                 new Vector2(0.68f, 0.52f), new Vector2(0.95f, 0.92f), font);
 
-            // Sliced Bar Slot Background
+            // Sliced Bar Slot Background with stitched 9-sliced frame
             var barBgGO = CreateUIObject("BarBG", rowGO.transform);
             var bRect = barBgGO.GetComponent<RectTransform>();
             SetAnchor(bRect, new Vector2(0.28f, 0.16f), new Vector2(0.95f, 0.44f), Vector2.zero, Vector2.zero);
             var bBg = barBgGO.AddComponent<Image>();
-            bBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_back");
+            bBg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_bar_frame");
             bBg.type = Image.Type.Sliced;
             bBg.color = Color.white;
 
+            var barMaskGO = CreateUIObject("BarMask", barBgGO.transform);
+            var bmRect = barMaskGO.GetComponent<RectTransform>();
+            SetAnchor(bmRect, Vector2.zero, Vector2.one, new Vector2(4, 3), new Vector2(-4, -3));
+            barMaskGO.AddComponent<RectMask2D>();
+
             string fillKey = title switch
             {
-                "Oxygen" => "rpg_bar_green",
-                "Composure" => "rpg_bar_red",
-                "Connection" => "rpg_bar_yellow",
-                _ => "rpg_bar_yellow"
+                "Oxygen" => "rpg_bar_fill_green",
+                "Composure" => "rpg_bar_fill_red",
+                "Connection" => "rpg_bar_fill_yellow",
+                _ => "rpg_bar_fill_yellow"
             };
 
-            var fillGO = CreateUIObject("Fill", barBgGO.transform);
+            var fillGO = CreateUIObject("Fill", barMaskGO.transform);
             var fRect = fillGO.GetComponent<RectTransform>();
             SetAnchor(fRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var fillImg = fillGO.AddComponent<Image>();
@@ -882,6 +930,13 @@ namespace CtrlHeart.Core.UI
             txt.font = font;
             txt.raycastTarget = false;
             return txt;
+        }
+
+        private static void AddShadow(GameObject go, Color? color = null, Vector2? dist = null)
+        {
+            var s = go.AddComponent<Shadow>();
+            s.effectColor = color ?? new Color(0f, 0f, 0f, 0.85f);
+            s.effectDistance = dist ?? new Vector2(1.5f, -1.5f);
         }
 
         private static void SetAnchor(RectTransform rect, Vector2 min, Vector2 max, Vector2 offsetMin, Vector2 offsetMax)
