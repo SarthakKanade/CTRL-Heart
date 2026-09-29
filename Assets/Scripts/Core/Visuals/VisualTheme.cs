@@ -38,8 +38,8 @@ namespace CtrlHeart.Core.Visuals
         public static readonly Color ColorConnection = new Color(0.95f, 0.68f, 0.18f, 1f);  // Radiant Gold Connection
 
         // ── Environment Paneling & Warm RPG Wood / Light Parchment ──
-        public static readonly Color ColorGoldAccent = new Color(0.96f, 0.78f, 0.32f, 1f);       // Radiant Antique Gold
-        public static readonly Color ColorParchmentText = new Color(0.95f, 0.91f, 0.82f, 1f);     // Warm Cream Parchment Text
+        public static readonly Color ColorGoldAccent = new Color(1.0f, 0.95f, 0.65f, 1f);       // Radiant Crisp Bright Gold
+        public static readonly Color ColorParchmentText = new Color(1.0f, 1.0f, 1.0f, 1f);     // Pure Crisp White
         public static readonly Color ColorBackgroundDeep = new Color(0.13f, 0.08f, 0.07f, 1f);    // Deep Walnut Espresso #211512
         public static readonly Color ColorPanelGlass = new Color(0.24f, 0.16f, 0.13f, 0.95f);     // Warm Mahogany RPG Wood
         public static readonly Color ColorPanelBorder = new Color(0.78f, 0.64f, 0.38f, 0.90f);    // Antique Gold / Brass Filigree

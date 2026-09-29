@@ -46,7 +46,8 @@ namespace CtrlHeart.Core.UI
             if (nodeNameText != null)
             {
                 nodeNameText.text = type.ToString().ToUpper();
-                nodeNameText.color = VisualTheme.ColorGoldAccent;
+                nodeNameText.color = Color.white;
+                nodeNameText.fontSize = 15;
             }
 
             Color themeColor = VisualTheme.GetNodeColor(type);
@@ -177,7 +178,8 @@ namespace CtrlHeart.Core.UI
             if (alertBadgeText != null)
             {
                 alertBadgeText.text = isThreat ? $"⚠ {alertText}" : alertText;
-                alertBadgeText.color = isThreat ? Color.white : VisualTheme.ColorParchmentText;
+                alertBadgeText.color = isThreat ? new Color(1f, 0.40f, 0.40f, 1f) : new Color(0.40f, 0.95f, 0.60f, 1f);
+                alertBadgeText.fontSize = 14;
             }
 
             if (alertBadgeImage != null)

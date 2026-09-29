@@ -290,12 +290,16 @@ namespace CtrlHeart.Core.UI
                 iconImg.raycastTarget = false;
 
                 // Emotion Name (Center Top)
-                var label = CreateText(cardGO.transform, "Label", emotion.ToString().ToUpper(), 14, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleLeft,
+                var label = CreateText(cardGO.transform, "Label", emotion.ToString().ToUpper(), 14, FontStyle.Bold, Color.white, TextAnchor.MiddleLeft,
                     new Vector2(0.32f, 0.52f), new Vector2(0.96f, 0.92f), defaultFont);
+                label.horizontalOverflow = HorizontalWrapMode.Overflow;
+                label.verticalOverflow = VerticalWrapMode.Overflow;
 
                 // Role Subtitle (Center Bottom)
-                var roleText = CreateText(cardGO.transform, "Role", role, 10, FontStyle.Normal, VisualTheme.ColorParchmentText, TextAnchor.MiddleLeft,
-                    new Vector2(0.32f, 0.12f), new Vector2(0.96f, 0.50f), defaultFont);
+                var roleText = CreateText(cardGO.transform, "Role", role, 12, FontStyle.Bold, new Color(0.95f, 0.95f, 0.95f, 1f), TextAnchor.MiddleLeft,
+                    new Vector2(0.32f, 0.10f), new Vector2(0.98f, 0.50f), defaultFont);
+                roleText.horizontalOverflow = HorizontalWrapMode.Overflow;
+                roleText.verticalOverflow = VerticalWrapMode.Overflow;
 
                 // Selection glow ring
                 var glowGO = CreateUIObject("SelectionGlow", cardGO.transform);
@@ -344,10 +348,15 @@ namespace CtrlHeart.Core.UI
             aiImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_sword_gold");
             aiImg.preserveAspect = true;
 
-            var eventHeadline = CreateText(bannerScrollGO.transform, "Headline", "⚠ SOCIAL THREAT DETECTED", 14, FontStyle.Bold, new Color(0.78f, 0.22f, 0.12f), TextAnchor.MiddleLeft,
+            var eventHeadline = CreateText(bannerScrollGO.transform, "Headline", "⚠ SOCIAL THREAT DETECTED", 15, FontStyle.Bold, new Color(0.82f, 0.15f, 0.10f), TextAnchor.MiddleLeft,
                 new Vector2(0.08f, 0.50f), new Vector2(0.98f, 0.96f), defaultFont);
-            var eventDetails = CreateText(bannerScrollGO.transform, "Details", "Primary Answer Node: Brain | Impacting Composure and Organ Harmony", 11, FontStyle.Normal, VisualTheme.ColorDateText, TextAnchor.MiddleLeft,
+            eventHeadline.horizontalOverflow = HorizontalWrapMode.Overflow;
+            eventHeadline.verticalOverflow = VerticalWrapMode.Overflow;
+
+            var eventDetails = CreateText(bannerScrollGO.transform, "Details", "Primary Answer Node: Brain | Impacting Composure and Organ Harmony", 13, FontStyle.Bold, new Color(0.12f, 0.08f, 0.06f, 1f), TextAnchor.MiddleLeft,
                 new Vector2(0.08f, 0.04f), new Vector2(0.98f, 0.50f), defaultFont);
+            eventDetails.horizontalOverflow = HorizontalWrapMode.Overflow;
+            eventDetails.verticalOverflow = VerticalWrapMode.Overflow;
 
             coreUI.AssignEventBanner(bannerGO, eventHeadline, eventDetails, null);
 
@@ -447,8 +456,10 @@ namespace CtrlHeart.Core.UI
                 iconImg.raycastTarget = false;
 
                 // Node Name Text (e.g. BRAIN)
-                var nameText = CreateText(discGO.transform, "NodeName", kvp.Key.ToString().ToUpper(), 11, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+                var nameText = CreateText(discGO.transform, "NodeName", kvp.Key.ToString().ToUpper(), 15, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter,
                     new Vector2(0f, 0.02f), new Vector2(1f, 0.26f), defaultFont);
+                nameText.horizontalOverflow = HorizontalWrapMode.Overflow;
+                nameText.verticalOverflow = VerticalWrapMode.Overflow;
 
                 // Health Bar (RPG Bar Frame below square box)
                 var hpBarGO = CreateUIObject("HealthBar", nodeGO.transform);
@@ -478,9 +489,10 @@ namespace CtrlHeart.Core.UI
                 sbImg.type = Image.Type.Sliced;
                 sbImg.color = Color.white;
 
-                var sbText = CreateText(statusBadgeGO.transform, "StatusText", "Stable", 10, FontStyle.Bold, VisualTheme.ColorParchmentText, TextAnchor.MiddleCenter,
+                var sbText = CreateText(statusBadgeGO.transform, "StatusText", "Stable", 14, FontStyle.Bold, new Color(0.40f, 0.95f, 0.60f, 1f), TextAnchor.MiddleCenter,
                     Vector2.zero, Vector2.one, defaultFont);
                 sbText.horizontalOverflow = HorizontalWrapMode.Overflow;
+                sbText.verticalOverflow = VerticalWrapMode.Overflow;
 
                 nodeView.AssignComponents(ringImg, discImg, iconImg, nameText, hpFill, sbImg, sbText, crownImg, targetBadgeGO, tbText);
                 nodeView.Initialize(kvp.Key);
