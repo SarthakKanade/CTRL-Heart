@@ -213,7 +213,7 @@ namespace CtrlHeart.Core.Editor
             var htpmRect = htpModalGO.GetComponent<RectTransform>();
             htpmRect.anchorMin = new Vector2(0.5f, 0.5f);
             htpmRect.anchorMax = new Vector2(0.5f, 0.5f);
-            htpmRect.sizeDelta = new Vector2(860, 680);
+            htpmRect.sizeDelta = new Vector2(980, 780);
             htpmRect.anchoredPosition = Vector2.zero;
             var htpmImg = htpModalGO.AddComponent<Image>();
             htpmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
@@ -227,7 +227,7 @@ namespace CtrlHeart.Core.Editor
             htphImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             htphImg.type = Image.Type.Sliced;
 
-            CreateText(htpHeaderGO.transform, "Title", "GUIDE: HOW TO PLAY CTRL+HEART", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(htpHeaderGO.transform, "Title", "GUIDE: HOW TO PLAY CTRL+HEART", 26, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             // Close Button (X in corner)
@@ -254,10 +254,10 @@ namespace CtrlHeart.Core.Editor
             cbContImg.type = Image.Type.Sliced;
 
             string guideText =
-                "<b><size=17><color=#FBBF24>1. THE DATE (10 SLOTS)</color></size></b>\n" +
+                "<b><size=20><color=#FBBF24>1. THE DATE (10 SLOTS)</color></size></b>\n" +
                 "You are sitting across from Maya at an outdoor café. Each slot presents a conversational moment.\n\n" +
 
-                "<b><size=17><color=#38BDF8>2. PHASE 1: RTS INTERVENTION (20 SECONDS)</color></size></b>\n" +
+                "<b><size=20><color=#38BDF8>2. PHASE 1: RTS INTERVENTION (20 SECONDS)</color></size></b>\n" +
                 "Drag 4 core emotional affects onto your 5 internal organs to shape your thoughts:\n" +
                 " • <color=#60A5FA><b>Calm</b></color>: Stabilizes heart rate, protects composure, grounds speech.\n" +
                 " • <color=#C084FC><b>Anxiety</b></color>: Heightens alertness & sharp responses, but stresses composure.\n" +
@@ -266,15 +266,16 @@ namespace CtrlHeart.Core.Editor
                 "<b>Organs:</b> Brain (Logic), Voice (Speech), Heart (Passion), Body (Presence), Lungs (Generates Oxygen).\n" +
                 "<i>*Note: Deploying affects costs 15 Oxygen (supplied by Lungs).</i>\n\n" +
 
-                "<b><size=17><color=#4ADE80>3. PHASE 2: YOUR SPOKEN WORDS (5 SECONDS)</color></size></b>\n" +
+                "<b><size=20><color=#4ADE80>3. PHASE 2: YOUR SPOKEN WORDS (5 SECONDS)</color></size></b>\n" +
                 "Your autonomic organ balance dictates what words and tone you actually speak aloud!\n\n" +
 
-                "<b><size=17><color=#F472B6>4. PHASE 3: MAYA'S REACTION & THE VERDICT (5 SECONDS)</color></size></b>\n" +
+                "<b><size=20><color=#F472B6>4. PHASE 3: MAYA'S REACTION & THE VERDICT (5 SECONDS)</color></size></b>\n" +
                 "Watch Maya's facial micro-expressions. If Composure hits 0, you suffer an autonomic Meltdown!\n" +
                 "Reach <b>Connection Tier 3 or 4</b> by Slot 10 to secure a second date—or even be invited over!";
 
-            CreateText(contentBoxGO.transform, "GuideBody", guideText, 14, FontStyle.Normal, new Color(0.96f, 0.94f, 0.90f, 1f), TextAnchor.UpperLeft,
+            var guideTxtComp = CreateText(contentBoxGO.transform, "GuideBody", guideText, 17, FontStyle.Normal, new Color(0.96f, 0.94f, 0.90f, 1f), TextAnchor.UpperLeft,
                 new Vector2(0.04f, 0.03f), new Vector2(0.96f, 0.97f), defaultFont);
+            guideTxtComp.verticalOverflow = VerticalWrapMode.Overflow;
 
             // Bottom Confirm Button: "UNDERSTOOD"
             var bottomBtnGO = CreateUIObject("UnderstoodButton", htpModalGO.transform);
@@ -282,7 +283,7 @@ namespace CtrlHeart.Core.Editor
             btbRect.anchorMin = new Vector2(0.5f, 0.5f);
             btbRect.anchorMax = new Vector2(0.5f, 0.5f);
             btbRect.sizeDelta = new Vector2(260, 48);
-            btbRect.anchoredPosition = new Vector2(0, -295);
+            btbRect.anchoredPosition = new Vector2(0, -345);
 
             var btbImg = bottomBtnGO.AddComponent<Image>();
             btbImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
@@ -290,7 +291,7 @@ namespace CtrlHeart.Core.Editor
             var bottomBtn = bottomBtnGO.AddComponent<Button>();
             bottomBtn.onClick.AddListener(menuController.OnCloseHowToPlay);
 
-            CreateText(bottomBtnGO.transform, "Label", "UNDERSTOOD", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(bottomBtnGO.transform, "Label", "UNDERSTOOD", 20, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             howToPlayOverlayGO.SetActive(false);
@@ -307,7 +308,7 @@ namespace CtrlHeart.Core.Editor
             var fpmRect = fpModalGO.GetComponent<RectTransform>();
             fpmRect.anchorMin = new Vector2(0.5f, 0.5f);
             fpmRect.anchorMax = new Vector2(0.5f, 0.5f);
-            fpmRect.sizeDelta = new Vector2(880, 680);
+            fpmRect.sizeDelta = new Vector2(980, 780);
             fpmRect.anchoredPosition = Vector2.zero;
             var fpmImg = fpModalGO.AddComponent<Image>();
             fpmImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_brown");
@@ -321,7 +322,7 @@ namespace CtrlHeart.Core.Editor
             fphImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_panel_inset_brown");
             fphImg.type = Image.Type.Sliced;
 
-            CreateText(fpHeaderGO.transform, "Title", "FUTURE PLANS & ROADMAP", 22, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(fpHeaderGO.transform, "Title", "FUTURE PLANS & ROADMAP", 26, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             // Close Button (X in corner)
@@ -348,32 +349,33 @@ namespace CtrlHeart.Core.Editor
             fpcImg.type = Image.Type.Sliced;
 
             string roadmapText =
-                "<b><size=17><color=#FBBF24>1. EXPANDED ROSTER & NEW CHARACTERS</color></size></b>\n" +
+                "<b><size=20><color=#FBBF24>1. EXPANDED ROSTER & NEW CHARACTERS</color></size></b>\n" +
                 "• Adding fully written <b>Male and Female</b> dating routes, each with unique dialogue, neuroses, and emotional quirks.\n" +
                 "• <i>(Community Demands Acknowledged):</i> Yes, by overwhelming request... <b>Goth Girls, Dominant Mommys, & Soft Femboys</b> are currently undergoing biological stress simulations. Our lab is on it. Stay tuned!\n\n" +
 
-                "<b><size=17><color=#38BDF8>2. FULL VOICE-OVER (VOICE ACTING)</color></size></b>\n" +
+                "<b><size=20><color=#38BDF8>2. FULL VOICE-OVER (VOICE ACTING)</color></size></b>\n" +
                 "• Expressive voice acting for both your date partner and your panicked internal monologue.\n" +
                 "• Dynamic audio cues that react to your heart rate—nervous stutters, bold quips, and breathless pauses!\n\n" +
 
-                "<b><size=17><color=#4ADE80>3. DATE LOCATION SELECTION</color></size></b>\n" +
+                "<b><size=20><color=#4ADE80>3. DATE LOCATION SELECTION</color></size></b>\n" +
                 "• Choose your battleground: <b>Candlelight Bistro, Retro Arcade, Rainy Park Bench, or Bustling Night Market</b>.\n" +
                 "• Each venue brings unique environmental stressors (e.g. Arcades drain Focus; Fancy Dining drains Composure)!\n\n" +
 
-                "<b><size=17><color=#F472B6>4. MORE ORGANS, EMOTIONS & MINI-GAMES</color></size></b>\n" +
+                "<b><size=20><color=#F472B6>4. MORE ORGANS, EMOTIONS & MINI-GAMES</color></size></b>\n" +
                 "• Introducing <b>The Stomach</b> (Butterflies vs Acid Reflux) and <b>Sweaty Palms</b> as active organ nodes!\n" +
                 "• Secret mixture emotions, unlockable outfits, and 10+ divergent branch endings.";
 
-            CreateText(fpContentBoxGO.transform, "RoadmapBody", roadmapText, 14, FontStyle.Normal, new Color(0.96f, 0.94f, 0.90f, 1f), TextAnchor.UpperLeft,
+            var roadTxtComp = CreateText(fpContentBoxGO.transform, "RoadmapBody", roadmapText, 17, FontStyle.Normal, new Color(0.96f, 0.94f, 0.90f, 1f), TextAnchor.UpperLeft,
                 new Vector2(0.04f, 0.03f), new Vector2(0.96f, 0.97f), defaultFont);
+            roadTxtComp.verticalOverflow = VerticalWrapMode.Overflow;
 
-            // Bottom Confirm Button: "HYPED!"
+            // Bottom Confirm Button: "UNDERSTOOD"
             var fpBottomBtnGO = CreateUIObject("HypedButton", fpModalGO.transform);
             var fpbbtRect = fpBottomBtnGO.GetComponent<RectTransform>();
             fpbbtRect.anchorMin = new Vector2(0.5f, 0.5f);
             fpbbtRect.anchorMax = new Vector2(0.5f, 0.5f);
             fpbbtRect.sizeDelta = new Vector2(260, 48);
-            fpbbtRect.anchoredPosition = new Vector2(0, -295);
+            fpbbtRect.anchoredPosition = new Vector2(0, -345);
 
             var fpbbtImg = fpBottomBtnGO.AddComponent<Image>();
             fpbbtImg.sprite = UIProceduralTextureGenerator.GetSprite("rpg_button_long_brown");
@@ -381,7 +383,7 @@ namespace CtrlHeart.Core.Editor
             var fpBottomBtn = fpBottomBtnGO.AddComponent<Button>();
             fpBottomBtn.onClick.AddListener(menuController.OnCloseFuturePlans);
 
-            CreateText(fpBottomBtnGO.transform, "Label", "HYPED!", 18, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
+            CreateText(fpBottomBtnGO.transform, "Label", "UNDERSTOOD", 20, FontStyle.Bold, VisualTheme.ColorGoldAccent, TextAnchor.MiddleCenter,
                 Vector2.zero, Vector2.one, pixelFont);
 
             futurePlansOverlayGO.SetActive(false);
