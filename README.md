@@ -1,13 +1,20 @@
 # CTRL + HEART (CTRL-Heart)
 ### *An Autonomic Dating Sim × Real-Time Emotional Command Center*
 
+[![Play on itch.io](https://img.shields.io/badge/Play%20on-itch.io-FA5C5C.svg?logo=itchdotio&logoColor=white)](https://mastersk.itch.io/ctrl-heart)
 [![Unity 6](https://img.shields.io/badge/Unity-6000.3.9f1-blue.svg?logo=unity)](https://unity.com/)
 [![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-orange.svg)](https://unity.com/srp/universal-render-pipeline)
-[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20WebGL-success.svg)](#quick-start--playable-webgl-build)
+[![Platform](https://img.shields.io/badge/Platform-Web%20(itch.io)%20%7C%20macOS%20%7C%20Windows-success.svg)](https://mastersk.itch.io/ctrl-heart)
 [![Status](https://img.shields.io/badge/Status-Playable%20Vertical%20Slice%20(10%20Slots)-brightgreen.svg)](#content-scale--the-10-slot-arc)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 > *"Balance your internal organs. Steady your pulse. Win Maya's heart."*
+
+<p align="center">
+  <a href="https://mastersk.itch.io/ctrl-heart">
+    <img src="https://img.shields.io/badge/▶_PLAY_NOW_ON_ITCH.IO-mastersk.itch.io%2Fctrl--heart-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white" alt="Play CTRL+HEART on itch.io" height="42" />
+  </a>
+</p>
 
 ---
 
@@ -168,31 +175,18 @@ All narrative content is authored directly in pure C# data tables ([FullDateCont
 
 ---
 
-## 🚀 Quick Start & Playable WebGL Build
+## 🚀 How to Play
 
-### Option 1: Play Instantly in Browser (Pre-built WebGL)
-A fully optimized WebGL build with Brotli/Gzip compression headers is included directly in this repository!
+### 🌐 Option 1: Play Instantly in Your Browser (Recommended)
+The full game is deployed and freely playable on **itch.io** with no installation required:
 
-#### On macOS / Linux:
-Double-click `Play_Game.command` or run:
-```bash
-./Play_Game.command
-```
-*Or run the built-in Python server directly:*
-```bash
-python3 scratch/serve_webgl.py
-```
-Open **[http://localhost:8080](http://localhost:8080)** in Chrome, Safari, Firefox, or Edge.
+👉 **[Play CTRL+HEART on itch.io (https://mastersk.itch.io/ctrl-heart)](https://mastersk.itch.io/ctrl-heart)**
 
-#### On Windows:
-```cmd
-python scratch/serve_webgl.py
-```
-Navigate to `http://localhost:8080`.
+*Supports Chrome, Safari, Firefox, Edge, and modern desktop/tablet browsers.*
 
 ---
 
-### Option 2: Open in Unity Editor
+### 🛠️ Option 2: Open and Run in Unity Editor
 
 #### Requirements:
 * **Unity 6** (`6000.3.9f1` or compatible Unity 6 release)
@@ -232,9 +226,6 @@ CTRL-Heart/
 │       ├── UI/                   # CoreGameUI, UIEmotionDraggable, UINodeView, UIHeartRateMonitor, MainMenuController
 │       ├── Testing/              # FullDateContent (The 10-slot master narrative dataset)
 │       └── Visuals/              # VisualTheme, DateCharacterVisuals
-├── CTRL - HEART_Web_Build/       # Exported, standalone WebGL distribution build
-├── Play_Game.command             # One-click desktop launcher for local WebGL play
-├── scratch/                      # Helper scripts (Brotli-compatible WebGL HTTP server)
 └── Available-Animations-Catalog.md # Detailed sprite sheet animation reference
 ```
 
